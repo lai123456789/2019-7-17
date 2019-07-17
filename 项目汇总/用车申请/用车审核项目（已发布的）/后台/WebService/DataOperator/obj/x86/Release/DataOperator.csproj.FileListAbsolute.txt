@@ -1,0 +1,4 @@
+E:\WebService\DataOperator\bin\x86\Release\DataOperator.dll
+E:\WebService\DataOperator\bin\x86\Release\DataOperator.pdb
+E:\WebService\DataOperator\obj\x86\Release\DataOperator.dll
+E:\WebService\DataOperator\obj\x86\Release\DataOperator.pdb

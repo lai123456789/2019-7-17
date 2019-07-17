@@ -1,0 +1,117 @@
+﻿.mid {
+float:left;
+margin-right:10px;
+
+}
+#form_th th {
+
+cursor:pointer;
+}
+
+#form_th > tr > th > i {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+    
+}
+
+#form_th > tr > th.contor > i {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    margin-right: 2px;
+}
+
+
+
+
+.gutter.gutter-horizontal {
+    background-image: url('../../../../UI/Image/vertical.png');
+}
+
+
+.split.split-horizontal {
+    float: left;
+}
+
+.gutter.gutter-horizontal {
+    float: left;
+    height: 5vh;
+    margin-top: 1px;
+}
+
+
+.split {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 0 10px;
+}
+
+.gutter {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: move;
+    cursor: pointer;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+    .gutter:active {
+        cursor: pointer;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }
+
+
+#query_title {
+    width: 100%;
+    height: 60px;
+    padding-top: 5px;
+    float: left;
+}
+#addline {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px
+}
+
+
+#BingBtn {
+    width: 60px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 10px
+}
+
+#AddProductionLineModal input {
+    width: 100%;
+    border: none;
+    outline: none;
+}

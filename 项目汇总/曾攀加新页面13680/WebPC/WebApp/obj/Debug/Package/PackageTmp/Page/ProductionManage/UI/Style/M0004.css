@@ -1,0 +1,322 @@
+﻿#top_main{
+    width: 100%;
+    height: 40px;
+}
+
+
+#top_main > .infolist{
+    width: 100px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+#top_main > .infolist.contor{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 3px solid red;
+    border-bottom: none;
+}
+
+
+#top_main > .addcnclist{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top:5px;
+}
+#top_main > .addcnclist:hover{
+    background: #5e256b;
+}
+
+
+#mid_main{
+    width: 100%;
+    height: 670px;
+    background: #fff;
+    border-left: 1px solid #ddd;
+}
+
+
+#mid_main > .infolist{
+    width:100%;
+    display:none;
+}
+
+#mid_main > .infolist.contor{
+    display: inline-block;
+    background: #fff;
+    padding-left: 5px;
+    border-left: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#mid_main > .infolist > .cnclist{
+    width: 180px;
+    height: 200px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+#mid_main > .infolist > .cnclist.redcolor{
+    background:#d07474;
+}
+
+#mid_main > .infolist > .cnclist.bluecolor{
+    background:#6fa9e4;
+}
+
+#mid_main > .infolist > .cnclist > .top{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    float: left;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows1{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows1 > .column1{
+    width: 70%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows1 > .column2{
+    width: 30%;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows1 > .column2 > .status{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 7px;
+    border: 2px solid #ccc;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows1 > .column2 > .status.redcolor{
+    background: red;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows1 > .column2 > .status.greencolor{
+    background: #37d637;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows1 > .column2 > .status.greycolor{
+    background:#9e9e9e;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows2{
+    width: 100%;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows2 > .column1{
+    width: 70%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+#mid_main > .infolist > .cnclist > .top > .rows2 > .column2{
+    width: 30%;
+    height: 30px;
+    float: right;
+    font-size: 12px;
+}
+
+
+#mid_main > .infolist > .cnclist > .under{
+    width: 100%;
+    height: 136px;
+    float: left;
+    background: #fff;
+    padding: 10px 5px;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows1{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows1 > .left{
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows1 > .right{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+}
+
+
+#mid_main > .infolist > .cnclist > .under > .rows2{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows2 > .left{
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows2 > .right{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+}
+
+
+#mid_main > .infolist > .cnclist > .under > .rows3{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows3 > .left{
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows3 > .right{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+}
+
+
+#mid_main > .infolist > .cnclist > .under > .rows4{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows4 > .left{
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows4 > .right{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+}
+
+
+#mid_main > .infolist > .cnclist > .under > .rows5{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows5 > .left{
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows5 > .right{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+}
+
+
+
+
+
+#mid_main > .infolist > .cnclist > .under > .rows6{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows6 > .left{
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#mid_main > .infolist > .cnclist > .under > .rows6 > .right{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+}
+
+
+
+
+#modalDialog select{
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    resize: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+
+#modalDialog input{
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    resize: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+#mid_main > .panel-body{
+    display:none;
+}
+
+#mid_main > .panel-body.contor{
+    display:block;
+}

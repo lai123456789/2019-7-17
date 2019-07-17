@@ -1,0 +1,10 @@
+﻿错误时间 : 2019-06-18 15:48:49
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 基础连接已经关闭: 接收时发生错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+

@@ -1,0 +1,30 @@
+﻿
+#maindiv > #user_application > .applycode.contor > .ff > #zhankai > .iconfont{
+        transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    margin-right: 2px;
+}
+#maindiv > #user_application > .applycode > .ff > #zhankai > .iconfont{
+        color: #62affc;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+}
+/*.itemAll22{
+     -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    transition: all 0.3s linear;
+}*/

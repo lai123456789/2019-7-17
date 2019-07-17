@@ -1,0 +1,180 @@
+﻿错误时间 : 2019-04-03 11:30:56
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 11:30:56
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 11:32:15
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 11:35:02
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 14:30:07
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 14:30:10
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 14:32:14
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 15:37:36
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 15:37:45
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 15:38:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 16:03:20
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 16:03:22
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 16:03:41
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 16:14:02
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-04-03 16:14:27
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 e:\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+

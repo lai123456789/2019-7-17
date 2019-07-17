@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-装配人员时间定义</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190430"></script>
+    <link href="/Page/ProjectManage/UI/Style/P0015.css?20190510" rel="stylesheet" />
+    <script src="/Page/ProjectManage/UI/Script/P0015.js?20190510"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+              
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">设置上班时间</h3>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <button>添加时间段</button>
+
+                    <table id="form_table" class="table table-small-font table-bordered col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>别名</th>
+                                <th>上班时间段</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb">
+                            <tr>
+                                <td>早班</td>
+                                <td>08:00-12:10</td>
+                                <td>修改别名</td>
+                            </tr>
+                            <tr>
+                                <td>晚班</td>
+                                <td>13：40-18:00</td>
+                                <td>修改别名</td>
+                            </tr>
+                            <tr>
+                                <td>加班</td>
+                                <td>18:30-22:30</td>
+                                <td>修改别名</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="panel panel-default" id="datalist2">
+            <div class="panel-heading">
+                <h3 class="panel-title">装配人员时间定义</h3>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th >序号</th>
+                                <th >工号</th>
+                                <th >姓名</th>
+                                <th >早上</th>
+                                <th >下午</th>
+                                <th >晚上</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                  
+                </div>
+                <ul class="pagination" id="pagination_P0014"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="DateDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">请选择时间段</h5>
+                </div>
+                <div class="modal-body" style="max-height: 520px;overflow-y: auto;">
+                    <input id="resetOrderVal" type="text" class="form-control" placeholder="请输入开始时间" />
+                    <span>-</span>
+                    <input id="resetOrderVal" type="text" class="form-control" placeholder="请输入结束时间" />
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                  
+                    <button type="button" class="btn btn-success" id="Reset_Ordersure">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Page/ProjectManage/UI/Script/split.min.js"></script>
+    <script>
+        Split(['#datalist', '#datalist2'], {
+            sizes: [50, 50],
+            minSize: 50
+        });
+
+    </script>
+</body>
+</html>

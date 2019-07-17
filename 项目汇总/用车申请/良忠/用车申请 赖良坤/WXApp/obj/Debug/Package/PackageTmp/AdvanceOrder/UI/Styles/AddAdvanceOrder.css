@@ -1,0 +1,614 @@
+﻿#mid{
+    width: 100%;
+    margin-top: 1.4rem;
+}
+
+#mid > .module1{
+    width: 9.6rem;
+    margin-left: 0.2rem;
+    height: 4.8rem;
+    padding-top: 0.2rem;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+    background: #fcfcfc;
+}
+
+#addinfo > .materialinfo > .column1 > .right{
+        width: calc(100% - 2rem);
+    height: 100%;
+    float: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#addinfo > .materialinfo > .column1 > .right textarea{
+         width: 97%;
+    max-height: calc(100% - 0.4rem);
+    border: none !important;
+    height: calc(100% - 0.4rem) !important;
+    resize: none !important;
+    outline: none !important;
+    margin-top: 0.3rem !important;
+}
+
+#mid > .module1 > .rows1{
+    width: 100%;
+    height: 0.8rem;
+    margin-top:0.1rem;
+}
+
+#mid > .module1 > .rows2 > .box1 > .right input{
+     width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+/*
+   
+    */
+
+#mid > .module1 > .rows1 > .box1{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows1 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows1 > .box1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows1 > .box1 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+#mid > .module1 > .rows1 > .box2{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows1 > .box2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows1 > .box2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows1 > .box2 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+#mid > .module1 > .rows2{
+    width: 100%;
+    height: 0.8rem;
+}
+
+#mid > .module1 > .rows2 > .box1{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows2 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows2 > .box1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows1 > .box1 > .right .values{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    text-align:center;
+}
+
+#infotype_dummy{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+#mid > .module1 > .rows2 > .box2{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows2 > .box2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows2 > .box2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows2 > .box2 > .right .values{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    text-align:center;
+}
+
+#mid > .module1 > .rows3{
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 0.1rem;
+}
+
+#mid > .module1 > .rows3 > .box1{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows3 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows3 > .box1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows3 > .box1 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows3 > .box2{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows3 > .box2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows3 > .box2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows3 > .box2 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows4{
+    width: 100%;
+    height: 0.8rem;
+   margin-top: 0.7rem;
+}
+
+#addmaterial{
+    width: 4rem;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #03A9F4;
+    margin-left:0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    float:left;
+}
+
+#addmaterial:active{
+    background:#0D7BAD;
+}
+
+
+#submitinfo{
+    width: 4rem;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #aaa;
+    margin-left:0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    float:left;
+}
+
+#submitinfo.contor{
+    background: #5FBD09;
+}
+
+#submitinfo.contor:active{
+    background:#4E9A07;
+}
+
+#mid > .module2{
+    width: 100%;
+}
+
+#mid > .module2 > .title{
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-top: 0.2rem;
+    background: #e2e2e2;
+}
+
+#mid > .module2 > .title > .column1{
+    width: 38%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    border-right: 1px solid #f9f9f9;
+    float: left;
+}
+
+#mid > .module2 > .title > .column2{
+    width: 17%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    border-right: 1px solid #f9f9f9;
+    float: left;
+}
+
+#mid > .module2 > .title > .column3{
+    width: 23%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    border-right: 1px solid #f9f9f9;
+    float: left;
+}
+
+#mid > .module2 > .title > .column4{
+    width: 22%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content{
+    width: 100%;
+    max-height: 10.1rem;
+    overflow-y: auto;
+}
+
+#mid > .module2 > .content > .infolist{
+    width: 100%;
+    height: 1rem;
+}
+
+#mid > .module2 > .content > .infolist:nth-child(2n+1){
+    background: #f4f4f4;
+}
+
+#mid > .module2 > .content > .infolist > .column1{
+    width: 38%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column2{
+    width: 17%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column3{
+    width: 23%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column4{
+    width: 22%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .left{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .left:active{
+    background:#ddd;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .right{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .right:active{
+    background:#ddd;
+}
+
+
+
+#addinfo{
+    position: fixed;
+    width: 100%;
+    height: 6.6rem;
+    background: #f5f5f5;
+    z-index: 400;
+    transition: all 0.3s linear;
+    top: -8rem;
+}
+
+#addinfo.contor{
+    transition: all 0.3s linear;
+    top: 1.2rem;
+}
+
+#addinfo > .materialinfo{
+    width: 9.2rem;
+    height: 5.8rem;
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ddd;
+}
+
+#addinfo > .materialinfo > .column1{
+    width: 100%;
+    height: 3rem;
+    line-height: 1rem;
+}
+
+#addinfo > .materialinfo > .column1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    padding-left: 0.2rem;
+}
+
+#addinfo > .materialinfo > .column1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column1 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column2{
+    width: 50%;
+    height: 1rem;
+    float: left;
+    line-height: 1rem;
+}
+
+#addinfo > .materialinfo > .column2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    padding-left: 0.2rem;
+}
+
+#addinfo > .materialinfo > .column2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#addinfo > .materialinfo > .column2 > .right .values{
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column3{
+    width: 50%;
+    height: 1rem;
+    float: left;
+    line-height: 1rem;
+}
+
+#addinfo > .materialinfo > .column3 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column3 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+}
+
+#materialtype_dummy{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    line-height: 1rem;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column4{
+    width: 100%;
+    height: 1.6rem;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column4 > .left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column4 > .left .values{
+    width: 3rem;
+    margin: 0 auto;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #aaa;
+    color:#fff;
+    border-radius: 0.15rem;
+    margin-top: 0.5rem;
+}
+
+#addinfo > .materialinfo > .column4 > .left .values:active{
+    background:#888;
+}
+
+#addinfo > .materialinfo > .column4 > .right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column4 > .right .values{
+    width: 3rem;
+    margin: 0 auto;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #0FB30F;
+    color: #fff;
+    border-radius: 0.15rem;
+    margin-top: 0.5rem;
+}
+
+#addinfo > .materialinfo > .column4 > .right .values:active{
+    background:#118411;
+}
+
+#mask300{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: #000;
+    opacity: 0.45;
+    display:none;
+}
+
+#mask300.contor{
+    display:block;
+}

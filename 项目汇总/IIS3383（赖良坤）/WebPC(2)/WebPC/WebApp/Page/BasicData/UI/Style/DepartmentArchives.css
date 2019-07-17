@@ -1,0 +1,210 @@
+﻿#search_content{
+    width: 210px;
+}
+
+#adddepartmentinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adddepartmentinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+
+#AddDepartmentModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_superiorcode{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#search_content{
+    width: 210px;
+}
+
+#adddepartmentinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adddepartmentinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+
+#AddDepartmentModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_superiorcode{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+#panel_table{
+    padding:0;
+}
+
+#department_list .fa.fa-plus{
+    width: 30px;
+    height: 30px;
+}
+
+#department_list .fa.fa-minus{
+    width: 30px;
+    height: 30px;
+}
+
+#department_list .fa.fa-minus{
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+#department_list .fa.fa-plus{
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+#department_list .left_content{
+    float: left;
+}
+
+#department_list .right_content{
+    float: right;
+}
+
+#department_list .right_content > .edit{
+    cursor:pointer;
+}
+
+#department_list .right_content > .del{
+    cursor:pointer;
+}
+
+#department_list .dd3-handle{
+    padding:0;
+    cursor: auto;
+}
+
+.dd {
+    float: left;
+    width: 80%;
+}

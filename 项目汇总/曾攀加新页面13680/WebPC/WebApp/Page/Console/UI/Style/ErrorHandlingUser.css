@@ -1,0 +1,83 @@
+﻿#search_content{
+    width: 210px;
+}
+
+#adduserinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adduserinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+#add_sex > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+#add_sex > .label.label-default.contor{
+    background: #79c447;
+    color: #fff;
+}
+
+#add_sex > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#AddUserModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+#AddUserModal select{
+    width:100%;
+    outline:none;
+    border:none !important;
+    resize:none;
+    box-shadow: none !important;
+}

@@ -1,0 +1,444 @@
+﻿错误时间 : 2019-01-31 09:18:36
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-31 09:18:39
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-31 09:19:24
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-31 09:19:26
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:23
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:26
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:28
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:30
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:33
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:35
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:35
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:37
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:40
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:40
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:42
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:42
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:44
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:46
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:46
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:49
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:49
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:51
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:51
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:53
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:56
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:58
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:05:58
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:00
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:02
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:02
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:05
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:05
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:07
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:09
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:09
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:12
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-01-31 14:06:12
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+

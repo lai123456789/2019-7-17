@@ -1,0 +1,30 @@
+﻿错误时间 : 2019-06-22 09:10:19
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-22 09:11:21
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-22 09:12:47
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+

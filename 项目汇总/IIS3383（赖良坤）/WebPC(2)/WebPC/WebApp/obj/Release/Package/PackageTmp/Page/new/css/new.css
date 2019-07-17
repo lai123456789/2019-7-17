@@ -1,0 +1,370 @@
+﻿#form_th > tr > th > i {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+#form_th > tr > th.contor > i {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+#form_th1 > tr > th > i { /*第二个表格的*/
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+#form_th1 > tr > th.contor > i {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+#query_title{
+    background:white;
+    width:100%;
+    height:90px;
+}
+#query_title ul{
+    /*width:1200px;
+    overflow-x:scroll;*/
+    /*clear:both;*/
+}
+#query_title ul li{
+    /*display:flex;*/
+    float:left;
+    list-style:none;
+    padding-bottom:20px;
+    padding-right:5px;
+}
+#query_title ul li span{
+    text-align:right;
+}
+
+
+#form_tb > tr > th > input{
+    border:none;
+    width:100%;
+    background-color:transparent;    
+}
+#form_tb1 > tr > th > input{
+    border:none;
+    width:100%;
+    background-color:transparent;    
+}
+.table_index{
+    display:flex;
+}
+.table_index div:nth-child(1){
+    margin-right:15px;
+}
+#search_content{
+    width: 210px;
+}
+
+
+#search01_content{
+    width: 210px;
+}
+
+
+#search02_content{
+    width: 210px;
+}
+
+#search03_content{
+    width: 210px;
+}
+
+#search04_content{
+    width: 210px;
+}
+
+#adduserinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #79c447;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adduserinfo:hover{
+    background: #79c447;
+}
+
+
+#datetype_date{
+    float: left;
+    width: 335px;
+}
+
+
+#datetype_date > .mid{
+    float: left;
+    width: 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 9px;
+}
+#setuserinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#setuserinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+#add_isshow > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+#add_isshow > .label.label-default.contor{
+    background: #79c447;
+    color: #fff;
+}
+
+#add_isshow > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#AddUserModal input{
+       width: 69%;
+    border: none;
+    outline: none;
+}
+
+#form_tb_Print i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#form_tb_Print i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+
+#form_tb_Print2 i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#form_tb_Print2 i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+
+#form_tb_Print3 i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#form_tb_Print3 i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+
+#form_tb_Print4 i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#form_tb_Print4 i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+
+
+
+
+
+#form_tb_Print6 i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#form_tb_Print6 i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+#set_isshow > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+
+
+#form_tb_Print44 i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#form_tb_Print44 i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+#form_tb_Print4 i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#form_tb_Print4 i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+
+#set_isshow > .label.label-default.contor{
+    background: #79c447;
+    color: #fff;
+}
+
+#set_isshow > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#SetUserModal input{
+    width: 60%;
+    border: none;
+    outline: none;
+
+    margin-right: 20px;
+}
+
+
+
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+#set_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+#form_th > tr > th > i {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+#form_th > tr > th.contor > i {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-物料明细</title>
+
+    <link href="UI/css/LeaveDepartmentManager.css" rel="stylesheet" />
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    
+    <script src="UI/Scripts/LeaveDepartmentManager.js"></script>
+</head>
+<body>
+
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+
+        <!--<div style="padding-bottom:10px;border-bottom:1px solid #eee;width:100%;background:white;margin-bottom:5px;">
+            <input type="text" class="form-control Print-Txt" placeholder="请输入要查询的机加分类代码或者名字" style="width:30%;display:inline-block" />
+            <button class="btn btn-success queryPrint-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+        </div>-->
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">代理人审核</h3>
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="panel-body" id="panel_table">
+
+                <div class="index" style="">
+                    <div class="content">
+                        <img src="UI/images/2.png" class="img-responsive" style="position:absolute;top:0;right:0;width:10rem;height:10rem" />
+                        <div style="display:flex;margin:2rem 0 2rem 0;width:100%">
+                            <div class="one">
+                                <!--第一块-->
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>工号：</label>
+                                        <label class="" id="account" style="margin-left:10px;">3383</label>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>姓名：</label>
+                                        <label class="" id="name" style="margin-left:10px;">赖良坤</label>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>部门：</label>
+                                        <label class="" id="department" style="margin-left:10px;">咨询部</label>
+                                    </div>
+
+
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>职务：</label>
+                                        <label class="" id="department_position" style="margin-left:10px;">技术员</label>
+                                        <!--<input class="form-control" type="text" placeholder="" id="department_position">-->
+                                    </div>
+                                </form>
+
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>职位代理人：</label>
+                                        <label class="" id="department" style="margin-left:10px;">杨晓龙</label>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>部门经理：</label>
+                                        <label class="" id="department" style="margin-left:10px;">林展浩</label>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <div class="two">
+                                <form class="form-inline">
+                                    <div class="form-group" id="leibie">
+                                        <label class="">请假类别：</label>
+                                        <span>事假</span>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>请假原因：</label>
+                                        <span id="result">回家探亲</span>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>请假时间：</label>
+
+                                        <span>2019-07-16 08:00</span>
+                                        <span>--</span>
+                                        <span>2019-07-16 18:00</span>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>请假时长：</label>
+                                        <span>1天</span><span>0时</span><span>0分</span>
+                                    </div>
+                                </form>
+
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>代理人审核：</label>
+                                        <span style="color:green;font-size:15px;"><b>同意</b></span>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label>经理审核：</label>
+                                        <span class="btn btn-primary" id="accept1">同意</span>
+                                        <span class="btn btn-danger" id="refuse1">拒绝</span>
+                                    </div>
+                                </form>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--拒绝按钮弹框显示输入原因-->
+        <div class="modal fade" id="RefuseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">拒绝原因</h5>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" placeholder="请输入拒绝原因" value="" class="" style="width:100%;border:none;outline:none" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" id="add_sure_edit" data-dismiss="modal">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

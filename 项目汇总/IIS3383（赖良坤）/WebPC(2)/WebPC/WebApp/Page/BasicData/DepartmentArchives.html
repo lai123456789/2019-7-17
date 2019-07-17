@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-部门档案</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/Page/BasicData/UI/Style/DepartmentArchives.css" rel="stylesheet" />
+    <script src="/Page/BasicData/UI/Script/DepartmentArchives.js"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <div id="adddepartmentinfo">添加部门</div>
+            </div>
+        </div>
+
+        <div class="col-sm-12" id="panel_table">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2><i class="fa fa-users red"></i><strong>部门档案</strong></h2>
+                </div>
+                <div class="panel-body clearfix">
+                    <div class="dd" id="department_list">
+                        <!--<ol class="dd-list">
+                            <li class="dd-item dd3-item">
+                                <div class="dd-handle dd3-handle"></div>
+                                <div class="dd3-content">
+                                    <div class="left_content">总经办</div>
+                                    <div class="right_content">
+                                        <a href="JavaSricpt:;" class="edit">编辑</a>
+                                        <a href="JavaSricpt:;" class="del">删除</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dd-item dd3-item">
+                                <div class="dd-handle dd3-handle"></div>
+                                <div class="dd3-content">
+                                    <div class="left_content">总经办</div>
+                                    <div class="right_content">
+                                        <a href="JavaSricpt:;" class="edit">编辑</a>
+                                        <a href="JavaSricpt:;" class="del">删除</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dd-item dd3-item">
+                                <div class="dd-handle dd3-handle"><i class="fa fa-minus"></i></div>
+                                <div class="dd3-content">
+                                    <div class="left_content">总经办</div>
+                                    <div class="right_content">
+                                        <a href="JavaSricpt:;" class="edit">编辑</a>
+                                        <a href="JavaSricpt:;" class="del">删除</a>
+                                    </div>
+                                </div>
+                                <ol class="dd-list">
+                                    <li class="dd-item dd3-item">
+                                        <div class="dd-handle dd3-handle"><i class="fa fa-minus"></i></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">总经办</div>
+                                            <div class="right_content">
+                                                <a href="JavaSricpt:;" class="edit">编辑</a>
+                                                <a href="JavaSricpt:;" class="del">删除</a>
+                                            </div>
+                                        </div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item dd3-item">
+                                                <div class="dd-handle dd3-handle"></div>
+                                                <div class="dd3-content">
+                                                    <div class="left_content">总经办</div>
+                                                    <div class="right_content">
+                                                        <a href="JavaSricpt:;" class="edit">编辑</a>
+                                                        <a href="JavaSricpt:;" class="del">删除</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item dd3-item">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">总经办</div>
+                                            <div class="right_content">
+                                                <a href="JavaSricpt:;" class="edit">编辑</a>
+                                                <a href="JavaSricpt:;" class="del">删除</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item dd3-item">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">总经办</div>
+                                            <div class="right_content">
+                                                <a href="JavaSricpt:;" class="edit">编辑</a>
+                                                <a href="JavaSricpt:;" class="del">删除</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="AddDepartmentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加部门信息</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>部门名称</td>
+                                <td><input id="add_departmentname" type="text" placeholder="请输入部门名称" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td><input id="add_remark" type="text" placeholder="请输入备注" /></td>
+                            </tr>
+                            <tr>
+                                <td>上级部门</td>
+                                <td>
+                                    <select id="add_superiorcode">
+                                        
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

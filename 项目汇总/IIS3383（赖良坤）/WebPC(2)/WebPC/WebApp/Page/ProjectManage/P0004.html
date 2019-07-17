@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-装配职能管理</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190324"></script>
+    <link href="/Page/ProjectManage/UI/Style/P0004.css?2019040801" rel="stylesheet" />
+    <script src="/Page/ProjectManage/UI/Script/P0004.js?2019040801"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <input type="text" id="search_content" value="" placeholder="输入用户名，工号，部门名" />
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">装配订单汇总</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>工号</th>
+                                <th style="min-width: 200px;">用户名</th>
+                                <th>部门</th>
+                                <th>职务</th>
+                                <th>职能</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                    <!--<ul class="pagination">
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SetUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加信息</h5>
+                </div>
+                <div class="modal-body" style="max-height: 520px;overflow-y: auto;">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>工号</td>
+                                <td id="account"></td>
+                            </tr>
+                            <tr>
+                                <td>名称</td>
+                                <td id="username"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background: #ddd;">职能</th>
+                                <th style="background: #ddd;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="flowinfo">
+
+                        </tbody>
+                    </table>
+                    <div id="addnewflow">添加新职能</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

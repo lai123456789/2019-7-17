@@ -1,0 +1,12 @@
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\WXInterface.dll
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\WXInterface.pdb
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\Common.dll
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\DataOperator.dll
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\Entity.dll
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\Oracle.DataAccess.dll
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\Common.pdb
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\DataOperator.pdb
+F:\linzhanhao\MES\WX\WX\WXInterface\bin\x64\Debug\Entity.pdb
+F:\linzhanhao\MES\WX\WX\WXInterface\obj\x64\Debug\WXInterface.csprojResolveAssemblyReference.cache
+F:\linzhanhao\MES\WX\WX\WXInterface\obj\x64\Debug\WXInterface.dll
+F:\linzhanhao\MES\WX\WX\WXInterface\obj\x64\Debug\WXInterface.pdb

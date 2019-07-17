@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-物料明细</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/UI/Style/superTables.css" rel="stylesheet" />
+    <script src="/UI/Scripts/supertables.js"></script>
+    <link href="/UI/Style/style.css" rel="stylesheet" />
+    <!--<script src="/UI/Scripts/pagination.min.js"></script>-->
+    <link href="/Page/ReportTable/UI/Style/R0001.css?20190404" rel="stylesheet" />
+
+    <script src="UI/Scripts/Usermanage.js"></script>
+
+    <link href="UI/Style/WordOrder.css" rel="stylesheet" />
+    <link href="UI/Style/yy_pagegps.css" rel="stylesheet" />
+    <!--<script src="UI/Scripts/WordOrder.js"></script>-->
+    <script src="UI/Scripts/yy_pagegps.js"></script>
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">                
+                <input type="text" id="gonghao" value="" autocomplete="off" placeholder="请输入工号或者姓名" />
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+        
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">用户管理</h3>
+                
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a id="guanliyuan" style="cursor:pointer">查看所有管理员</a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th class="contor" data-type="num" data-val="IP">IP<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" style="display:none" data-type="string" data-val="MD5_ID">MD5_ID<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="GUID">GUID<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="UUID">UUID<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="user_id">工号<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="user_name">姓名<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="操作">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <div id="yy_pagegps01" class="yy_pagegps" data-page="1" data-pagenums="1" style="bottom:30px;position:fixed;width:100%;text-align:center !important"></div>
+
+                <ul class="pagination" id="pagination_9">
+                    <!--<li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+        <!--测试表格导出-->
+        <table id="tableExcel" width="100%" class="table table-hover" style="display:none">
+            <thead id="form_th">
+                <tr>
+                    <th class="contor" data-type="num" data-val="IP">IP</th>
+                    <th class="contor" data-type="string" data-val="MD5_ID" style="display:none">MD5_ID</th>
+                    <th class="contor" data-type="string" data-val="GUID">GUID</th>
+                    <th class="contor" data-type="string" data-val="UUID">UUID</th>
+                    <th class="contor" data-type="string" data-val="user_id">工号</th>
+                    <th class="contor" data-type="string" data-val="user_name">姓名</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="excel"></tbody>
+        </table>
+        <a id="dlink" style="display:none;"></a>
+        <input type="text" name="" value="请输入文件名" class="center-block form-control" style="margin-bottom: 20px;display:none; text-align: center" id="submit" onclick="submt()">
+
+        <!--测试表格导出-->
+
+    </div>
+
+    <!--//编辑模态框-->
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">修改信息</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>IP</td>
+                                <td>
+                                    <input type="text" id="IP_edit" readonly style="width:100%;border:none;background:#E3E3E3"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MD5_ID</td>
+                                <td><input type="text" id="MD5_ID_edit" readonly style="width:100%;border:none;background:#E3E3E3" /></td>
+                            </tr>
+                            <tr>
+                                <td>GUID</td>
+                                <td><input type="text" id="GUID_edit" readonly style="width:100%;border:none;background:#E3E3E3" /></td>
+                            </tr>
+                            <tr>
+                                <td>UUID</td>
+                                <td>
+                                    <input type="text" id="UUID_edit" readonly style="width:100%;border:none;background:#E3E3E3" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>工号</td>
+                                <td>
+                                    <input type="text" id="user_id_edit" style="width:100%;border:none;" placeholder="请输入工号" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>姓名</td>
+                                <td>
+                                    <input type="text" id="user_name_edit" style="width:100%;border:none;" placeholder="请输入姓名" />
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure_edit" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--//管理员展示模态框-->
+    <div class="modal fade" id="AddUserModal_admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog1" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">管理员信息展示</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered" id="admin_table">
+                        <thead>
+                            <tr>
+                                <th>工号</th>
+                                <th>姓名</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin_show"></tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <!--<button type="button" class="btn btn-success" id="add_sure_edit" data-dismiss="modal">确定</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

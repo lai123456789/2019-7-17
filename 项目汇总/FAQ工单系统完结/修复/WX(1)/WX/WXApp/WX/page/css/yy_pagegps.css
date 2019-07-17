@@ -1,0 +1,97 @@
+﻿/* page 页码  */
+.index{
+   
+}
+.index > p{    
+    float:right;
+    
+    clear:both;
+}
+.yy_pagegps {
+    margin-top: 15px;
+    overflow: hidden;   
+    
+}
+.yy_pagegps .page5{
+    float:right;
+    margin-right:30%;
+    
+}
+ .yy_pagegps > p b {
+    font-weight: normal;
+  }
+ .yy_pagegps ul {
+    float:left;
+   
+    text-align:center;
+    list-style-type: none;
+    }
+
+    .yy_pagegps li {
+        float: left;
+    }
+
+    .yy_pagegps a {
+        padding: 0 12px;
+        border: 1px solid #ddd;
+        text-decoration: none;
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        color: #0d638f;
+        -moz-user-select: -moz-none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .yy_pagegps a:hover {
+            background: #f5f5f5;
+        }
+
+    .yy_pagegps .jump {
+        margin-right: 15px;
+    }
+
+        .yy_pagegps .jump span {
+            color: #c09853;
+        }
+
+        .yy_pagegps .jump input {
+            width: 50px;
+            height: 28px;
+            line-height: 28px;
+            padding-left: 8px;
+            border: 1px solid #ddd;
+            outline: none;
+            color: #0d638f;
+        }
+
+        .yy_pagegps .jump a {
+            margin-left: -1px;
+        }
+
+    .yy_pagegps .num li {
+        margin-left: -1px;
+    }
+
+    .yy_pagegps .next li {
+        margin-left: -1px;
+    }
+
+    .yy_pagegps li.contor a {
+        color: #999;
+        background: #fff;
+        cursor: default;
+    }
+
+    .yy_pagegps .num .contor a {
+        color: #999;
+        background: #f5f5f5;
+        cursor: default;
+    }
+/* page 页码  end */
+

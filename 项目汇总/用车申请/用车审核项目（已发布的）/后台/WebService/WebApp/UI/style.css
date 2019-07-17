@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.table{
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.table td{
+	border: 1px solid #ccc;
+	width: 100px;
+	height: 40px;
+}
+.table-button{
+	margin: 0 auto;
+	margin-top: 50px;
+	display: block;
+}
+.table td input{
+	width: 90%;
+	/*height: 90%;*/
+	margin: 0 auto;
+	display: block;
+	height: 30px;
+}

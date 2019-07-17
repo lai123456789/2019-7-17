@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="调试微信公共号" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^F:\\信息化平台\\testWX\\ll\\WX\\WXApp\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^F:\\信息化平台\\testWX\\ll\\WX\\WXApp\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

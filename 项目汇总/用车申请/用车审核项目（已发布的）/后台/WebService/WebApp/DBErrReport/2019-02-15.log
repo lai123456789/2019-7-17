@@ -1,0 +1,609 @@
+﻿错误时间 : 2019-02-15 08:18:21
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:18:22
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:21
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:21
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:48
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:48
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:49
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:49
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:49
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:49
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:49
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:49
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:50
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:55
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:55
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:56
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:56
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:57
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:57
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:58
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-15 08:19:59
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+
+错误时间 : 2019-02-15 09:29:09
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader()
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteScalar()
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 482
+
+**********************************************************************
+
+错误时间 : 2019-02-15 09:48:21
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00904: "T1"."GDSTATE": 标识符无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader()
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteScalar()
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 482
+
+**********************************************************************
+
+错误时间 : 2019-02-15 09:49:09
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00903: 表名无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader()
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteScalar()
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 482
+
+**********************************************************************
+
+错误时间 : 2019-02-15 10:47:13
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-15 10:47:16
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-15 10:49:23
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-15 10:49:25
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-15 10:49:36
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-15 10:50:36
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+

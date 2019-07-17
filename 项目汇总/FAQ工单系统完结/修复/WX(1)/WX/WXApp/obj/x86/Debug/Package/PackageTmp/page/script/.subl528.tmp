@@ -1,0 +1,94 @@
+﻿//评价栏js调用 延迟加载
+$(document).on('click', '#comment_sure', function () {
+    alert('评价成功！');
+    var start = Number(new Date());
+    while (start + 300 > Number(new Date())) {  //使JS执行1秒才完成！延迟加载方法        
+        $(this).parent().prev(".comment1").hide().next().next().show();
+        $(this).hide();
+        var a = $(this).parent().prev(".comment1").find("select:eq(0) option:selected").text();   //评价获取的值
+        var b = $(this).parent().prev(".comment1").find("select:eq(1) option:selected").text();
+        var c = $('#appraise-textarea').val();
+        $(".fuwu").text(a);
+        $(".item11").text(b);
+        $(".liuyan").text(c);
+    }
+    window.location.href = "create_gongdan.html";
+});
+
+
+
+$(function () {
+    var Wid = GetQueryString("Wid");
+    GetWordOrderInfo(Wid);
+})
+
+//获取URL地址中的参数值
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+        return unescape(r[2]);
+    }
+    return null;
+}
+
+
+
+
+/****************************************** Ajax *********************************************/
+
+
+/*
+获取请求数据的信息
+*/
+function GetWordOrderInfo(wordercode) {
+    var usercode = localStorage.getItem("usercode"); 
+    $.ajax({
+        cache: true,
+        type: "POST",
+        url: "http://172.27.56.4:1680/UserManage.aspx?action=lookworkorder",
+        data: {
+            "wordercode": wordercode
+            //"Wid": Wid,
+        },
+        dataType: "json",
+        async: true,
+        error: function (request) {
+            alert("连接失败，请稍候再试");
+        },
+        success: function (data) {
+            if (data.errcode == "#code#") {
+                var goodsid = '';
+                var content = '';
+                var username = '';
+                var time = '';
+                
+                $('#WordID').empty();
+                $('#WordID').append(content);
+                $('#fl').empty();
+                $('#fl').append(username + "<span class=\"time\">" + time + "</span>" + "<img src=http://172.27.56.4:1680/" +  img + ">");//data.User+"&nbsp;&nbsp;"+obj.CREATETIME
+                $('#text').empty();
+                $('#text').append(goodsid);
+                // $('.ii').append("<img src=http://172.27.56.4:1680/" +  img + ">");  
+
+            }
+            else {
+                alert(data.errmsg);
+                location.href = "WordOrder.aspx";
+            }
+            var a = $("#state").text();  //获取状态的值进行判断是何种状态 0 1
+            if (a=1) {
+                $("#state").text("待处理");
+                
+            };
+            // if (a=2) {
+            //     $("#state").text("处理中");
+            // };
+            // if (a=3) {
+            //     $("#state").text("已完成");
+            // }
+        }
+    });
+}
+
+/****************************************** Ajax End *********************************************/

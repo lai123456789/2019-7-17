@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-任务消息</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/Page/Task/UI/Style/AssemblyError.css?20190524" rel="stylesheet" />
+    <script src="/Page/Task/UI/Script/AssemblyError.js?20190524"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <input type="text" id="search_content" value="" placeholder="请输入PJ或者名称搜索" />
+                <div class="query_btn">查询</div>
+                <menu id="nestable-menu">
+                    <button type="button" class="btn btn-success" data-val="">全部</button>
+                    <button type="button" class="btn btn-default" data-val="1">已授理</button>
+                    <button type="button" class="btn btn-default" data-val="0">未受理</button>
+                    <button type="button" class="btn btn-default" data-val="-1">已关闭</button>
+                </menu>
+            </div>
+           
+        </div>
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">异常任务列表</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>PJ号</th>
+                                <th>项目名称</th>
+                                <th>异常是否关闭</th>
+                                <th>异常分组</th>
+                                <th>异常类别</th>
+                                <th>异常开始时间</th>
+                                <th>异常原因</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_AssemblyError"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

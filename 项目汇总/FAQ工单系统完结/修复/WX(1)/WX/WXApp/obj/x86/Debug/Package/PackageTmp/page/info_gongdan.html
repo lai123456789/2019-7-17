@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- 规定国产浏览器使用webkit内核渲染（目前只有360支持） -->
+    <meta name="renderer" content="webkit">
+    <title>我的工单</title>
+    <!-- oray的控制台公共css样式 -->
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="script/jquery-1.11.3.min.js"></script>
+    <script src="script/info_gongdan.js"></script>
+    <link rel="stylesheet" href="css/create_gongdan.css">
+    <link href="css/123.css" rel="stylesheet">
+    <link href="css/1.css" rel="stylesheet">
+    <link href="css/2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/auth.css">
+    <style>
+        .sub-til img {
+            width: 50px;
+            height: 40px;
+        }
+
+
+        .page-content .content-section {
+            background: #f2f2f2;
+            padding: 0 20px;
+        }
+
+        @media(max-width: 1500px) {
+            .page-content .content-section {
+                padding: 0;
+            }
+        }
+
+        .star-wrap img {
+            margin-right: 30px;
+        }
+
+        .taglist label {
+            cursor: default;
+        }
+
+        .num-show {
+            background: #FF7281;
+            color: #fff !important;
+        }
+    </style>
+
+    <style>
+        #divid {
+            position: fixed;
+            z-index: 2000;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        #imgid {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <script>
+        function myFunc() {
+            $("#divid").css("display", "none")
+        }
+    </script>
+
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <!--左边导航-->
+        <!-- 页面左边导航开始 -->
+        <div class="page-sidebar">
+            <div class="logo-wrap">
+                <a href="" class="block">
+                    <img class="img-oray" src="img/MT.png" style=" width:70px; height:31px">
+                </a>
+            </div>
+            <ul class="menu-level-1" id="index">
+                              
+                <!--<li class="level-1-item">
+                    <a class="toggle-item" href="create_gongdan.html">
+                        <i class="iconfont"></i>
+                        <span>创建工单</span>
+                    </a>
+                </li>
+                <li class="level-1-item active">
+                    <a class="toggle-item" href="gongdan_list.html">
+                        <i class="iconfont"></i>
+                        <span>工单分页列表</span>
+                    </a>
+                </li>-->
+                
+
+            </ul>
+            <div class="packup-btn-wrap">
+                <div class="packup-btn-box">
+                    <a data-open="true" id="packup-btn" href="javascript:void(0);" class="iconfont" style="font-size: 20px;color: #fff;">&#xe844;</a>
+                </div>
+            </div>
+        </div>
+        <!-- 页面左边导航结束 -->
+        <!--右边内容-->
+        <div class="page-main">
+
+            <!-- 页面右边顶部导航栏开始 -->
+            <div class="top-bar">
+                <ul class="nav-menu-list" id="console-header">
+                    <li class="item no-border">
+                        <a href="javascript:void(0);" style="width: 160px;">
+                            账号信息： <span id="info_gongdan_user"></span>
+                            <i class="iconfont more-icon"></i>
+                        </a>
+
+                    </li>  
+                    <li class="item">
+                        <a href="javascript:;"><span id="layout11">注销</span></a>
+                    </li>                  
+                    <li class="item">
+                        <a href="http://www.mtworld.cn/"><span>每通首页</span><i class="iconfont more-icon"></i></a>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- 页面右边顶部导航栏结束 -->
+            <!-- 页面右边顶部导航栏开始 -->
+            <div class="page-content page-content-bg">
+                <div class="content-section">
+
+
+                    <!-- 内容开始 -->
+                    <div class="work-order-wrap">
+                        <!-- 导航开始 -->
+                        <div class="step-tab clear">
+                            <span class="step-til">工单详情</span>
+                            <ul class="step-list fr" id="ull">
+                                <li class="finish">
+                                    <i class="iconfont next-icon"></i>
+                                    <div class="step-con">
+                                        <span class="num-icon">1</span>
+                                        <span>待受理</span>
+                                    </div>
+                                </li>
+                                <li class="finish">
+                                    <i class="iconfont next-icon"></i>                                 
+                                    <div class="step-con">
+                                        <span class="num-icon">2</span>
+                                        <span>处理中</span>
+                                    </div>
+                                </li>
+                                <li class="finish">
+                                    <i class="iconfont next-icon"></i>
+                                    <div class="step-con">
+                                        <span class="num-icon">3</span>
+                                        <span>待评价</span>
+                                    </div>
+                                </li>
+                                <li class="finish">
+                                    <i class="iconfont next-icon"></i>
+                                    <div class="step-con">
+                                        <span class="num-icon">4</span>
+                                        <span>已完成</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 导航结束 -->
+                        <div class="work-order-content">
+                            <!-- 内容开始 -->
+                            <div class="content-right">
+                                <div class="work-order-info" id="WordID">
+                                    
+                                </div>
+
+
+                                <!-- 待评价模块-->
+                                <div class="workorder-box finish ">
+                                    <div class="workorder-con">
+                                        
+                                        <!--确认评价-->
+                                        <div class="grade-container comment1" style="margin-top: -40px;text-align:center;">
+                                            <p class="info-title">评价栏</p>
+                                            <div style="margin-left:90px;">
+                                                <div class="item" style="float: left; clear: both; text-align: center;"><span class="til">服务态度：</span><span class="grade-star-wrap grade-star-attitude" data-val="attitude"></span></div>
+
+                                                <select style="margin-top: 15px; font-size: 15px; width: 75px;" id="attitude">
+                                                    <option>非常好</option>
+                                                    <option>很好</option>
+                                                    <option>好</option>
+                                                    <option>一般</option>
+                                                    <option>中</option>
+                                                </select>
+                                                <div class="item">
+                                                    <span class="til" style="clear: both; float: left;">产品功能：</span><span class="grade-star-wrap grade-star-feature" data-val="product"></span>
+
+                                                    <select style="margin: 0px 0px 0px -5px; width: 75px; height: 20px; font-size: 15px;" id="function">
+                                                        <option>非常好</option>
+                                                        <option>很好</option>
+                                                        <option>好</option>
+                                                        <option>一般</option>
+                                                        <option>中</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="textarea-box">
+                                                <textarea placeholder="您的建议或鼓励，都是我们进步的动力～" rows="6" id="appraise-textarea" name="content"></textarea>
+                                            </div>
+                                            <!--确认评价按钮-->
+                                            <div class="btn-box-wrap" style="text-align: center; margin-top: 20px;"><a class="btn btn-primary" id="comment_sure">确认评价！</a><a class="btn btn-primary" id="comment_updata">确认修改！</a></div>
+                                        </div>
+
+                                        <!--修改评价模块-->
+                                        <div class="grade-container comment2" style="margin-top: -40px; display: none;">
+                                            <div style="margin-left:90px;">
+                                                <div class="item" style="float: left; clear: both; text-align: center;"><span class="til">服务态度：</span><span class="grade-star-wrap grade-star-attitude" data-val="attitude"></span></div>
+                                                <div class="item">
+                                                    <span class="fuwu" style="margin-left:-250px;"></span>
+                                                    <!-- 这里获取服务态度的内容  -->
+                                                    <!--<select style="margin-top: 15px; font-size: 15px; width: 75px;" class="fuwu">
+                                                        <option value="非常好" selected="selected">非常好</option>
+                                                        <option value="很好">很好</option>
+                                                        <option value="好">好</option>
+                                                        <option value="一般">一般</option>
+                                                        <option value="中">中</option>
+                                                    </select>-->
+                                                </div>
+                                                <div class="item">
+                                                    <span class="til" style="clear: both; float: left;">产品功能：</span><span class="grade-star-wrap grade-star-feature" data-val="product"></span>
+                                                    <span class="item11" style="margin-left:-250px;">
+                                                        <!-- 这里获取产品功能的内容  -->
+                                                    </span>
+                                                </div>
+                                                <div class="textarea-box">
+                                                    <div class="item" style="margin-left:-260px;"><span class="til">评价内容：</span><span class="liuyan" style="margin-left: 24px;"><!-- 这里获取评价的内容  --></span></div>
+                                                </div>
+                                            </div>
+                                            <!--修改评价按钮-->
+                                            <div class="btn-box-wrap" style="padding-top: 35px; text-align: center; border-top: 1px solid #E5E5E5;" id="update_order">
+                                                <a href="javascript: void(0);" type="update_review" class="btn btn-primary updata">修改评价</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript: void(0);" type="delete" class="btn" id="delete">删除工单</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-main">
+
+                                <div class="work-order-section">
+                                    <p class="title" style="text-align: left;">问题描述</p>
+                                    <div class="item-box clear">
+                                        <div class="img-item fl">
+                                            <img src="img/noavatar_big.gif" width="48" height="48">
+                                        </div>
+                                        <div class="text-item">
+                                            <p class="sub-til clear">
+                                                <span class="fl" id="fl">
+                                                    <!-- 这里获取用户  -->
+                                                    <img src="" alt="出错" />
+                                                </span>
+                                            </p>
+                                            <div class="text" id="text">
+                                                <!-- 这里获取问题描述的内容  -->
+                                            </div>
+                                            <!--<a href="javascript:void(0);" class="itemimg-wrap">-->
+                                                <!--<img src="" alt="" height="50">-->
+                                                <!-- 这里获取图片的内容  -->
+                                            <!--</a>-->
+                                            <div class="ii"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="xianshi"> <!--// display: none;-->
+                                    <!-- 这里先隐藏管理员回复 -->
+                                    <div id="dd">
+
+                                    </div>
+                                    <div class="toolbar">
+                                        <div class="huifu">
+                                           
+                                        </div>
+                                        <div class="ext">
+                                            <div>
+                                                <span class="backpage">
+                                                </span>
+                                                <span id="now"></span></span>/<span id="totalpage"></span>页
+                                                <span class="nextpage">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 内容结束 -->
+                        </div>
+                    </div>
+                    <!-- 内容结束 -->
+                </div>
+            </div>
+
+            <!-- 页面左边导航栏开始 -->
+            <div class="window-wrapper" id="reconfirm-win">
+                <div class="window">
+                    <div class="window-opt">
+                        <a href="javascript:void(0)" class="iconfont close">&#xe61f;</a>
+                    </div>
+                    <div class="window-header massage">工单处理</div>
+                    <div class="window-body">
+                        <div class="appraise-win-content" style="text-align: center; padding: 20px;">
+                            <p id="massages" style="font-size: 18px;"></p>
+                            <a class="btn btn-primary" type='' id="reconfirm" style="margin: 20px 20px 0 0;">确认</a>
+                            <a class="btn close" style="margin: 20px 20px 0 0;">取消</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="window-wrapper" style="display: none; top: 0; left: 0; min-width: 0;" id="bigImg-win">
+                    <div class="window">
+                        <div class="window-opt">
+                            <a href="javascript:void(0)" class="iconfont close"></a>
+                        </div>
+                        <div class="window-body">
+                            <div class="bimgimg-wrap" style="text-align: center; width: 800px; height: 600px; position: relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 页面左边导航栏结束 -->
+        </div>
+        <!-- 左边内容结束 -->
+    </div>
+
+
+
+    <!-- <script type="text/javascript" src="https://cdn.orayimg.com/console/js/domain-1.2.67.js"></script> -->
+    <div style="display:none;" id="divid">
+        <img onclick="myFunc()" src="" id="imgid" />
+    </div>
+
+</body>
+</html>

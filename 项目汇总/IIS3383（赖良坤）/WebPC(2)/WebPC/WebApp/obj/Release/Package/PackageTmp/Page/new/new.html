@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-【机加1】每日SLA物料及报告事件</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="css/new.css" rel="stylesheet" />
+    <script src="js/new.js"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+
+            <ul>
+                <li><span>pj号：</span><input type="text" onclick="Click()" id="j1" name="name" value="" /></li>
+                <li><span>批次：</span><input type="text" name="name" id="j2" value="" /></li>
+                <li><span>图号：</span><input type="text" name="name1" id="j3" value="" /></li>
+                <li><span>版本：</span><input type="text" name="name" id="j4" value="" /></li>
+                <li><span>名称：</span><input type="text" name="name" id="j5" value="" /></li>
+                <li><span>数量：</span><input type="text" name="name" id="j6" value="" /></li>
+                <li><span>工艺数量：</span><input type="text" name="name" id="j7" value="" /></li>
+            </ul>
+            <div id="adduserinfo">确定保存</div>
+        </div>
+
+
+
+        <div class="modal fade" id="PrintUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialogPrint" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">开放率01</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <div style="padding-bottom:10px;border-bottom:1px solid #eee">
+                            <input type="text" class="form-control Print-Txt" placeholder="请输入要查询的机加分类代码或者名字" style="width:80%;display:inline-block" />
+                            <button class="btn btn-success queryPrint-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+                        </div>
+
+
+                        <div class="panel-body" id="panel_table">
+                            <div class="table-responsive" id="div_form_table">
+                                <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                    <thead id="form_th_Print">
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>批次</th>
+                                            <th>图号</th>
+                                            <th>版本</th>
+                                            <th>名称</th>
+                                            <th>数量</th>
+                                            <th>工艺数量</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="form_tb_Print"></tbody>
+                                </table>
+
+                            </div>
+                            <ul class="pagination" id="pagination_PringPwd"></ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" id="add_sure2">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">物料明细</h3>
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="table_index">
+                <div class="panel-body" id="panel_table" style="width:50%;">
+                    <div class="table-responsive" id="div_form_table">
+                        <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                            <thead id="form_th">
+                                <tr>
+
+                                    <th class="contor" data-type="num">物料代码<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="状态">名称<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="date" data-val="下图日期">规格<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="K3备注">尺寸<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="旧ERP备注">单位<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="销售订单号">数量<i class="iconfont">&#xe733;</i></th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="form_tb">
+                                <tr>
+                                    <th class="inp11"><input type="text" onclick="Click01(this)" data-len="1" id="01" value=" " /></th>
+                                    <th class="inp21"><input type="text" value="" /></th>
+                                    <th class="inp31"><input type="text" value="" /></th>
+                                    <th class="inp41"><input type="text" value="" /></th>
+                                    <th class="inp51"><input type="text" value="" /></th>
+                                    <th class="inp61"><input type="text" value="" /></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="add">添加一行</button>
+                    </div>
+                    <ul class="pagination" id="pagination_9">
+                        <!--<li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>-->
+                    </ul>
+                </div>
+
+                <div class="modal fade" id="PrintUserModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div id="modalDialogPrint2" class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h5 class="modal-title">开放率02</h5>
+                            </div>
+                            <div class="modal-body">
+
+                                <div style="padding-bottom:10px;border-bottom:1px solid #eee">
+                                    <input type="text" class="form-control Print-Txt2" placeholder="请输入要查询的机加分类代码或者名字" style="width:80%;display:inline-block" />
+                                    <button class="btn btn-success queryPrint2-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+                                </div>
+
+
+                                <div class="panel-body" id="panel_table">
+                                    <div class="table-responsive" id="div_form_table">
+                                        <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                            <thead id="form_th_Print2">
+                                                <tr>
+                                                    <th>序号</th>
+
+                                                    <th>物料名称</th>
+                                                    <th>规格</th>
+                                                    <th>单位</th>
+
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="form_tb_Print2"></tbody>
+                                        </table>
+
+                                    </div>
+                                    <ul class="pagination" id="pagination_PringPwd2"></ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-success" id="add_sure3">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="panel-body" id="panel_table" style="width:50%;">
+                    <div class="table-responsive" id="div_form_table">
+                        <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                            <thead id="form_th1">
+                                <tr>
+                                    <th class="contor" data-type="工序号">工序号<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="工序名称">工序名称<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="date" data-val="工序内容">工序内容<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="准备工时">准备工时<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="单件工时">单件工时<i class="iconfont">&#xe733;</i></th>
+                                    <th class="contor" data-type="string" data-val="总工时">总工时<i class="iconfont">&#xe733;</i></th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="form_tb1">
+                                <tr>
+                                    <th class="inp11"><input type="text" value="" onclick="Click03(this)" data-len="1" /></th>
+                                    <th class="inp21"><input type="text" value="" /></th>
+                                    <th class="inp31"><input type="text" value="" /></th>
+                                    <th class="inp41"><input type="text" value="" /></th>
+                                    <th class="inp51"><input type="text" value="" /></th>
+                                    <th class="inp61"><input type="text" value="" /></th>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="add1">添加一行</button>
+                    </div>
+                    <ul class="pagination" id="pagination_9">
+                        <!--<li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>-->
+                    </ul>
+                </div>
+
+
+
+
+
+                <div class="modal fade" id="PrintUserModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div id="modalDialogPrint3" class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h5 class="modal-title">开放率03</h5>
+                            </div>
+                            <div class="modal-body">
+
+                                <div style="padding-bottom:10px;border-bottom:1px solid #eee">
+                                    <input type="text" class="form-control Print-Txt3" placeholder="请输入要查询的机加分类代码或者名字" style="width:80%;display:inline-block" />
+                                    <button class="btn btn-success queryPrint3-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+                                </div>
+
+
+                                <div class="panel-body" id="panel_table">
+                                    <div class="table-responsive" id="div_form_table">
+                                        <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                            <thead id="form_th_Print3">
+                                                <tr>
+                                                    <th>序号</th>
+
+                                                    <th>工序名称</th>
+                                                    <th>转序工时</th>
+
+
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="form_tb_Print3"></tbody>
+                                        </table>
+
+                                    </div>
+                                    <ul class="pagination" id="pagination_PringPwd3"></ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-success" id="add_sure4">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

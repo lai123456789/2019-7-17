@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-装配异常分类定义</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190324"></script>
+    <link href="/Page/ProjectManage/UI/Style/P0008.css?20190424" rel="stylesheet" />
+    <link href="/UI/Style/input-autocomplete.css" rel="stylesheet" />
+    <script src="/UI/Scripts/input-autocomplete.js"></script>
+    <script src="/Page/ProjectManage/UI/Script/P0008.js?20190424"></script>
+</head>
+<body>
+    <div  class="main" id="main">
+
+        <div id="query_title">
+            <div class="query_content">
+                <!--<input type="text" id="search_content" value="" placeholder="请输入用户账号或者名称" />
+            <div class="query_btn">查询</div>-->
+                <!--<div id="adduserinfo">添加工序</div>-->
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">装配异常分类定义</h3>
+                <div class="query_content">
+                    <input type="text" id="search_content" value="" placeholder="请输入异常类型"  style="margin-left:10px;"/>
+                    <button class="btn btn-primary  searchBtn">查询</button>
+                    <div id="adderrorinfo">添加异常定义</div>
+                </div>
+
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-hover col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                               
+                                <th>异常类型</th>
+                                <th>备注</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default" id="datalist2">
+            <div class="panel-heading">
+                <h3 class="panel-title">装配异常分类负责人</h3>
+
+                <div class="query_content">
+                    <!--<input type="text" id="search_content" value="" placeholder="请输入工号" style="margin-left:10px;" />
+                    <button class="btn btn-primary">查询</button>-->
+                    <div id="BingUserBtn" disabled>绑定</div>
+
+                </div>
+               
+                <!--<div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>-->
+              
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th2">
+                            <tr>
+                                <th>序号</th>
+                                <th>负责人员工号</th>
+                                <th>负责人员名称</th>
+                                <th>备注</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb2"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+    <div class="modal fade in" id="EditErrorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h5 class="modal-title">编辑异常定义</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="rc-handle-container" style="width: 556px; min-width: 556px;"><div class="rc-handle" ></div></div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>异常代号</td>
+                                <td id="set_bcode"></td>
+                            </tr>
+                            <tr>
+                                <td>异常类型</td>
+                                <td><input id="set_bname" type="text" placeholder="请输入异常类型"></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <input id="set_remark" type="text" placeholder="请输入备注">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="EditError_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade in" id="AddErrorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h5 class="modal-title">新增异常定义</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="rc-handle-container" style="width: 556px; min-width: 556px;"><div class="rc-handle"></div></div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                      
+                            <tr>
+                                <td>异常类型</td>
+                                <td><input id="set_Addbname" type="text" placeholder="请输入异常类型"></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <input id="set_Addremark" type="text" placeholder="请输入备注">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="AddError_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+    <div class="modal fade in" id="BindUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h5 class="modal-title">新增异常定义</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="rc-handle-container" style="width: 556px; min-width: 556px;"><div class="rc-handle"></div></div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>工号</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>绑定工号</td>
+                                <td><input id="set_AddUserJobNum" type="text" placeholder="请输入工号或者姓名"></td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="AddErrorUser_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

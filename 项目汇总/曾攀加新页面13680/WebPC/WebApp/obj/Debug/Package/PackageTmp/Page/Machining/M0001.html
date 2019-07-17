@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-CNC(机加1)</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/Page/Machining/UI/Style/M0001.css?20190430" rel="stylesheet" />
+    <script src="/Page/Machining/UI/Script/M0001.js?20190430"></script>
+
+</head>
+<body>
+    <div class="main" id="main">
+
+        <div id="query_title">
+            <div class="query_content">
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="机台号">机台号</option>
+                    <option value="机型">机型</option>
+                    <option value="线别">机台号</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+                <select id="numbertype">
+                    <option>全部</option>
+                    <option value="待命">待命</option>
+                    <option value="进行">进行</option>
+                    <option value="完成">完成</option>
+                    <option value="故障">故障</option>
+                    <option value="调机">调机</option>
+                    <option value="离线">离线</option>
+                </select>
+                <div class="query_btn">查询</div>
+                <div id="colorgroup">
+                    <div class="box1 status1"></div><div class="boxtxt">待命</div>
+                    <div class="box1 status2"></div><div class="boxtxt">进行</div>
+                    <div class="box1 status3"></div><div class="boxtxt">完成</div>
+                    <div class="box1 status4"></div><div class="boxtxt">故障</div>
+                    <div class="box1 status5"></div><div class="boxtxt">调机</div>
+                    <div class="box1 status6"></div><div class="boxtxt">离线</div>
+                </div>
+                <div id="add_cncgroup">添加分组</div>
+                <div id="set_cncgroup">编辑分组</div>
+                <div id="del_cncgroup">删除分组</div>
+            </div>
+        </div>
+
+        <div id="top_main">
+            <div class="infolist contor">全部</div>
+        </div>
+        <div id="mid_main">
+            <div class="infolist contor">
+
+                <!--<div class="cnclist redcolor">
+                    <div class="top">
+                        <div class="rows1">
+                            <div class="column1">三菱（乌龟机）</div>
+                            <div class="column2">
+                                <div class="status redcolor"></div>
+                            </div>
+                        </div>
+                        <div class="rows2">
+                            <div class="column1">400*400*350</div>
+                            <div class="column2">MC-02</div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="box1">1组</div>
+                    </div>
+                    <div class="under">
+                        <div class="rows1">
+                            <div class="left">当月运行时长：</div>
+                            <div class="right">20.3h</div>
+                        </div>
+                        <div class="rows2">
+                            <div class="left">当天运行时长：</div>
+                            <div class="right">561.6h</div>
+                        </div>
+                        <div class="rows3">
+                            <div class="left">当天运行次数：</div>
+                            <div class="right">30</div>
+                        </div>
+                        <div class="rows4">
+                            <div class="left">当月运行次数：</div>
+                            <div class="right">630</div>
+                        </div>
+                        <div class="rows5">
+                            <div class="left">最近运行时间：</div>
+                            <div class="right">04/30 14:48</div>
+                        </div>
+                        <div class="rows6">
+                            <div class="left">当前操作人员：</div>
+                            <div class="right">张三</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cnclist bluecolor">
+                    <div class="top">
+                        <div class="rows1">
+                            <div class="column1">三菱（乌龟机）</div>
+                            <div class="column2">
+                                <div class="status greencolor"></div>
+                            </div>
+                        </div>
+                        <div class="rows2">
+                            <div class="column1">400*400*350</div>
+                            <div class="column2">MC-02</div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="box1">【未分组】</div>
+                    </div>
+                    <div class="under">
+                        <div class="rows1">
+                            <div class="left">当月运行时长：</div>
+                            <div class="right">20.3h</div>
+                        </div>
+                        <div class="rows2">
+                            <div class="left">当天运行时长：</div>
+                            <div class="right">561.6h</div>
+                        </div>
+                        <div class="rows3">
+                            <div class="left">当天运行次数：</div>
+                            <div class="right">30</div>
+                        </div>
+                        <div class="rows4">
+                            <div class="left">当月运行次数：</div>
+                            <div class="right">630</div>
+                        </div>
+                        <div class="rows5">
+                            <div class="left">最近运行时间：</div>
+                            <div class="right">04/30 14:48</div>
+                        </div>
+                        <div class="rows6">
+                            <div class="left">当前操作人员：</div>
+                            <div class="right">张三</div>
+                        </div>
+                    </div>
+                </div>-->
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="AddCncgroupList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加分组</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>名称</td>
+                                <td>
+                                    <input type="text" value="" id="add_cncgname" placeholder="请输入分组名称" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="SetCncgroupList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑分组</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>原名称</td>
+                                <td id="set_cncgname"></td>
+                            </tr>
+                            <tr>
+                                <td>新名称</td>
+                                <td>
+                                    <input type="text" value="" id="set_newcncgname" placeholder="请输入分组新名称" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="DelCncgroupList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content" style="width: 300px;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">删除分组</h5>
+                </div>
+                <div class="modal-body">
+                    <div>确定要删除“<span id="del_cncgname"></span>”?</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="del_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="BindCncgroupList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑分组</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style=" width: 100px;">名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >绑定组别</td>
+                                <td>
+                                    <select id="bindgroup">
+                                        
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="bind_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

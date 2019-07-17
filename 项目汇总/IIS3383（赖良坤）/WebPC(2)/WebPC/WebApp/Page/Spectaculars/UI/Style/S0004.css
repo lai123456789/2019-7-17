@@ -1,0 +1,245 @@
+﻿#form_th > tr >th {
+    font-size:12px !important;
+    padding:3px;
+    text-align:center;
+    color:#000 !important;
+}
+#form_tb > tr > td{
+    font-size:11px !important;
+    padding: 3px;
+    height: 15px;
+    text-align:center;
+    color:#000 !important;
+}
+
+#form_th > tr >th.wd_30{
+    width:60px;
+    max-width:60px;
+    min-width:60px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_40{
+    width:80px;
+    max-width:80px;
+    min-width:80px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_50{
+    width:100px;
+    max-width:100px;
+    min-width:100px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_60{
+    width:120px;
+    max-width:120px;
+    min-width:120px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_70{
+    width:140px;
+    max-width:140px;
+    min-width:140px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_80{
+    width:160px;
+    max-width:160px;
+    min-width:160px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_90{
+    width:180px;
+    max-width:180px;
+    min-width:180px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_100{
+    width:200px;
+    max-width:200px;
+    min-width:200px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_110{
+    width:220px;
+    max-width:220px;
+    min-width:220px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_120{
+    width:240px;
+    max-width:240px;
+    min-width:240px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_130{
+    width:260px;
+    max-width:260px;
+    min-width:260px;
+    word-wrap:break-word;
+}
+
+#form_th > tr >th.wd_140{
+    width:280px;
+    max-width:280px;
+    min-width:280px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_30{
+    width:60px;
+    max-width:60px;
+    min-width:60px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_40{
+    width:80px;
+    max-width:80px;
+    min-width:80px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_50{
+    width:100px;
+    max-width:100px;
+    min-width:100px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_60{
+    width:120px;
+    max-width:120px;
+    min-width:120px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_70{
+    width:140px;
+    max-width:140px;
+    min-width:140px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_80{
+    width:160px;
+    max-width:160px;
+    min-width:160px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_90{
+    width:180px;
+    max-width:180px;
+    min-width:180px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_100{
+    width:200px;
+    max-width:200px;
+    min-width:200px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_110{
+    width:220px;
+    max-width:220px;
+    min-width:220px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_120{
+    width:240px;
+    max-width:240px;
+    min-width:240px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_130{
+    width:260px;
+    max-width:260px;
+    min-width:260px;
+    word-wrap:break-word;
+}
+
+#form_tb > tr > td.wd_140{
+    width:280px;
+    max-width:280px;
+    min-width:280px;
+    word-wrap:break-word;
+}
+
+
+
+#form_tb > tr > td.left_red {
+    border-left:2px solid red !important;
+}
+
+#form_tb > tr > td.right_red{
+    border-right:2px solid red !important;
+}
+
+#form_tb > tr > td.bottom_red{
+    border-bottom:2px solid red !important;
+}
+
+#form_tb > tr > td.top_red{
+    border-top:2px solid red !important;
+}
+
+#form_th > tr >th.top_red{
+    border-top:2px solid red !important;
+}
+
+#form_th > tr >th.left_red{
+    border-left:2px solid red !important;
+}
+
+#form_th > tr >th.right_red{
+    border-right:2px solid red !important;
+}
+
+#form_th{
+    /*position: absolute;*/
+    background: #fff !important;
+}
+
+#form_table{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.table-bordered {
+    border: 0px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+}
+
+.table-responsive{
+    /*max-height:400px;*/
+}
+
+.panel .panel-heading > .panel-options a.savainfo{
+    width: 80px;
+    height: 24px;
+    line-height: 28px;
+    text-align: center;
+    background: #1ec754;
+    color: #fff;
+    cursor: pointer;
+    text-decoration:none
+}
+
+.panel .panel-heading > .panel-options a.savainfo:active{
+    background: #0a8e34;
+}

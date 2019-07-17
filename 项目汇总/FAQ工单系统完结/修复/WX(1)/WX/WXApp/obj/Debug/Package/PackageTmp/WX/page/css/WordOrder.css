@@ -1,0 +1,50 @@
+﻿
+#di1 table {
+    width: 100%;
+    border: 0px;    
+    table-layout: fixed;
+}
+
+#di1 table thead {
+    background-color: #EAEAEA;
+}
+#di1 table thead tr th {
+    border: 1px solid black;
+}
+#yy_pagegps01{
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+#tb_account td {
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border: 1px solid black;
+}
+
+.creactworek {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    overflow: hidden;
+   
+}
+
+.creactworek #add_work {
+        
+        padding: 0 10px;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        background: red;
+        color: #fff;
+    }
+
+.creactworek #add_work:hover {
+        background: #852b99;
+   }

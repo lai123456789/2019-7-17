@@ -1,0 +1,66 @@
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\BLL.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\BLL.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\DAL.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\DataOperator.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\Oracle.DataAccess.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\Common.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\DAL.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\DataOperator.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\bin\Debug\Common.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\obj\Debug\BLL.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\BLL\obj\Debug\BLL.pdb
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\BLL.dll
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\BLL.pdb
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\DAL.dll
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\DataOperator.dll
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\Oracle.DataAccess.dll
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\Common.dll
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\DAL.pdb
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\DataOperator.pdb
+C:\Users\hp\Desktop\WebService\BLL\bin\Debug\Common.pdb
+C:\Users\hp\Desktop\WebService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\WebService\BLL\obj\Debug\BLL.dll
+C:\Users\hp\Desktop\WebService\BLL\obj\Debug\BLL.pdb
+E:\WebService\BLL\bin\Debug\BLL.dll
+E:\WebService\BLL\bin\Debug\BLL.pdb
+E:\WebService\BLL\bin\Debug\Common.dll
+E:\WebService\BLL\bin\Debug\DAL.dll
+E:\WebService\BLL\bin\Debug\Entity.dll
+E:\WebService\BLL\bin\Debug\DataOperator.dll
+E:\WebService\BLL\bin\Debug\Oracle.DataAccess.dll
+E:\WebService\BLL\bin\Debug\Common.pdb
+E:\WebService\BLL\bin\Debug\DAL.pdb
+E:\WebService\BLL\bin\Debug\Entity.pdb
+E:\WebService\BLL\bin\Debug\DataOperator.pdb
+E:\WebService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\WebService\BLL\obj\Debug\BLL.dll
+E:\WebService\BLL\obj\Debug\BLL.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\BLL.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\BLL.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\Common.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\DAL.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\Entity.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\DataOperator.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\Oracle.DataAccess.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\Common.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\DAL.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\Entity.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\bin\Debug\DataOperator.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\obj\Debug\BLL.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\BLL\obj\Debug\BLL.pdb
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\BLL.dll
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\BLL.pdb
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\Common.dll
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\DAL.dll
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\Entity.dll
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\DataOperator.dll
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\Oracle.DataAccess.dll
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\Common.pdb
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\DAL.pdb
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\Entity.pdb
+D:\临时\WebService(2)\WebService\BLL\bin\Debug\DataOperator.pdb
+D:\临时\WebService(2)\WebService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\临时\WebService(2)\WebService\BLL\obj\Debug\BLL.dll
+D:\临时\WebService(2)\WebService\BLL\obj\Debug\BLL.pdb

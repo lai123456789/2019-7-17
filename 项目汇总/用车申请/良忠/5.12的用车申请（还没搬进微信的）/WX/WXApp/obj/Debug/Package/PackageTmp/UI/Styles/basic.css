@@ -1,0 +1,398 @@
+﻿/*  css 准备工作  */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,span,blockquote,th,td,footer,article,aside,header,section,nav,figure,figcaption,hgroup
+{font-family:  "微软雅黑","Segoe UI",Helvetica, Arial, sans-serif ;margin:0; padding:0; font-size:.3rem; text-shadow: none; box-sizing: border-box;color:#979898}
+table{border-collapse:collapse; border-spacing:0;}
+fieldset,img{ border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{ font-style:normal;font-weight:normal;}
+ol,ul,li,dl,dt,dd{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{ border:0; font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{ vertical-align:text-bottom;}
+input,textarea,select{ font-size:12px;font-weight:inherit;}
+legend{color:#333; }
+a{text-decoration: none;color:#666;}
+a:hover{text-decoration: none;color:#666;}
+#yui3-css-stamp.cssreset{ display:none}
+select,input{
+  border-radius: 0;
+}
+img{
+    pointer-events: none; 
+}
+
+.ui-input-text {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    resize: none !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width:100%;
+    height:100%;
+}
+
+/*  css 准备工作  end  */
+
+body{
+    background: #fff;
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;  
+    -khtml-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    user-select: none;
+}
+input , textarea{
+    -moz-user-select: auto;
+    -o-user-select:auto;
+    -khtml-user-select:auto;
+    -webkit-user-select:auto;
+    -ms-user-select:auto;
+    user-select:auto;
+}
+table{
+    width: 100%;
+}
+td{
+    border: 1px solid #ddd;
+}
+
+/*nothing*/
+.nothing{
+  height: 4rem;
+  background: url('../../../BasicUI/UI/Images/no_record.png') no-repeat center top;
+  background-size: auto 70%;
+  position: relative;
+  background-color: #f5f5f5;
+  margin-top: 1px;
+}
+.nothing>p{
+  width: 100%;
+  position: absolute;
+  bottom: .5rem;
+  text-align: center;
+  color: #555;
+}
+/*nothing*/
+.nothingtext{
+  text-align: center;
+  width: 100%;
+  padding: 10px!important;
+  color: #777!important;
+  background: #fff!important;
+}
+
+/*成功*/
+#success{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 5rem;
+  background: rgba(255,255,255,0.4);
+  text-align: center;
+  z-index:20;
+}
+#success>p{
+  display: inline-block;
+  background: rgba(255,255,255,0.9);
+  padding: 5px 15px;
+}
+#success>p span{
+    font-size: .4rem;
+    color: #555;
+    font-weight: bold;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+}
+#success i{
+     color: #008c16;
+    font-size: .8rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+/*失败*/
+#fail{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 5rem;
+  background: rgba(255,255,255,0.4);
+  text-align: center;
+  z-index:20;
+}
+#fail>p{
+  display: inline-block;
+  background: rgba(255,255,255,0.9);
+  padding: 5px 15px;
+}
+#fail>p span{
+    font-size: .4rem;
+    color: #555;
+    font-weight: bold;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+}
+#fail i{
+     color: #f80000;
+    font-size: .8rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/*输出时间*/
+/*成功*/
+#showdate{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 5rem;
+  background: rgba(255,255,255,0.4);
+  text-align: center;
+  z-index:20;
+}
+#showdate>p{
+  display: inline-block;
+  background: rgba(255,255,255,0.9);
+  padding: 5px 15px;
+}
+#showdate>p span{
+    font-size: .7rem;
+    color: #555;
+    font-weight: bold;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+}
+
+/*警示*/
+#caution{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 5rem;
+  background: rgba(255,255,255,0.6);
+  text-align: center;
+  z-index:600;
+}
+#caution>p{
+    background: #fff;
+    display: inline-block;
+    padding: 3px 10px;
+    line-height: .6rem;
+}
+#caution>p span{
+    font-size: .4rem;
+    color: #555;
+    font-weight: bold;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#caution i{
+    color: #f60;
+    font-size: .6rem;
+    margin-right: 3px;
+    font-style: normal;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-right: .2rem;
+}
+
+/*暂无消息*/
+.no_dd{
+  height: 3rem!important;
+  background: url(../Images/no_record.png) no-repeat center center;
+  background-size: 2rem;
+  position: relative;
+  border: none!important;
+}
+.no_dd>p{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.35rem;
+  color: #b94a48;
+}
+
+tr.no_tr{
+  border: none;
+}
+tr.no_tr td{
+  height: 6rem;
+  border: none;
+  background: #ddd url(../Images/no_record.png) no-repeat center center;
+  background-size: 5rem;
+  position: relative;
+  padding: 0;
+}
+tr.no_tr td>p{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.35rem;
+  color: #555;
+}
+
+/*提示*/
+.notice{
+  color: #b94a48;
+  padding: .2rem 0;
+}
+
+/*加载*/
+#Loading{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2) url('../Image/loading.gif') no-repeat center center;
+  background-size: 6rem;
+  z-index: 99994;
+}
+/*遮罩层*/
+#mask{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 99994;
+}
+/*show_bottom */
+#show_bottom{
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+    text-shadow:none;
+}
+
+body{
+    position: fixed;
+    width: 100%;
+    height: 0;
+    left: 100%;
+}
+
+body.contor{
+    transition: all 0.3s linear;
+    left: 0;
+}
+
+
+#top{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    z-index:9999;
+}
+
+#top > .title{
+    width:100%;
+    height:100%;
+    background: #03a9f4;
+}
+
+#top > .title > .control1{
+    width: 13%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+}
+
+#top > .title > .control1 > i{
+    color: #fff;
+    font-size: 21px;
+}
+
+#top > .title > .control2{
+    width:13%;
+    height:100%;
+    float:left;
+}
+
+#top > .title > .control3{
+    width:48%;
+    height:100%;
+    float:left;
+}
+
+#top > .title > .control3 > .titlename{
+    text-align:center;
+    line-height:45px;
+    font-size:20px;
+    color:#fff
+}
+
+#top > .title > .control4{
+    width: 13%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+}
+
+#top > .title > .control4 > i{
+    color: #fff;
+    font-size: 21px;
+}
+
+#top > .title > .control5{
+    width: 13%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+}
+
+#top > .title > .control5 > i{
+    color: #fff;
+    font-size: 21px;
+}
+
+
+#top > .title > .control4:active{
+    background:#0486c1;
+}
+
+#top > .title > .control5:active{
+    background:#0486c1;
+}
+

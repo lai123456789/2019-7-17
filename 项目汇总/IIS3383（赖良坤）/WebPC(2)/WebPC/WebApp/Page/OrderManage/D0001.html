@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-订单明细</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/UI/Style/superTables.css" rel="stylesheet" />
+    <script src="/UI/Scripts/supertables.js"></script>
+    <link href="/UI/Style/style.css" rel="stylesheet" />
+    <script src="/UI/Scripts/pagination.min.js"></script>
+    <link href="/Page/OrderManage/UI/Style/D0001.css?2019040501" rel="stylesheet" />
+    <script src="/Page/OrderManage/UI/Scripts/D0001.js?2019040501"></script>
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="流程单号">流程单号</option>
+                    <option value="项目经理">项目经理</option>
+                    <option value="试制号">试制号</option>
+                    <option value="图档号">图档号</option>
+                    <option value="规格型号及夹具名称">规格型号及夹具名称</option>
+                    <option value="需求数量">需求数量</option>
+                    <option value="归类">归类</option>
+                    <option value="提单人">提单人</option>
+                    <option value="需求场景">需求场景</option>
+                    <option value="子流程单号">子流程单号</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="系统通知日期">系统通知日期</option>
+                    <option value="创建日期">创建日期</option>
+                </select>
+                <div id="datetype_date" style="display:none">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid">-</div>
+                    <input id="enddate" type="date" value="" />
+                </div>
+                <select id="numbertype">
+                    <option>全部</option>
+                    <option value="未出图">未出图</option>
+                    <option value="已出图">已出图</option>
+                </select>
+                <div class="query_btn">查询</div>
+                <div id="import_btn">导入</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">订单明细</h3>
+                <div id="progress1">
+
+                </div>
+                <div id="progress2">
+
+                </div>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" data-resizable-columns-id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>序号</th>
+                                <th data-val="流程单号">流程单号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="项目经理">项目经理<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="试制号">试制号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="图档号">图档号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="规格型号及夹具名称">规格型号及夹具名称<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="需求数量">需求数量<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="归类">归类<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="提单人">提单人<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="系统通知日期">系统通知日期<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="需求场景">需求场景<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="子流程单号">子流程单号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="创建时间">创建时间<i class="iconfont">&#xe733;</i></th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_9">
+                    <!--<li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

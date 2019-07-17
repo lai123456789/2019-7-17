@@ -1,0 +1,174 @@
+﻿#search_content{
+    width: 210px;
+}
+
+#adduserinfo{
+    width: 90px;
+    text-align: center;
+    background: #8b449c;
+    border-radius: 3px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#adduserinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+#add_sex > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+#add_sex > .label.label-default.contor{
+    background: #79c447;
+    color: #fff;
+}
+
+#add_sex > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#AddUserModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+#datalist{
+    width:60%;
+    float:left;
+    min-height:500px;
+    max-height:500px;
+    overflow-y:auto;
+}
+
+#businesstype{
+    width:calc(40% - 10px);
+    float:left;
+    margin-right:10px;
+    min-height:500px;
+    max-height:500px;
+    overflow-y:auto;
+}
+
+
+#department_list li.libtn{
+    cursor:pointer;
+    user-select:none;
+}
+
+
+#department_list li.libtn.contor .dd3-content{
+    background: #fcfcfc;
+    color:#00bcff;
+}
+
+#department_list li.libtn.contor .dd3-content:hover{
+    background: #fff;
+    color: #20a8d8;
+}
+
+
+
+
+
+
+#panel_table{
+    padding:0;
+}
+
+#department_list .fa.fa-plus{
+    width: 30px;
+    height: 30px;
+}
+
+#department_list .fa.fa-minus{
+    width: 30px;
+    height: 30px;
+}
+
+#department_list .fa.fa-minus{
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+#department_list .fa.fa-plus{
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+#department_list .left_content{
+    float: left;
+}
+
+#department_list .right_content{
+    float: right;
+}
+
+#department_list .right_content > .edit{
+    cursor:pointer;
+}
+
+#department_list .right_content > .del{
+    cursor:pointer;
+}
+
+#department_list .dd3-handle{
+    padding:0;
+    cursor: auto;
+}
+
+.dd {
+    float: left;
+    width: calc(100% - 20px);
+}
+
+

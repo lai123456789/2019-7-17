@@ -1,0 +1,21 @@
+﻿错误时间 : 2019-02-14 14:12:13
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-12541: TNS: 无监听程序
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src)
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-14 14:12:13
+错误对象 : DataOperator
+异常方法 : System.Object ExecuteScalar(System.String, OracleCmdParam[])
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 480
+
+**********************************************************************
+

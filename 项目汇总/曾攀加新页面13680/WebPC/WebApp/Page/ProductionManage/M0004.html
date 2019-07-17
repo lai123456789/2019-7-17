@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-CNC机床定义</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/Page/Machining/UI/Style/M0004.css?2019050801" rel="stylesheet" />
+    <script src="/Page/Machining/UI/Script/M0004.js?2019050801"></script>
+</head>
+<body>
+
+    <div class="main" id="main">
+
+        <div id="top_main">
+            <div class="infolist contor">全部</div>
+            <div class="infolist">机加1部</div>
+            <div class="infolist">机加2部</div>
+            <div class="infolist">事业2部</div>
+            <div class="addcnclist">添加机床</div>
+        </div>
+        <div id="mid_main">
+
+            <div class="panel-body contor" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>线别（部门）</th>
+                                <th>CNC机台号</th>
+                                <th>设备编码</th>
+                                <th>CNC型号</th>
+                                <th>CNC规格</th>
+                                <th>组别</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel-body" id="panel_table1">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th1">
+                            <tr>
+                                <th>线别（部门）</th>
+                                <th>CNC机台号</th>
+                                <th>设备编码</th>
+                                <th>CNC型号</th>
+                                <th>CNC规格</th>
+                                <th>组别</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb1"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel-body" id="panel_table2">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th2">
+                            <tr>
+                                <th>线别（部门）</th>
+                                <th>CNC机台号</th>
+                                <th>设备编码</th>
+                                <th>CNC型号</th>
+                                <th>CNC规格</th>
+                                <th>组别</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb2"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel-body" id="panel_table3">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th3">
+                            <tr>
+                                <th>线别（部门）</th>
+                                <th>CNC机台号</th>
+                                <th>设备编码</th>
+                                <th>CNC型号</th>
+                                <th>CNC规格</th>
+                                <th>组别</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb3"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="AddCNCList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加CNC列表</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>线别</td>
+                                <td>
+                                    <select id="add_linetype">
+                                        <option value="CNC1">机加1部</option>
+                                        <option value="CNC2">机加2部</option>
+                                        <option value="CNC3">事业2部</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CNC机台号</td>
+                                <td>
+                                    <input id="add_cncnumber" type="text" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CNC型号</td>
+                                <td>
+                                    <input id="add_cncmodel" type="text" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CNC规格</td>
+                                <td>
+                                    <input id="add_cncspecification" type="text" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>关联设备码</td>
+                                <td>
+                                    <input id="add_devicecode" type="text" value="" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="SetCNCList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑CNC列表</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>线别</td>
+                                <td>
+                                    <select id="set_linetype">
+                                        <option value="CNC1">机加1部</option>
+                                        <option value="CNC2">机加2部</option>
+                                        <option value="CNC3">事业2部</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CNC机台号</td>
+                                <td>
+                                    <input id="set_cncnumber" type="text" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CNC型号</td>
+                                <td>
+                                    <input id="set_cncmodel" type="text" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CNC规格</td>
+                                <td>
+                                    <input id="set_cncspecification" type="text" value="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>关联设备码</td>
+                                <td>
+                                    <input id="set_devicecode" type="text" value="" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

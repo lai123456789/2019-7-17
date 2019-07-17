@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-详情页</title>
+    <script src="../../UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="../../UI/Scripts/info_Basic.js"></script>
+    <!--<link rel="stylesheet" href="css/UserManage.css">-->
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/create_gongdan.css">
+    <!--<link href="css/123.css" rel="stylesheet">-->   
+    <script src="Script/info.js"></script>
+    <script>
+    </script>
+</head>
+<body>
+
+    <div class="main" id="main">
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <!--<h3 class="panel-title">派工管理</h3>-->
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 页面中间内容开始-->
+            <div id="jz" style="height:800px;">
+                <div id="result1" style="display: none;"></div>  <!-- 这里通过usercode拿到对应的分页信息显示值 -->
+                <div id="result2"></div>
+                <div class="lowin">
+                    <div class="lowin-brand" style="margin-left:330px;">
+                        <img src="img/mtt.jpg" height="60px;" alt="logo" style="margin-top: 10px;">
+                    </div>
+                    <div class="lowin-wrapper">
+                        <div class="lowin-box lowin-login" style="margin-left:-230px;">
+                            <div class="lowin-box-inner">
+                                <form id="login" enctype="multipart/form-data">
+                                    <p>工单处理</p>
+                                    <div class="lowin-group password-group">
+                                        <label>
+                                            标题：
+                                            <span id="biaoti"><!--这里获取标题--></span>
+                                        </label>
+                                    </div>
+                                    <div class="lowin-group">
+                                        <label>
+                                            内容：
+                                            <span id="wenti"><!--这里获取问题--></span>
+                                        </label>
+                                    </div>
+                                    <div class="lowin-group">
+                                        <label>
+                                            图片:
+                                            <span id="tupian"><!--这里获取图片-->
+                                                <!--<img src="" id="img_tupian" />-->
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="lowin-group">
+                                        <label>
+                                            创建时间：
+                                            <span id="createtime" style="margin-top:10px;"><!--这里获取时间--></span>
+                                        </label>
+                                    </div>
+                                    <div class="lowin-group">
+                                        <label>
+                                            用户名：
+                                            <span id="mingzi"><!--这里获取名字--></span>
+                                        </label>
+                                    </div>
+                                    <div class="lowin-group">
+                                        <label>
+                                            联系方式：
+                                            <span id="phone"><!--这里获取phone--></span>
+                                        </label>
+                                    </div>
+                                    <div class="lowin-group">
+                                        <label>问题回复：</label>
+
+                                        <span class="adf"></span>
+                                        <textarea class="lowin-input" id="con"></textarea>
+                                    </div>
+                                    <p><input style="width: 200px;" id="btn_sure_reply" class="lowin-input lowin-btn login-btn" type="button" value="确认回复"></p>
+
+
+
+
+
+
+                                </form>
+
+                                
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+                <div class="reply_xianshi" style="float:right;clear:both;width:300px;margin:50px 200px 0px 50px;height:500px;">
+                    <!-- 这里是管理员跟用户问题回复展示模块 -->
+                    <div id="dd">
+
+                    </div>
+                    <div class="toolbar">
+                        <div class="huifu">
+
+                        </div>
+                        <!--<div class="ext" >   分页模块
+                            <div class="toolbar-pages"><span id="count"></span>页</div>
+                        </div>-->
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <!-- 页面中间内容结束-->
+
+
+
+        </div>
+    </div>
+
+   
+</body>
+</html>

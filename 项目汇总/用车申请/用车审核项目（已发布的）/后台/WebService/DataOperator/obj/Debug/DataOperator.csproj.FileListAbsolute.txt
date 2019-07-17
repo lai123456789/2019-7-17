@@ -1,0 +1,23 @@
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\DataOperator\bin\Debug\DataOperator.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\DataOperator\bin\Debug\DataOperator.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\DataOperator\obj\Debug\DataOperator.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\DataOperator\obj\Debug\DataOperator.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\DataOperator\obj\Debug\DataOperator.pdb
+C:\Users\hp\Desktop\WebService\DataOperator\bin\Debug\DataOperator.dll
+C:\Users\hp\Desktop\WebService\DataOperator\bin\Debug\DataOperator.pdb
+C:\Users\hp\Desktop\WebService\DataOperator\bin\Debug\Oracle.DataAccess.dll
+C:\Users\hp\Desktop\WebService\DataOperator\obj\Debug\DataOperator.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\WebService\DataOperator\obj\Debug\DataOperator.dll
+C:\Users\hp\Desktop\WebService\DataOperator\obj\Debug\DataOperator.pdb
+E:\WebService\DataOperator\bin\Debug\DataOperator.dll
+E:\WebService\DataOperator\bin\Debug\DataOperator.pdb
+E:\WebService\DataOperator\obj\Debug\DataOperator.dll
+E:\WebService\DataOperator\obj\Debug\DataOperator.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\DataOperator\bin\Debug\DataOperator.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\DataOperator\bin\Debug\DataOperator.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\DataOperator\obj\Debug\DataOperator.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\DataOperator\obj\Debug\DataOperator.pdb
+D:\临时\WebService(2)\WebService\DataOperator\bin\Debug\DataOperator.dll
+D:\临时\WebService(2)\WebService\DataOperator\bin\Debug\DataOperator.pdb
+D:\临时\WebService(2)\WebService\DataOperator\obj\Debug\DataOperator.dll
+D:\临时\WebService(2)\WebService\DataOperator\obj\Debug\DataOperator.pdb

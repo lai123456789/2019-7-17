@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-用户管理</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/Page/Console/UI/Style/UserManage.css?20190325" rel="stylesheet" />
+    <script src="/Page/Console/UI/Script/UserManage.js?20190329"></script>
+</head>
+<body>
+
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="工号">工号</option>
+                    <option value="姓名">姓名</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+                <select id="twotype">
+                    <option value="全部">全部</option>
+                    <option value="密码">密码</option>
+                    <option value="部门">部门</option>
+                    <option value="职务">职务</option>
+                    <option value="性别">性别</option>
+                    <option value="地址">地址</option>
+                    <option value="手机号码">手机号码</option>
+                    <option value="角色权限">角色权限</option>
+                    <option value="绑定微信">微信昵称</option>
+                    <option value="IC高频卡号">IC高频卡号</option>
+                    <option value="IC超高频卡号">IC超高频卡号</option>
+                    <option value="门禁卡号">门禁卡号</option>
+                </select>
+                <input type="text" id="twoval" value="" placeholder="请输入" style="display:none" />
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="生日">生日</option>
+                    <option value="入职日期">入职日期</option>
+                </select>
+                <div id="datetype_date" style="display:none">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid">-</div>
+                    <input id="enddate" type="date" value="" />
+                </div>
+                <select id="numbertype">
+                    <option>全部</option>
+                    <option value="未录高频卡">未录高频卡</option>
+                    <option value="未录超高频卡">未录超高频卡</option>
+                    <option value="未绑定微信">未绑定微信</option>
+                </select>
+
+                <select id="fourtype" style="display:none;">
+                    <option value="全部">全部</option>
+                </select>
+                <input type="text" id="fourval" value="" placeholder="请输入" style="display:none" />
+                <div class="query_btn">查询</div>
+                <div id="adduserinfo">添加用户</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">用户管理</h3>
+                <div id="progress1">
+
+                </div>
+                <div id="progress2">
+
+                </div>
+                <div class="panel-options">
+                    <div id="import_btn">导入</div>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>序号</th>
+                                <th data-val="工号">工号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="姓名">姓名<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="密码">密码<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="部门">部门<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="职务">职务<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="性别">性别<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="生日">生日<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="地址">地址<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="手机号码">手机号码<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="角色权限">角色权限<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="绑定微信">绑定微信<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="IC高频卡号">IC高频卡号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="IC超高频卡号">IC超高频卡号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="门禁卡号">门禁卡号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="入职日期">入职日期<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="操作">操作<i class="iconfont">&#xe733;</i></th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_9">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加用户</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>账号</td>
+                                <td><input id="add_account" type="text" placeholder="请输入用户登录账号" /></td>
+                            </tr>
+                            <tr>
+                                <td>名称</td>
+                                <td><input id="add_username" type="text" placeholder="请输入用户名称" /></td>
+                            </tr>
+                            <tr>
+                                <td>密码</td>
+                                <td><input id="add_password" type="text" placeholder="请输入用户登录密码" /></td>
+                            </tr>
+                            <tr>
+                                <td>ID卡序号</td>
+                                <td>
+                                    <input type="text" id="add_idnumber" placeholder="请输入ID卡序号" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ID卡校正码</td>
+                                <td>
+                                    <input type="text" id="add_idkey" placeholder="请输入ID卡校正码" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>部门</td>
+                                <td>
+                                    <select id="add_department"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>职务</td>
+                                <td><input id="add_position" type="text" placeholder="请输入用户所担任的职务" /></td>
+                            </tr>
+                            <tr>
+                                <td>性别</td>
+                                <td id="add_sex">
+                                    <span class="label label-default contor">男</span>
+                                    <span class="label label-default">女</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>生日</td>
+                                <td>
+                                    <input type="date" id="add_birthday" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>地址</td>
+                                <td>
+                                    <input type="text" id="add_address" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>手机号码</td>
+                                <td>
+                                    <input type="text" id="add_phonenumber" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>入职时间</td>
+                                <td>
+                                    <input type="date" id="add_hiredate" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SetUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑用户</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>账号</td>
+                                <td><input id="set_account" type="text" placeholder="请输入用户登录账号" /></td>
+                            </tr>
+                            <tr>
+                                <td>名称</td>
+                                <td><input id="set_username" type="text" placeholder="请输入用户名称" /></td>
+                            </tr>
+                            <tr>
+                                <td>密码</td>
+                                <td><input id="set_password" type="text" placeholder="请输入用户登录密码" /></td>
+                            </tr>
+                            <tr>
+                                <td>ID卡序号</td>
+                                <td>
+                                    <input type="text" id="set_idnumber" placeholder="请输入ID卡序号" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ID卡校正码</td>
+                                <td>
+                                    <input type="text" id="set_idkey" placeholder="请输入ID卡校正码" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>部门</td>
+                                <td>
+                                    <select id="set_department"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>职务</td>
+                                <td><input id="set_position" type="text" placeholder="请输入用户所担任的职务" /></td>
+                            </tr>
+                            <tr>
+                                <td>性别</td>
+                                <td id="set_sex">
+                                    <span class="label label-default contor">男</span>
+                                    <span class="label label-default">女</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>生日</td>
+                                <td>
+                                    <input type="date" id="set_birthday" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>地址</td>
+                                <td>
+                                    <input type="text" id="set_address" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>手机号码</td>
+                                <td>
+                                    <input type="text" id="set_phonenumber" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>入职时间</td>
+                                <td>
+                                    <input type="date" id="set_hiredate" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="BindUserinfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">绑定用户</h5>
+                </div>
+                <div class="modal-body">
+                    <div id="binduserqrcode">
+                        <img src="" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="BindUserinfo_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="JoinRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">加入角色权限</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>角色名称</td>
+                                <td>
+                                    <select id="rolelist">
+                                        <option value="">默认</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="JoinRole_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

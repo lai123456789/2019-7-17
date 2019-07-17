@@ -1,0 +1,644 @@
+﻿#search_content{
+    width: 210px;
+}
+
+#editexcel{
+    width: 160px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#editexcel.contor{
+    background: #8b449c;
+}
+
+#editexcel.contor:hover{
+    background: #5e256b;
+}
+
+#setuserinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#setuserinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+#add_isshow > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+#add_isshow > .label.label-default.contor{
+    background: #79c447;
+    color: #fff;
+}
+
+#add_isshow > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#AddUserModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+#set_isshow > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+#set_isshow > .label.label-default.contor{
+    background: #79c447;
+    color: #fff;
+}
+
+#set_isshow > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#SetUserModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+#set_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+
+
+#datalist{
+    width:200px;
+    margin-right:2px;
+    float:left;
+}
+
+#datalist2{
+    width: calc(100% - 202px);
+    float: left;
+    height: 620px;
+    overflow-y: auto;
+}
+
+#datalist2 > .panel-heading > .edit{
+    width: 60px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #428bca;
+    color: #fff;
+    cursor: pointer;
+    display:none;
+    user-select: none;
+}
+
+#datalist2 > .panel-heading > .edit:active{
+    background: #1e588a;
+}
+
+
+#datalist2 > .panel-heading > .edit.contor{
+    display:block;
+}
+
+#datalist2 > .panel-heading > .edit.disabled{
+    background:#999;
+    color:#fff;
+}
+
+#datalist2 > .panel-heading > .edit.disabled:active{
+    background:#999;
+    color:#fff;
+}
+
+#datalist2 > .panel-heading > .sava{
+    width: 60px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #42ca70;
+    color: #fff;
+    cursor: pointer;
+    display:none;
+    user-select: none;
+}
+
+#datalist2 > .panel-heading > .sava:active{
+    background: #208c44;
+}
+
+#datalist2 > .panel-heading > .sava.contor{
+    display:block;
+}
+
+
+#datalist3{
+    width: calc(30% - 1px);
+    float: left;
+    height: 620px;
+    overflow-y: auto;
+}
+
+#datalist3 > .panel-heading > .edit{
+    width: 60px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #428bca;
+    color: #fff;
+    cursor: pointer;
+    display:none;
+    user-select: none;
+}
+
+#datalist3 > .panel-heading > .edit:active{
+    background: #1e588a;
+}
+
+
+#datalist3 > .panel-heading > .edit.contor{
+    display:block;
+}
+
+#datalist3 > .panel-heading > .edit.disabled{
+    background:#999;
+    color:#fff;
+}
+
+#datalist3 > .panel-heading > .edit.disabled:active{
+    background:#999;
+    color:#fff;
+}
+
+#datalist3 > .panel-heading > .sava{
+    width: 60px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #42ca70;
+    color: #fff;
+    cursor: pointer;
+    display:none;
+    user-select: none;
+}
+
+#datalist3 > .panel-heading > .sava:active{
+    background: #208c44;
+}
+
+#datalist3 > .panel-heading > .sava.contor{
+    display:block;
+}
+
+
+
+#form_tb > tr.contor > td{
+    background:#dafadf;
+
+}
+
+
+
+
+
+
+
+#search_content{
+    width: 210px;
+}
+
+#adddepartmentinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adddepartmentinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+
+#AddDepartmentModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_superiorcode{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#search_content{
+    width: 210px;
+}
+
+#adddepartmentinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adddepartmentinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+
+#AddDepartmentModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_superiorcode{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+#panel_table{
+    padding:0;
+}
+
+#department_list .fa.fa-plus{
+    width: 30px;
+    height: 30px;
+}
+
+#department_list .fa.fa-minus{
+    width: 30px;
+    height: 30px;
+}
+
+#department_list .fa.fa-minus{
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+#department_list .fa.fa-plus{
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+#department_list .left_content{
+    float: left;
+    max-width: calc(100% - 30px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#department_list .right_content{
+    float: right;
+}
+
+#department_list .right_content > .edit{
+    cursor:pointer;
+}
+
+#department_list .right_content > .del{
+    cursor:pointer;
+}
+
+#department_list .dd3-handle{
+    padding:0;
+    cursor: auto;
+}
+
+.dd {
+    float: left;
+    width: 100%;
+}
+
+#department_list .right_content i.choice{
+    border: 1px solid #bbb;
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+    color: transparent;
+}
+
+#department_list .right_content i.choice.contor{
+        color: #fff;
+    background: #79c447;
+}
+
+
+#editexcel.disabled{
+    background: #999;
+    color: #fff;
+}
+
+#form_tb > tr.contor > td{
+    background: rgba(0, 218, 255, 0.2);
+}
+
+.addtablehead i.fa{
+    font-size: 22px;
+    color: #428bca;
+    cursor: pointer;
+}
+
+#EditTableHead .delcolumn{
+        width: 60px;
+    height: 23px;
+    margin-top: 20px;
+    background: #999;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 9px;
+    margin-right: 6px;
+    cursor: pointer;
+    right: 14px;
+    position: absolute;
+    top: -13px;
+}
+
+#EditTableHead .delcolumn.contor{
+    background:#e05050;
+}
+
+#EditTableHead .delcolumn.contor:hover{
+    background: red;
+}
+
+#th_tbhead > tr > th.columninfo.contor{
+    background:red;
+    color:#fff;
+}
+
+#th_tbhead > tr > th{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#form_th2 > tr > th{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#useraddrows{
+    width: 70px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    background: #999;
+    color: #fff;
+    margin-right: 10px;
+    user-select: none;
+}
+
+#useraddrows.contor{
+    cursor: pointer;
+    background: #4ba54d;
+}
+
+#usereditrows{
+    width: 70px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    background: #999;
+    color: #fff;
+    margin-right: 10px;
+    user-select: none;
+}
+
+#usereditrows.contor{
+    background: #5d8fb8;
+    cursor: pointer;
+}
+
+#userdelrows{
+    width: 70px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    background: #999;
+    color: #fff;
+    margin-right: 10px;
+    user-select: none;
+}
+
+#userdelrows.contor{
+    cursor: pointer;
+    background: #e05050;
+}
+
+#useraddrows.disabled{
+    background: #999;
+    color: #fff;
+}
+
+#usereditrows.disabled{
+    background: #999;
+    color: #fff;
+}
+
+#userdelrows.disabled{
+    background: #999;
+    color: #fff;
+}
+
+#form_tb2 > tr > td input{
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    margin: 0;
+    height: 24px;
+    line-height: 24px;
+    background: transparent;
+}

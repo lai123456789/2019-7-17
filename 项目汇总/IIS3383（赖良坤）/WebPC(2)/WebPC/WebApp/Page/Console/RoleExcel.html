@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-角色Excel权限</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/Page/Console/UI/Style/RoleExcel.css?20190408" rel="stylesheet" />
+    <script src="/Page/Console/UI/Script/RoleExcel.js?20190408"></script>
+</head>
+<body>
+
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <input type="text" id="search_content" value="" placeholder="请输入用户账号或者名称" />
+                <div class="query_btn">查询</div>
+                <div id="adduserinfo">添加角色</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">角色信息</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>角色代码</th>
+                                <th>角色名称</th>
+                                <th>备注</th>
+                                <th>最近更新时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default" id="datalist2">
+            <div class="panel-heading">
+                <h2><strong>Excel表</strong></h2>
+                <div class="addtable contor disabled">添加表</div>
+                <div class="edit contor disabled">编辑</div>
+                <div class="sava">保存</div>
+            </div>
+            <div class="panel-body clearfix">
+                <div class="dd" id="department_list">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist3">
+            <div class="panel-heading">
+                <h2><strong>Excel表权限【未选中】</strong></h2>
+                <div class="edit contor disabled">编辑</div>
+                <div class="sava">保存</div>
+            </div>
+            <div class="panel-body clearfix">
+                <div class="dd" id="department_list2">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加角色</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>角色名称</td>
+                                <td><input id="add_rolename" type="text" placeholder="请输入角色名称" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td><input id="add_remark" type="text" placeholder="请输入备注" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SetUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑页面</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>角色代码</td>
+                                <td id="set_rolecode"></td>
+                            </tr>
+                            <tr>
+                                <td>角色名称</td>
+                                <td><input id="set_rolename" type="text" placeholder="请输入页面名称" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <input id="set_remark" type="text" placeholder="请输入备注" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="AddTableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加Excel表格</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Excel名称</td>
+                                <td><input id="add_excelname" type="text" placeholder="请输入Excel名称" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_tbsure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

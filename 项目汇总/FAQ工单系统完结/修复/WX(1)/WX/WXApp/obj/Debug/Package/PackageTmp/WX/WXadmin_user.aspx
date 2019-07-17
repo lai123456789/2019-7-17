@@ -1,0 +1,153 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WXadmin_user.aspx.cs" Inherits="WXApp.WX.WXadmin_user" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>工单服务</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet"><!-- 图标库 -->
+    <link rel="stylesheet" href="css/weui.css" />    
+    <link rel="stylesheet" href="css/example.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-1.11.3.min.js"></script>    
+    <script src="js/weui.js"></script>  
+    <script src="js/WXadmin_user.js"></script>
+    <%--<script src="UI/Scripts/Basic.js"></script>--%>
+</head>
+<body>
+    
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <p class="weui-cells__title " style="font-size: 16px;"><a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a></p>
+            </div>
+            <div class="weui-cell__bd" style="text-align:center;font-size: 19px;line-height: 60px;">查看用户</div>
+        </div>
+    </div>
+    
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                
+            </div>
+            <div class="weui-cell__bd weui-cells__title" style="text-align:center;font-size: 16px;">用户汇总</div>
+        </div>
+    </div>
+    
+
+    <!-- 这里显示所有用户结束 -->
+   
+    <div id="tb_account1">
+        
+    </div>
+
+
+
+
+    <!--编辑模态框弹出开始-->
+    <div class="modal fade" id="AddUserModal88" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑用户</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>用户ID</td>
+                                <td><span id="usercode"></span></td>
+                            </tr>
+                            <tr>
+                                <td>账号</td>
+                                <td><span id="one"></span></td>  <!--//<input id="add_account2" type="text" placeholder="请输入用户登录账号" />-->
+                            </tr>
+                            <tr>
+                                <td>联系人</td>
+                                <td><input type="text" id="two" /></td>
+                            </tr>
+                            <tr>
+                                <td>电话号码</td>
+                                <td><input type="text" id="three" /></td>
+                            </tr>
+                            <tr>
+                                <td>用户类型</td>
+                                <td><span id="four"></span></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" id="add_sure_edit">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--编辑模态框弹出结束-->
+
+    <!--删除模态框弹出开始-->
+    <div class="modal fade" id="AddUserModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">删除用户</h5>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <p style="text-align:center;font-size:16px;">确定删除该用户吗？</p>
+                          
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success " id="shanchu" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--删除模态框弹出结束-->
+
+
+    <!--设置模态框弹出开始-->
+    <div class="modal fade" id="AddUserModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">删除用户</h5>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <p style="text-align:center;font-size:16px;">确定设置为技术员吗？</p>
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success " id="queding_shezhi" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>

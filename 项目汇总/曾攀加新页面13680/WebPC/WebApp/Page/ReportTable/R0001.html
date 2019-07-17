@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-物料明细</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/UI/Style/superTables.css" rel="stylesheet" />
+    <script src="/UI/Scripts/supertables.js"></script>
+    <link href="/UI/Style/style.css" rel="stylesheet" />
+    <script src="/UI/Scripts/pagination.min.js"></script>
+    <link href="/Page/ReportTable/UI/Style/R0001.css?20190531" rel="stylesheet" />
+    <script src="/Page/ReportTable/UI/Scripts/R0001.js?20190531"></script>
+    
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="twotype">
+                    <option value="全部">全部</option>
+                    <option value="PJ">PJ</option>
+                    <option value="客户订单号">客户订单号</option>
+                    <option value="试制单号">试制单号</option>
+                    <option value="产品名称">产品名称</option>
+                </select>
+                <input type="text" id="twoval" value="" placeholder="请输入" style="display:none" />
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="状态">状态</option>
+                    <option value="研发量产">客户分类</option>
+                    <option value="物料代码">物料代码</option>
+                    <option value="物料名称">物料名称</option>
+                    <option value="物料属性">物料属性</option>
+                    <option value="规格">规格</option>
+                    <option value="操作部门">操作部门</option>
+                    <option value="操作业务员">操作业务员</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="下图日期">下图日期</option>
+                    <option value="要求配件到货日期">要求配件到货日期</option>
+                    <option value="申购日期">申购日期</option>
+                    <option value="采购日期">采购日期</option>
+                    <option value="领料日期">领料日期</option>
+                    <option value="入库日期">入库日期</option>
+                    <option value="需求到货时间">需求到货时间</option>
+                    <option value="交货日期">交货日期</option>
+                    <option value="收货时间">收货时间</option>
+                    <option value="领料出库日期">领料出库日期</option>
+                    <option value="制表日期">制表日期</option>
+                </select>
+                <div id="datetype_date" style="display:none">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid">-</div>
+                    <input id="enddate" type="date" value="" />
+                </div>
+                <select id="numbertype">
+                    <option value="未入库">未完成</option>
+                    <option>全部</option>
+                    <option value="已入库">已完成</option>
+                    <option value="已关闭">已关闭</option>
+                    <option value="未领料">未领料</option>
+                    <option value="已领料">已领料</option>
+                    <option value="未下计划">未下计划</option>
+                </select>
+
+                <select id="fourtype">
+                    <option value="全部">全部</option>
+                    <option value="PJ">PJ</option>
+                    <option value="研发量产">客户分类</option>
+                    <option value="客户订单号">客户订单号</option>
+                    <option value="试制单号">试制单号</option>
+                    <option value="状态">状态</option>
+                    <option value="物料代码">物料代码</option>
+                    <option value="物料名称">物料名称</option>
+                    <option value="物料属性">物料属性</option>
+                    <option value="规格">规格</option>
+                    <option value="操作部门">操作部门</option>
+                    <option value="操作业务员">操作业务员</option>
+                    <option value="K3备注">K3备注</option>
+                    <option value="旧备注">旧ERP备注</option>
+                    <option value="销售订单号">销售订单号</option>
+                    <option value="单套用量">单套用量</option>
+                    <option value="BOM总需求数量">BOM总需求数量</option>
+                    <option value="调拨数量">调拨数量</option>
+                    <option value="欠入库数量">欠入库数量</option>
+                    <option value="欠领料数">欠领料数</option>
+                    <option value="齐套数量">齐套数量</option>
+                    <option value="业务类型">业务类型</option>
+                    <option value="申购数量">申购数量</option>
+                    <option value="采购数量">采购数量</option>
+                    <option value="采购员">采购员</option>
+                    <option value="供应商">供应商</option>
+                    <option value="收货数量">收货数量</option>
+                    <option value="总入库数">总入库数</option>
+                    <option value="外购入库数量">外购入库数量</option>
+                    <option value="产品入库数量">产品入库数量</option>
+                    <option value="委外入库数量">委外入库数量</option>
+                    <option value="领料数量">领料数量</option>
+                    <option value="制表人">制表人</option>
+                    <option value="下图日期">下图日期</option>
+                    <option value="要求配件到货日期">要求配件到货日期</option>
+                    <option value="申购日期">申购日期</option>
+                    <option value="采购日期">采购日期</option>
+                    <option value="领料日期">领料日期</option>
+                    <option value="入库日期">入库日期</option>
+                    <option value="需求到货时间">需求到货时间</option>
+                    <option value="交货日期">交货日期</option>
+                    <option value="收货时间">收货时间</option>
+                    <option value="领料出库日期">领料出库日期</option>
+                    <option value="制表日期">制表日期</option>
+                </select>
+                <input type="text" id="fourval" value="" placeholder="请输入" style="display:none" />
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">物料明细</h3>
+                <div class="panel-options">
+                    <div id="tablesetting_btn">
+
+                    </div>
+                    <a href="JavaScript:;" id="allselect" class="">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <!--<th class="contor" data-type="num">序号</th>
+                                <th class="contor" data-type="string" data-val="状态">状态<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="下图日期">下图日期<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="K3备注">K3备注<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="旧ERP备注">旧ERP备注<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="销售订单号">销售订单号<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="PJ">PJ<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="物料代码">物料代码<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="物料名称">物料名称<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="物料属性">物料属性<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="规格" style="min-width: 200px !important;">规格<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="单套用量">单套用量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="BOM总需求数量">BOM总需求数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="要求配件到货时间">要求配件到货时间<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="调拨数量">调拨数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="欠入库数量">欠入库数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="欠领料数">欠领料数<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="齐套数量">齐套数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="业务类型">业务类型<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="产品名称">产品名称<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="操作部门">操作部门<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="操作业务员">操作业务员<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="申购日期">申购日期<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="申购数量">申购数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="需求到货时间">需求到货时间<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="采购日期">采购日期<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="采购数量">采购数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="采购员">采购员<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="交货日期">交货日期<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="供应商">供应商<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="收货数量">收货数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="收货时间">收货时间<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="入库日期">入库日期<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="总入库数">总入库数<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="外购入库数量">外购入库数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="产品入库数量">产品入库数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="委外入库数量">委外入库数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="领料出库日期">领料出库日期<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="领料数量">领料数量<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="客户订单号">客户订单号<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="试制单号">试制单号<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="制表人">制表人<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="date" data-val="制表日期">制表日期<i class="iconfont">&#xe733;</i></th>-->
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_9">
+                    <!--<li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

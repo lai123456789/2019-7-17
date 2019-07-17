@@ -1,0 +1,155 @@
+﻿.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+    text-shadow:none;
+}
+
+body{
+    position: fixed;
+    width: 100%;
+    height: 0;
+    opacity:0;
+}
+
+body.contor{
+    transition: all 0.5s linear;
+    opacity:1;
+}
+
+
+
+#top{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+}
+
+#top > .title{
+    width:100%;
+    height:100%;
+    background: #03a9f4;
+}
+
+#top > .title > .control1{
+    width: 13%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+}
+
+#top > .title > .control1 > i{
+    color: #fff;
+    font-size: 21px;
+}
+
+#top > .title > .control2{
+    width:13%;
+    height:100%;
+    float:left;
+}
+
+#top > .title > .control3{
+    width:48%;
+    height:100%;
+    float:left;
+}
+
+#top > .title > .control3 > .titlename{
+    text-align:center;
+    line-height:45px;
+    font-size:20px;
+    color:#fff
+}
+
+#top > .title > .control4{
+    width: 13%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+}
+
+#top > .title > .control4 > i{
+    color: #fff;
+    font-size: 21px;
+}
+
+#top > .title > .control5{
+    width: 13%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+}
+
+#top > .title > .control5 > i{
+    color: #fff;
+    font-size: 21px;
+}
+
+#mid{
+    margin-top:45px;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 100%;
+    overflow-x:hidden;
+}
+
+#mid > .moudle{
+    width: 100%;
+    float: left;
+}
+
+#mid > .moudle > .title{
+    background: #f7f7f7;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 8px;
+    font-size: 12px;
+}
+
+#mid > .moudle > .content{
+    
+}
+
+#mid > .moudle > .content > .box{
+    width: calc(25% - 2px);
+    height: 90px;
+    float: left;
+    border: 1px solid #f7f7f7;
+    text-align: center;
+}
+
+#mid > .moudle > .content > .box > .boxpic{
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+#mid > .moudle > .content > .box > .boxpic > i{
+    color: #ff4081;
+    font-size: 32px;
+    line-height: 60px;
+}
+
+#mid > .moudle > .content > .box > .boxname{
+    width: 100%;
+    font-size: 14px;
+}
+
+#mid > .moudle > .content > .box:active{
+    background:#ddd;
+}
+
+#top > .title > .control4:active{
+    background:#0486c1;
+}
+
+#top > .title > .control5:active{
+    background:#0486c1;
+}
+
+#top > .title > .control1:active{
+    background:#0486c1;
+}

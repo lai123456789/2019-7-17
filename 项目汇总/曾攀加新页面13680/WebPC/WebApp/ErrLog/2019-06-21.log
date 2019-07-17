@@ -1,0 +1,210 @@
+﻿错误时间 : 2019-06-21 09:56:31
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 10:21:49
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 基础连接已经关闭: 接收时发生错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 10:21:54
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 10:21:56
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 10:27:10
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 基础连接已经关闭: 服务器关闭了本应保持活动状态的连接。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetMyTaskUnfinishedListV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 314
+
+***************************************************************
+
+错误时间 : 2019-06-21 10:38:27
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserTaskNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 288
+
+***************************************************************
+
+错误时间 : 2019-06-21 10:39:06
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 基础连接已经关闭: 服务器关闭了本应保持活动状态的连接。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserTaskNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 288
+
+***************************************************************
+
+错误时间 : 2019-06-21 10:39:40
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-21 11:01:56
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 基础连接已经关闭: 接收时发生错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 11:01:58
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 11:02:01
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 15:37:03
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3738API(System.String, System.String, System.String)
+错误信息 : 操作超时
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3738API(String url, String postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 72
+   在 BLL.BLLRequestData.RequestIIS3738Data(String pageurl, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 108
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:43:21
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:45:01
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:46:51
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:48:00
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:48:12
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:48:43
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:52:06
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:57:57
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+
+错误时间 : 2019-06-21 17:58:09
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String usercode, String data, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLRequestData.cs:行号 28
+
+***************************************************************
+

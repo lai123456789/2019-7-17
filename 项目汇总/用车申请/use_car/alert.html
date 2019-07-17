@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>WeUI</title>
+    <link rel="stylesheet" href="../style/weui.css"/>
+    <link rel="stylesheet" href="./example.css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- <script src="jquery-1.11.3.min.js"></script> -->
+    <style>
+        .weui-jiaj-panel{
+    background-color: #fff;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.weui-jiaj-dialog-panel{
+    background-color: #fff;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.weui-jiaj-btn-info{
+    margin-top: 1em;
+}
+    </style>
+</head>
+<body>
+<!--弹框的最外层 js_container-->
+        <div class="container js_container">
+            <div class="page">
+                <div class="weui-jiaj-panel">   
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <input type="text" class="weui-input" placeholder="骨科" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells__title">选择科室</div>
+                <div class="weui-jiaj-panel">
+                    <div class="weui-jiaj-btn-cell">
+                        <div class="weui-btn weui-btn_mini weui-btn_default">骨科</div>
+                        <div class="weui-btn weui-btn_mini weui-btn_default">妇科</div>
+                        <div class="weui-btn weui-btn_mini weui-btn_default">儿科</div>
+                        <div class="weui-btn weui-btn_mini weui-btn_default">骨科</div>
+                        <div class="weui-btn weui-btn_mini weui-btn_default">妇科</div>
+                        <div class="weui-btn weui-btn_mini weui-btn_default">儿科</div>
+                    </div>
+                </div>
+　　　　　　　　　　<!--点击 id="showKeshi"-->
+                <div class="bd spacing">
+                    <div class="weui-btn weui-btn_mini weui-btn_primary" id="showKeshi">其它</div>
+                </div>
+                <!--showKeshi 科室弹框-->
+                <div class="weui_dialog_alert" id="keshiDialogPanel" style="display: none;">
+                    <div class="weui_mask"></div>
+                    <div class="weui_dialog">
+                        <div class="weui_dialog_hd"><strong class="weui_dialog_title">输入科室</strong></div>
+                        <div class="weui_dialog_bd">
+                            <div class="weui-jiaj-dialog-panel">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <input type="text" class="weui-input" placeholder="骨科" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui_dialog_ft">
+                            <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+                        </div>
+                    </div>
+                </div>
+                <!--button-->
+                <div class="weui-jiaj-bd">
+                    <div class="weui-jiaj-btn-spc weui-jiaj-btn-info">
+                        <a href="javascript:;" class="weui-btn weui-btn_plain-default js_cell" data-id="doctorInfo">保存</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--页面切换-->
+        <script src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js"></script>
+        
+        
+                        
+        
+</body>
+<script type="text/javascript">   
+$(function () {
+    //获取js_container的jQuery节点
+    var $container = $('.js_container');
+  
+    $container.on('click', '#showKeshi', function () {
+        $('#keshiDialogPanel').show();
+        $('#keshiDialogPanel').find('.weui_btn_dialog').on('click', function () {
+            $('#keshiDialogPanel').hide();
+        });
+    })
+}); 
+</script>
+
+    <script src="./zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script src="./example.js"></script>
+</body>
+</html>

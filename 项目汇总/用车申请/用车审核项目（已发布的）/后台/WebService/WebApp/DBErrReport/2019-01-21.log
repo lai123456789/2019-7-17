@@ -1,0 +1,315 @@
+﻿错误时间 : 2019-01-21 08:06:45
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:06:48
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:09:58
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:10:09
+错误对象 : Oracle.DataAccess
+异常方法 : Oracle.DataAccess.Client.OracleTransaction BeginTransaction()
+错误信息 : 连接已经是本地事务处理或分布式事务处理的一部分
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.BeginTransaction()
+   在 DataOperator.OracleDBO.BeginTransaction() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 220
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:10:13
+错误对象 : Oracle.DataAccess
+异常方法 : Oracle.DataAccess.Client.OracleTransaction BeginTransaction()
+错误信息 : 连接已经是本地事务处理或分布式事务处理的一部分
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.BeginTransaction()
+   在 DataOperator.OracleDBO.BeginTransaction() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 220
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:11:20
+错误对象 : Oracle.DataAccess
+异常方法 : Oracle.DataAccess.Client.OracleTransaction BeginTransaction()
+错误信息 : 连接已经是本地事务处理或分布式事务处理的一部分
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.BeginTransaction()
+   在 DataOperator.OracleDBO.BeginTransaction() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 220
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:17:17
+错误对象 : Oracle.DataAccess
+异常方法 : Oracle.DataAccess.Client.OracleTransaction BeginTransaction()
+错误信息 : 连接已经是本地事务处理或分布式事务处理的一部分
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.BeginTransaction()
+   在 DataOperator.OracleDBO.BeginTransaction() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 220
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:22:37
+错误对象 : Oracle.DataAccess
+异常方法 : Oracle.DataAccess.Client.OracleTransaction BeginTransaction()
+错误信息 : 连接已经是本地事务处理或分布式事务处理的一部分
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.BeginTransaction()
+   在 DataOperator.OracleDBO.BeginTransaction() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 220
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:23:00
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:23:26
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:23:39
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:26:43
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:29:51
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00933: SQL 命令未正确结束
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:32:59
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00933: SQL 命令未正确结束
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:51:33
+错误对象 : Oracle.DataAccess
+异常方法 : Oracle.DataAccess.Client.OracleTransaction BeginTransaction()
+错误信息 : 连接已经是本地事务处理或分布式事务处理的一部分
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.BeginTransaction()
+   在 DataOperator.OracleDBO.BeginTransaction() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 220
+
+**********************************************************************
+
+错误时间 : 2019-01-21 08:52:40
+错误对象 : Oracle.DataAccess
+异常方法 : Oracle.DataAccess.Client.OracleTransaction BeginTransaction()
+错误信息 : 连接已经是本地事务处理或分布式事务处理的一部分
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.BeginTransaction()
+   在 DataOperator.OracleDBO.BeginTransaction() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 220
+
+**********************************************************************
+
+错误时间 : 2019-01-21 09:01:35
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 09:40:33
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 09:48:54
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:07:08
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:17:30
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:19:00
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:20:17
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:20:19
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:20:33
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:20:38
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:20:47
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:21:26
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:21:38
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:33:31
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00904: "T"."SUPERIOCODE": 标识符无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader()
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteScalar()
+   在 DataOperator.OracleDBO.ExecuteScalar(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 482
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:34:26
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:42:23
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-21 10:42:28
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+

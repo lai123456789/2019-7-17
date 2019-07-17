@@ -1,0 +1,21 @@
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\Common\bin\Debug\Common.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\Common\bin\Debug\Common.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\Common\obj\Debug\Common.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\Files\WebService\Common\obj\Debug\Common.pdb
+C:\Users\hp\Desktop\WebService\Common\bin\Debug\Common.dll
+C:\Users\hp\Desktop\WebService\Common\bin\Debug\Common.pdb
+C:\Users\hp\Desktop\WebService\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\WebService\Common\obj\Debug\Common.dll
+C:\Users\hp\Desktop\WebService\Common\obj\Debug\Common.pdb
+E:\WebService\Common\bin\Debug\Common.dll
+E:\WebService\Common\bin\Debug\Common.pdb
+E:\WebService\Common\obj\Debug\Common.dll
+E:\WebService\Common\obj\Debug\Common.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\Common\bin\Debug\Common.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\Common\bin\Debug\Common.pdb
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\Common\obj\Debug\Common.dll
+C:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-06\WebService\Common\obj\Debug\Common.pdb
+D:\临时\WebService(2)\WebService\Common\bin\Debug\Common.dll
+D:\临时\WebService(2)\WebService\Common\bin\Debug\Common.pdb
+D:\临时\WebService(2)\WebService\Common\obj\Debug\Common.dll
+D:\临时\WebService(2)\WebService\Common\obj\Debug\Common.pdb

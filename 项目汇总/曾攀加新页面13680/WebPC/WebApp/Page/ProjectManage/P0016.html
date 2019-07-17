@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-装配机台号定义</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190324"></script>
+    <link href="/Page/ProjectManage/UI/Style/P0016.css?20190527" rel="stylesheet" />
+    <script src="/Page/ProjectManage/UI/Script/P0016.js?20190527"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="机台号">机台号</option>
+                    <!--<option value="工序代号">工序代号</option>-->
+                    <option value="工序名称">工序名称</option>
+                    <!--<option value="创建人">创建人</option>-->
+                    <option value="修改人">修改人</option>
+                    <option value="备注">备注</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+
+
+
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <!--<option value="创建时间">开始时间</option>-->
+                    <option value="修改时间">修改时间</option>
+                </select>
+                <div id="datetype_date" style="display:none;">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid" style="width:auto;">-</div>
+                    <input id="enddate" type="date" value="" />
+                </div>
+              
+                <select id="numbertype">
+                    <option value="全部">全部</option>
+                    <option value="修改次数">修改次数</option>
+                </select>
+                <input type="text" id="numberval" value="" placeholder="请输入" style="display:none" />
+                <div id="numberval" style="display:none">
+                    <select id="numselect">
+                        <option value=">">大于</option>
+                        <option value="<">小于</option>
+                        <option value="=">等于</option>
+                    </select>
+                    <input type="text" value="" placeholder="请输入大于数量" id="numqty" />
+                </div>
+
+
+                <select id="twotype">
+                    <option value="全部">全部</option>
+                    <option value="未使用">未使用</option>
+                    <option value="使用中">使用中</option>
+                    <option value="故障中">故障中</option>
+                    <option value="暂停中">暂停中</option>
+                </select>
+           
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">装配机台号定义</h3>
+
+                <!--<div id="progress1">
+
+                </div>-->
+               
+                <div class="panel-options">
+                    <button class="btn btn-success bindMedef" >绑定</button>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th data-val="序号">序号</th>
+                                <th data-val="操作">操作<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="状态">状态<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="机台号">机台号<i class="iconfont">&#xe733;</i></th>
+                                <!--<th data-val="工序代号">工序代号<i class="iconfont">&#xe733;</i></th>-->
+                                <th data-val="工序名称">工序名称<i class="iconfont">&#xe733;</i></th>
+                                <!--<th data-val="创建人">创建人<i class="iconfont">&#xe733;</i></th>-->
+                                <th data-val="备注">备注<i class="iconfont">&#xe733;</i></th>
+                                <!--<th data-val="创建时间">创建时间<i class="iconfont">&#xe733;</i></th>-->
+                                <th data-val="修改时间">修改时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="修改人">修改人<i class="iconfont">&#xe733;</i></th>
+                                <th style="max-width: 35px;" data-val="修改次数">修改次数<i class="iconfont">&#xe733;</i></th>
+                               
+
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+
+                </div>
+                <ul class="pagination" id="pagination_P0016"></ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="editFlows" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑机台工序名称</h5>
+                </div>
+                <div class="modal-body flowers" style="max-height: 520px;overflow-y: auto;">               
+                    <select id="selectFlow">
+                     
+                    </select>
+
+
+                </div>
+               
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                    <button type="button" class="btn btn-success" id="Flows_sure">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="AddMacDefModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加机台信息</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>机台号</td>
+                                <td><input id="add_mcdefcode" type="text" placeholder="请输入机台号" /></td>
+                            </tr>
+                            <tr>
+                                <td>工序名称</td>
+                                <td>
+                                <select id="flows">
+                                    
+                                </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>机台设备唯一码</td>
+                                <td><input id="add_machineuqcode" type="text" placeholder="请输入机台设备唯一码" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <textarea class="form-control des" rows="3"></textarea>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_macdefSure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="UpdateMacDefModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialogupdate" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">修改机台信息</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>机台号</td>
+                                <td><input id="update_mcdefcode" type="text" placeholder="请输入机台号" /></td>
+                            </tr>
+                            <tr>
+                                <td>工序名称</td>
+                                <td>
+                                    <select id="update_flows"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>机台设备唯一码</td>
+                                <td><input id="update_machineuqcode" type="text" placeholder="请输入机台设备唯一码" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <textarea class="form-control update_des" rows="3"></textarea>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="update_macdefSure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

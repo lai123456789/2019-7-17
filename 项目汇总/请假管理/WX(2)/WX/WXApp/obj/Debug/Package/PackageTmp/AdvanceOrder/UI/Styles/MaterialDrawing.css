@@ -1,0 +1,409 @@
+﻿#div_form_table{
+    margin-top: 1.3rem;
+    max-width: 100%;
+    overflow: auto;
+    padding-bottom: 1.3rem;
+    width:100%;
+}
+
+#form_th th{
+    white-space: nowrap;
+    padding: 5px 12px;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+
+#conditions{
+    transition: all 0.3s linear;
+    margin-top: -1.4rem;
+    width: 100%;
+    height: 2rem;
+}
+
+#conditions.contor{
+    transition: all 0.3s linear;
+    margin-top: 1.4rem;
+}
+
+#conditions > .left{
+    float: left;
+    width: 98%;
+    border: 1px solid #eee;
+    padding: 0.3rem 0.2rem;
+    margin-left: 1%;
+    border-radius: 0.1rem;
+}
+
+#conditions > .right{
+
+}
+
+#conditions > .right > .query{
+
+}
+
+#onetype_dummy{
+    width: 3.2rem;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+#oneval{
+    width: 5.9rem;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+#conditions > .left > .query{
+    width: 9.2rem;
+    float: left;
+    padding: 7px 0px;
+    background: #34BB49;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 0.1rem;
+    margin-top: 0.3rem;
+    color: #fff;
+}
+
+#conditions > .left > .query:active{
+    background:#1D942F;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 1px 0.2rem;
+}
+
+
+#conditions > .dropdown{
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: 0.2rem;
+    background: #f5f5f5;
+    padding: 0.1rem;
+}
+
+#conditions > .dropdown:active{
+    background:#ddd;
+}
+
+#conditions > .dropdown > .iconfont{
+    color: #ccc;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#conditions > .dropdown:active > .iconfont{
+    color:#fff;
+}
+
+#conditions.contor > .dropdown > .iconfont
+{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg)
+}
+
+#bottom_footer{
+    width: 100%;
+    position: fixed;
+    height: 1.1rem;
+    bottom: 0;
+}
+
+#bottom_footer > .left{
+    width: 6rem;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+#bottom_footer > .left > .box1{
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+}
+
+#bottom_footer > .right{
+    width: 4rem;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+
+#bottom_footer > .right > .box1{
+    background:#808080;
+    color: #fff;
+}
+
+#bottom_footer > .right > .box1.contor{
+    background: #62affc;
+}
+
+#bottom_footer > .right > .box1.contor:active{
+    background: #175DA2;
+}
+
+#form_tb > tr.contor > td{
+    background: rgba(0, 218, 255, 0.2);
+}
+
+
+#div_form_table > .infolist{
+    width: 9.8rem;
+    margin-left: 0.1rem;
+    border: 1px solid #eee;
+    padding: 0.1rem;
+    border-radius: 0.1rem;
+    margin-bottom:3px;
+}
+
+#div_form_table > .infolist > .maininfo{
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+
+
+#div_form_table > .infolist > .maininfo > .rows1{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows1 > .box1{
+    color: #444;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2{
+    width: 100%;
+    height: 1.2rem;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2 > .left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2 > .left > .box1{
+        width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2 > .left > .box2{
+        width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2 > .mid{
+    width: 10%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    float: left;
+    text-align: center;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2 > .mid > .box1{
+    font-size: 0.38rem;
+    color: red;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2 > .right{
+    width: 40%;
+    height: 1.2rem;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+#div_form_table > .infolist > .maininfo > .rows2 > .right > .box1{
+    font-size: 0.38rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows3{
+        width: 100%;
+    height: 0.5rem;
+    line-height: 0.4rem;
+}
+
+#div_form_table > .infolist > .maininfo > .rows3 > .box1{
+    width: 57%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows3 > .box2{
+    width: 27%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows3 > .box3{
+    width: 10%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .maininfo > .rows3 > .box3:active{
+    background:#ddd;
+}
+
+#div_form_table > .infolist.contor > .maininfo > .rows3 > .box3 > .iconfont{
+        transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    margin-right: 2px;
+}
+
+#div_form_table > .infolist > .maininfo > .rows3 > .box3 > .iconfont{
+    color: #62affc;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+#div_form_table > .infolist > .detialinfo{
+    width: 0;
+    height: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    transition: all 0.3s linear;
+}
+
+#div_form_table > .infolist > .detialinfo > .rows1{
+        width: 100%;
+    height: 0.6rem;
+    float: left;
+}
+
+#div_form_table > .infolist > .detialinfo > .rows1 > .box1{
+        width: 50%;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .detialinfo > .rows1 > .box2{
+        width: 50%;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .detialinfo > .rows2{
+        width: 100%;
+    height: 0.6rem;
+    float: left;
+}
+
+#div_form_table > .infolist > .detialinfo > .rows2 > .box1{
+    width: 50%;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .detialinfo > .rows2 > .box2{
+    width: 50%;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+#div_form_table > .infolist.contor > .maininfo{
+    padding-bottom: 0.2rem;
+    border-bottom:1px solid #eee;
+    transition: all 0.3s linear;
+}
+
+#div_form_table > .infolist.contor > .detialinfo{
+    width:100%;
+    height:1.2rem;
+        -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+#div_form_table > .infolist:nth-child(2n+1){
+    background:#fcfcfc;
+}
+
+#div_form_table > .infolist.select{
+    background: rgba(0, 218, 255, 0.2);
+}

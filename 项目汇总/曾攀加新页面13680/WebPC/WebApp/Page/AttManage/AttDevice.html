@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-物料明细</title>
+    <link href="UI/css/AttDevice.css" rel="stylesheet" />
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <script src="UI/Scripts/AttDevice.js"></script>
+
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+
+                <!--<select id="select_name">
+                    <option value="全部">全部</option>
+                    <option value="C.Account">工号</option>
+                    <option value="C.username">姓名</option>
+                </select>
+
+                <input type="text" id="oneval" value="" placeholder="请输入工号" style="display:none" />
+                <input type="text" id="select_val" value="" placeholder="" style="display:none" />
+
+
+                <div class="query_btn" style="">查询</div>-->
+
+                <div id="adduserinfo">添加连接</div>
+            </div>
+        </div>
+        
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">设备连接</h3>
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th_Print">
+                            <tr>
+
+                                <td>序号</td>
+                                <th class="contor" data-type="工号">IP</th>
+                                <th class="contor" data-type="姓名">端口</th>
+                                <th class="contor" data-type="部门">状态</th>
+                                <td>操作</td>
+                                
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb_Print"></tbody>
+                    </table>
+
+                </div>
+                <ul class="pagination" id="pagination_PringPwd"></ul>  <!--分页ul-->
+            </div>
+
+        </div>
+
+        <!--添加连接弹框-->
+        <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">添加信息</h5>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>IP</td>
+                                    <td><input id="add_IP" type="text" placeholder="请输入IP"  /></td>
+                                </tr>
+                                <tr>
+                                    <td>端口</td>
+                                    <td><input id="add_port" type="text" value="4370" placeholder="请输入端口" /></td>
+                                </tr>
+                                <!--<tr>
+                                    <td>当前状况（PJ）</td>
+                                    <td>
+                                        <textarea id="add_condition" placeholder="请输入当前状况"></textarea>
+                                    </td>
+                                </tr>-->
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="add_sure">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--修改连接弹框-->
+        <div class="modal fade" id="UpdateUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">修改信息</h5>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr style="display:none">
+                                    <td>原IP</td>
+                                    <td><input id="update_OldIp" type="text" readonly="readonly"/></td>
+                                </tr>
+                                <tr>
+                                    <td>IP</td>
+                                    <td><input id="update_IP" type="text" placeholder="请输入新的IP" /></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>端口</td>
+                                    <td><input id="update_port" type="text" value="4370" placeholder="请输入端口" /></td>
+                                </tr>                             
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="update_sure">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--删除连接弹框-->
+        <div class="modal fade" id="DelUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">删除信息</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>确定删除该条记录吗？</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="del_sure">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

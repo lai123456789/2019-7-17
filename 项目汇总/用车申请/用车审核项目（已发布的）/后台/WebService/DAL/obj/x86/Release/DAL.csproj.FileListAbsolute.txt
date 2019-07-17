@@ -1,0 +1,11 @@
+E:\WebService\DAL\bin\x86\Release\DAL.dll
+E:\WebService\DAL\bin\x86\Release\DAL.pdb
+E:\WebService\DAL\bin\x86\Release\Common.dll
+E:\WebService\DAL\bin\x86\Release\DataOperator.dll
+E:\WebService\DAL\bin\x86\Release\Entity.dll
+E:\WebService\DAL\bin\x86\Release\Common.pdb
+E:\WebService\DAL\bin\x86\Release\DataOperator.pdb
+E:\WebService\DAL\bin\x86\Release\Entity.pdb
+E:\WebService\DAL\obj\x86\Release\DAL.csprojResolveAssemblyReference.cache
+E:\WebService\DAL\obj\x86\Release\DAL.dll
+E:\WebService\DAL\obj\x86\Release\DAL.pdb

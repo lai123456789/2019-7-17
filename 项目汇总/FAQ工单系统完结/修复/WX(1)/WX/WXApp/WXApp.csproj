@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0E70A41-D921-4E2D-B924-D359890E2290}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WXApp</RootNamespace>
+    <AssemblyName>WXApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\add-ons.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\climacons-font.css" />
+    <Content Include="assets\css\filetypes.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\glyphicons.css" />
+    <Content Include="assets\css\halflings.css" />
+    <Content Include="assets\css\jquery.mmenu.css" />
+    <Content Include="assets\css\social.css" />
+    <Content Include="assets\css\style.min.css" />
+    <Content Include="assets\ico\favicon.ico" />
+    <Content Include="assets\ico\flags\Brazil.png" />
+    <Content Include="assets\ico\flags\Germany.png" />
+    <Content Include="assets\ico\flags\India.png" />
+    <Content Include="assets\ico\flags\Russia.png" />
+    <Content Include="assets\ico\flags\Spain.png" />
+    <Content Include="assets\ico\flags\USA.png" />
+    <Content Include="assets\img\avatar.jpg" />
+    <Content Include="assets\img\avatar1.jpg" />
+    <Content Include="assets\img\avatar2.jpg" />
+    <Content Include="assets\img\avatar3.jpg" />
+    <Content Include="assets\img\avatar4.jpg" />
+    <Content Include="assets\img\avatar5.jpg" />
+    <Content Include="assets\img\avatar6.jpg" />
+    <Content Include="assets\img\avatar7.jpg" />
+    <Content Include="assets\img\browser-chrome-big.png" />
+    <Content Include="assets\img\browser-firefox-big.png" />
+    <Content Include="assets\img\browser-ie.png" />
+    <Content Include="assets\img\browser-opera.png" />
+    <Content Include="assets\img\browser-safari.png" />
+    <Content Include="assets\img\gallery\photo1.jpg" />
+    <Content Include="assets\img\gallery\photo10.jpg" />
+    <Content Include="assets\img\gallery\photo11.jpg" />
+    <Content Include="assets\img\gallery\photo12.jpg" />
+    <Content Include="assets\img\gallery\photo13.jpg" />
+    <Content Include="assets\img\gallery\photo14.jpg" />
+    <Content Include="assets\img\gallery\photo15.jpg" />
+    <Content Include="assets\img\gallery\photo2.jpg" />
+    <Content Include="assets\img\gallery\photo3.jpg" />
+    <Content Include="assets\img\gallery\photo4.jpg" />
+    <Content Include="assets\img\gallery\photo5.jpg" />
+    <Content Include="assets\img\gallery\photo6.jpg" />
+    <Content Include="assets\img\gallery\photo7.jpg" />
+    <Content Include="assets\img\gallery\photo8.jpg" />
+    <Content Include="assets\img\gallery\photo9.jpg" />
+    <Content Include="assets\img\logo1.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\core.min.js" />
+    <Content Include="assets\js\jquery-2.1.1.min.js" />
+    <Content Include="assets\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="assets\js\jquery.mmenu.min.js" />
+    <Content Include="assets\js\pages\calendar.js" />
+    <Content Include="assets\js\pages\charts-flot.js" />
+    <Content Include="assets\js\pages\charts-other.js" />
+    <Content Include="assets\js\pages\charts-xcharts.js" />
+    <Content Include="assets\js\pages\form-dropzone.js" />
+    <Content Include="assets\js\pages\form-wizard.js" />
+    <Content Include="assets\js\pages\form-x-editable-demo.js" />
+    <Content Include="assets\js\pages\form-x-editable.js" />
+    <Content Include="assets\js\pages\index.js" />
+    <Content Include="assets\js\SmoothScroll.js" />
+    <Content Include="assets\plugins\autosize\jquery.autosize.min.js" />
+    <Content Include="assets\plugins\chosen\js\chosen.jquery.min.js" />
+    <Content Include="assets\plugins\d3\d3.min.js" />
+    <Content Include="assets\plugins\datatables\js\dataTables.bootstrap.min.js" />
+    <Content Include="assets\plugins\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="assets\plugins\dropzone\css\dropzone.css" />
+    <Content Include="assets\plugins\dropzone\images\spritemap.png" />
+    <Content Include="assets\plugins\dropzone\js\dropzone.min.js" />
+    <Content Include="assets\plugins\easypiechart\js\jquery.easypiechart.min.js" />
+    <Content Include="assets\plugins\editable\css\bootstrap-editable.css" />
+    <Content Include="assets\plugins\editable\inputs-ext\address\address.min.js" />
+    <Content Include="assets\plugins\editable\inputs-ext\typeaheadjs\typeaheadjs.min.js" />
+    <Content Include="assets\plugins\editable\js\bootstrap-editable.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.pie.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.resize.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.spline.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.stack.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.time.min.js" />
+    <Content Include="assets\plugins\fullcalendar\css\fullcalendar.css" />
+    <Content Include="assets\plugins\fullcalendar\js\fullcalendar.min.js" />
+    <Content Include="assets\plugins\gauge\gauge.min.js" />
+    <Content Include="assets\plugins\jquery-ui\css\jquery-ui-1.10.4.min.css" />
+    <Content Include="assets\plugins\jquery-ui\js\jquery-ui-1.10.4.min.js" />
+    <Content Include="assets\plugins\justgage\justgage.1.0.1.min.js" />
+    <Content Include="assets\plugins\jvectormap\css\jquery-jvectormap-1.2.2.css" />
+    <Content Include="assets\plugins\jvectormap\js\gdp-data.js" />
+    <Content Include="assets\plugins\jvectormap\js\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="assets\plugins\jvectormap\js\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="assets\plugins\maskedinput\jquery.maskedinput.min.js" />
+    <Content Include="assets\plugins\mockjax\jquery.mockjax.min.js" />
+    <Content Include="assets\plugins\moment\moment.min.js" />
+    <Content Include="assets\plugins\morris\css\morris.css" />
+    <Content Include="assets\plugins\morris\js\morris.min.js" />
+    <Content Include="assets\plugins\placeholder\jquery.placeholder.min.js" />
+    <Content Include="assets\plugins\raphael\raphael.min.js" />
+    <Content Include="assets\plugins\select2\js\select2.min.js" />
+    <Content Include="assets\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="assets\plugins\touchpunch\jquery.ui.touch-punch.min.js" />
+    <Content Include="assets\plugins\wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="assets\plugins\xcharts\css\xcharts.min.css" />
+    <Content Include="assets\plugins\xcharts\js\xcharts.min.js" />
+    <Content Include="page\admin_info.html" />
+    <Content Include="page\admin_paigong.html" />
+    <Content Include="page\admin_user.html" />
+    <Content Include="page\auth.css" />
+    <Content Include="page\auth.js" />
+    <Content Include="page\create_gongdan.html" />
+    <Content Include="page\css\1.css" />
+    <Content Include="page\css\123.css" />
+    <Content Include="page\css\2.css" />
+    <Content Include="page\css\auth.css" />
+    <Content Include="page\css\create_gongdan.css" />
+    <Content Include="page\css\rank.css" />
+    <Content Include="page\css\UserManage.css" />
+    <Content Include="page\css\WordOrder.css" />
+    <Content Include="page\css\yy_pagegps.css" />
+    <Content Include="page\gongdan_list.html" />
+    <Content Include="page\img\logo.jpg" />
+    <Content Include="page\img\MT.png" />
+    <Content Include="page\img\mtt.jpg" />
+    <Content Include="page\img\noavatar_big.gif" />
+    <Content Include="page\index.html" />
+    <Content Include="page\info.html" />
+    <Content Include="page\info_gongdan.html" />
+    <Content Include="page\js\jquery-1.11.3.min.js" />
+    <Content Include="page\script\admin_info.js" />
+    <Content Include="page\script\admin_paigong.js" />
+    <Content Include="page\script\admin_user.js" />
+    <Content Include="page\script\ImageManage.js" />
+    <Content Include="page\script\info.js" />
+    <Content Include="page\script\info_gongdan.js" />
+    <Content Include="page\script\jquery-1.11.3.min.js" />
+    <Content Include="page\script\jquery.1.7.js" />
+    <Content Include="page\script\jquery.js" />
+    <Content Include="page\script\UserManage.js" />
+    <Content Include="page\script\WordOrder.js" />
+    <Content Include="page\script\yy_pagegps.js" />
+    <Content Include="page\script\zhuce.js" />
+    <Content Include="page\zhuce.html" />
+    <Content Include="UI\Image\head.jpg" />
+    <Content Include="UI\Image\loading.gif" />
+    <Content Include="UI\Image\logo.ico" />
+    <Content Include="UI\Image\logo.png" />
+    <Content Include="UI\Image\logo_head.png" />
+    <Content Include="UI\Scripts\admin_paigong.Basic.js" />
+    <Content Include="UI\Scripts\admin_user.Basic.js" />
+    <Content Include="UI\Scripts\Basic.js" />
+    <Content Include="UI\Scripts\Basic_info.js" />
+    <Content Include="UI\Scripts\ExcelManage.js" />
+    <Content Include="UI\Scripts\gongdan_list.Basic.js" />
+    <Content Include="UI\Scripts\info_Basic.js" />
+    <Content Include="UI\Scripts\jquery-1.11.3.min.js" />
+    <Content Include="UI\Scripts\jquery-ui.min.js" />
+    <Content Include="UI\Scripts\Loading.js" />
+    <Content Include="UI\Style\Basic.css" />
+    <Content Include="UI\Style\iconfont.css" />
+    <Content Include="UI\Style\Loading.css" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WXQRManage.aspx" />
+    <Content Include="WX\assets\css\add-ons.min.css" />
+    <Content Include="WX\assets\css\bootstrap.min.css" />
+    <Content Include="WX\assets\css\climacons-font.css" />
+    <Content Include="WX\assets\css\filetypes.css" />
+    <Content Include="WX\assets\css\font-awesome.min.css" />
+    <Content Include="WX\assets\css\glyphicons.css" />
+    <Content Include="WX\assets\css\halflings.css" />
+    <Content Include="WX\assets\css\jquery.mmenu.css" />
+    <Content Include="WX\assets\css\social.css" />
+    <Content Include="WX\assets\css\style.min.css" />
+    <Content Include="WX\assets\ico\favicon.ico" />
+    <Content Include="WX\assets\ico\flags\Brazil.png" />
+    <Content Include="WX\assets\ico\flags\Germany.png" />
+    <Content Include="WX\assets\ico\flags\India.png" />
+    <Content Include="WX\assets\ico\flags\Russia.png" />
+    <Content Include="WX\assets\ico\flags\Spain.png" />
+    <Content Include="WX\assets\ico\flags\USA.png" />
+    <Content Include="WX\assets\img\avatar.jpg" />
+    <Content Include="WX\assets\img\avatar1.jpg" />
+    <Content Include="WX\assets\img\avatar2.jpg" />
+    <Content Include="WX\assets\img\avatar3.jpg" />
+    <Content Include="WX\assets\img\avatar4.jpg" />
+    <Content Include="WX\assets\img\avatar5.jpg" />
+    <Content Include="WX\assets\img\avatar6.jpg" />
+    <Content Include="WX\assets\img\avatar7.jpg" />
+    <Content Include="WX\assets\img\browser-chrome-big.png" />
+    <Content Include="WX\assets\img\browser-firefox-big.png" />
+    <Content Include="WX\assets\img\browser-ie.png" />
+    <Content Include="WX\assets\img\browser-opera.png" />
+    <Content Include="WX\assets\img\browser-safari.png" />
+    <Content Include="WX\assets\img\gallery\photo1.jpg" />
+    <Content Include="WX\assets\img\gallery\photo10.jpg" />
+    <Content Include="WX\assets\img\gallery\photo11.jpg" />
+    <Content Include="WX\assets\img\gallery\photo12.jpg" />
+    <Content Include="WX\assets\img\gallery\photo13.jpg" />
+    <Content Include="WX\assets\img\gallery\photo14.jpg" />
+    <Content Include="WX\assets\img\gallery\photo15.jpg" />
+    <Content Include="WX\assets\img\gallery\photo2.jpg" />
+    <Content Include="WX\assets\img\gallery\photo3.jpg" />
+    <Content Include="WX\assets\img\gallery\photo4.jpg" />
+    <Content Include="WX\assets\img\gallery\photo5.jpg" />
+    <Content Include="WX\assets\img\gallery\photo6.jpg" />
+    <Content Include="WX\assets\img\gallery\photo7.jpg" />
+    <Content Include="WX\assets\img\gallery\photo8.jpg" />
+    <Content Include="WX\assets\img\gallery\photo9.jpg" />
+    <Content Include="WX\assets\img\logo1.png" />
+    <Content Include="WX\assets\js\bootstrap.min.js" />
+    <Content Include="WX\assets\js\core.min.js" />
+    <Content Include="WX\assets\js\jquery-2.1.1.min.js" />
+    <Content Include="WX\assets\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="WX\assets\js\jquery.mmenu.min.js" />
+    <Content Include="WX\assets\js\pages\calendar.js" />
+    <Content Include="WX\assets\js\pages\charts-flot.js" />
+    <Content Include="WX\assets\js\pages\charts-other.js" />
+    <Content Include="WX\assets\js\pages\charts-xcharts.js" />
+    <Content Include="WX\assets\js\pages\form-dropzone.js" />
+    <Content Include="WX\assets\js\pages\form-wizard.js" />
+    <Content Include="WX\assets\js\pages\form-x-editable-demo.js" />
+    <Content Include="WX\assets\js\pages\form-x-editable.js" />
+    <Content Include="WX\assets\js\pages\index.js" />
+    <Content Include="WX\assets\js\SmoothScroll.js" />
+    <Content Include="WX\assets\plugins\autosize\jquery.autosize.min.js" />
+    <Content Include="WX\assets\plugins\chosen\js\chosen.jquery.min.js" />
+    <Content Include="WX\assets\plugins\d3\d3.min.js" />
+    <Content Include="WX\assets\plugins\datatables\js\dataTables.bootstrap.min.js" />
+    <Content Include="WX\assets\plugins\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="WX\assets\plugins\dropzone\css\dropzone.css" />
+    <Content Include="WX\assets\plugins\dropzone\images\spritemap.png" />
+    <Content Include="WX\assets\plugins\dropzone\js\dropzone.min.js" />
+    <Content Include="WX\assets\plugins\easypiechart\js\jquery.easypiechart.min.js" />
+    <Content Include="WX\assets\plugins\editable\css\bootstrap-editable.css" />
+    <Content Include="WX\assets\plugins\editable\inputs-ext\address\address.min.js" />
+    <Content Include="WX\assets\plugins\editable\inputs-ext\typeaheadjs\typeaheadjs.min.js" />
+    <Content Include="WX\assets\plugins\editable\js\bootstrap-editable.min.js" />
+    <Content Include="WX\assets\plugins\flot\jquery.flot.min.js" />
+    <Content Include="WX\assets\plugins\flot\jquery.flot.pie.min.js" />
+    <Content Include="WX\assets\plugins\flot\jquery.flot.resize.min.js" />
+    <Content Include="WX\assets\plugins\flot\jquery.flot.spline.min.js" />
+    <Content Include="WX\assets\plugins\flot\jquery.flot.stack.min.js" />
+    <Content Include="WX\assets\plugins\flot\jquery.flot.time.min.js" />
+    <Content Include="WX\assets\plugins\fullcalendar\css\fullcalendar.css" />
+    <Content Include="WX\assets\plugins\fullcalendar\js\fullcalendar.min.js" />
+    <Content Include="WX\assets\plugins\gauge\gauge.min.js" />
+    <Content Include="WX\assets\plugins\jquery-ui\css\jquery-ui-1.10.4.min.css" />
+    <Content Include="WX\assets\plugins\jquery-ui\js\jquery-ui-1.10.4.min.js" />
+    <Content Include="WX\assets\plugins\justgage\justgage.1.0.1.min.js" />
+    <Content Include="WX\assets\plugins\jvectormap\css\jquery-jvectormap-1.2.2.css" />
+    <Content Include="WX\assets\plugins\jvectormap\js\gdp-data.js" />
+    <Content Include="WX\assets\plugins\jvectormap\js\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="WX\assets\plugins\jvectormap\js\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="WX\assets\plugins\maskedinput\jquery.maskedinput.min.js" />
+    <Content Include="WX\assets\plugins\mockjax\jquery.mockjax.min.js" />
+    <Content Include="WX\assets\plugins\moment\moment.min.js" />
+    <Content Include="WX\assets\plugins\morris\css\morris.css" />
+    <Content Include="WX\assets\plugins\morris\js\morris.min.js" />
+    <Content Include="WX\assets\plugins\placeholder\jquery.placeholder.min.js" />
+    <Content Include="WX\assets\plugins\raphael\raphael.min.js" />
+    <Content Include="WX\assets\plugins\select2\js\select2.min.js" />
+    <Content Include="WX\assets\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="WX\assets\plugins\touchpunch\jquery.ui.touch-punch.min.js" />
+    <Content Include="WX\assets\plugins\wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="WX\assets\plugins\xcharts\css\xcharts.min.css" />
+    <Content Include="WX\assets\plugins\xcharts\js\xcharts.min.js" />
+    <Content Include="WX\bangding\bangding.html" />
+    <Content Include="WX\bangding\bangding.js" />
+    <Content Include="WX\comment\comment.html" />
+    <Content Include="WX\comment\comment.js" />
+    <Content Include="WX\comment_content\comment_content.html" />
+    <Content Include="WX\comment_content\comment_content.js" />
+    <Content Include="WX\comment_success.html" />
+    <Content Include="WX\create_gongdan\create_gongdan.aspx" />
+    <Content Include="WX\create_gongdan\create_gongdan.html" />
+    <Content Include="WX\create_gongdan\create_gongdan.js" />
+    <Content Include="WX\create_gongdan\gallery.css" />
+    <Content Include="WX\create_gongdan\shouquan.html" />
+    <Content Include="WX\create_gongdan\uploader-font.css" />
+    <Content Include="WX\create_gongdan\weui-uploader.js" />
+    <Content Include="WX\create_gongdan\weui.css" />
+    <Content Include="WX\create_gongdan\zepto.min.js" />
+    <Content Include="WX\create_gongdan\create_gongdan__success.aspx" />
+    <Content Include="WX\css\auth.css" />
+    <Content Include="WX\css\bootstrap.min.css" />
+    <Content Include="WX\css\scale.css" />
+    <Content Include="WX\gongdan_server_info.aspx" />
+    <Content Include="WX\img\logo.jpg" />
+    <Content Include="WX\img\mtt.jpg" />
+    <Content Include="WX\js\bootstrap.min.js" />
+    <Content Include="WX\js\create_gongdan.js" />
+    <Content Include="WX\css\gallery.css" />
+    <Content Include="WX\css\uploader-font.css" />
+    <Content Include="WX\js\jquery-3.3.1.min.js" />
+    <Content Include="WX\js\question_click_info.js" />
+    <Content Include="WX\js\register.js" />
+    <Content Include="WX\js\scale.js" />
+    <Content Include="WX\js\weui-uploader.js" />
+    <Content Include="WX\js\WXadmin_click_info.js" />
+    <Content Include="WX\js\WXadmin_info.js" />
+    <Content Include="WX\js\WXadmin_paigong.js" />
+    <Content Include="WX\js\WXadmin_user.js" />
+    <Content Include="WX\js\zepto.min.js" />
+    <Content Include="WX\css\example.css" />
+    <Content Include="WX\css\font-awesome.min.css" />
+    <Content Include="WX\css\weui.css" />
+    <Content Include="WX\css\weui.min.css" />
+    <Content Include="WX\dist\example\example.css" />
+    <Content Include="WX\dist\example\example.js" />
+    <Content Include="WX\dist\example\images\icon_footer.png" />
+    <Content Include="WX\dist\example\images\icon_footer_link.png" />
+    <Content Include="WX\dist\example\images\icon_intro.png" />
+    <Content Include="WX\dist\example\images\icon_nav_actionSheet.png" />
+    <Content Include="WX\dist\example\images\icon_nav_article.png" />
+    <Content Include="WX\dist\example\images\icon_nav_button.png" />
+    <Content Include="WX\dist\example\images\icon_nav_cell.png" />
+    <Content Include="WX\dist\example\images\icon_nav_dialog.png" />
+    <Content Include="WX\dist\example\images\icon_nav_feedback.png" />
+    <Content Include="WX\dist\example\images\icon_nav_flow.png" />
+    <Content Include="WX\dist\example\images\icon_nav_form.png" />
+    <Content Include="WX\dist\example\images\icon_nav_icons.png" />
+    <Content Include="WX\dist\example\images\icon_nav_layout.png" />
+    <Content Include="WX\dist\example\images\icon_nav_msg.png" />
+    <Content Include="WX\dist\example\images\icon_nav_nav.png" />
+    <Content Include="WX\dist\example\images\icon_nav_panel.png" />
+    <Content Include="WX\dist\example\images\icon_nav_progress.png" />
+    <Content Include="WX\dist\example\images\icon_nav_search.png" />
+    <Content Include="WX\dist\example\images\icon_nav_search_bar.png" />
+    <Content Include="WX\dist\example\images\icon_nav_special.png" />
+    <Content Include="WX\dist\example\images\icon_nav_tab.png" />
+    <Content Include="WX\dist\example\images\icon_nav_toast.png" />
+    <Content Include="WX\dist\example\images\icon_nav_z-index.png" />
+    <Content Include="WX\dist\example\images\icon_nav_zindex.png" />
+    <Content Include="WX\dist\example\images\icon_tabbar.png" />
+    <Content Include="WX\dist\example\images\layers\content.png" />
+    <Content Include="WX\dist\example\images\layers\navigation.png" />
+    <Content Include="WX\dist\example\images\layers\popout.png" />
+    <Content Include="WX\dist\example\images\layers\transparent.gif" />
+    <Content Include="WX\dist\example\images\logo.png" />
+    <Content Include="WX\dist\example\images\pic_160.png" />
+    <Content Include="WX\dist\example\images\pic_article.png" />
+    <Content Include="WX\dist\example\images\vcode.jpg" />
+    <Content Include="WX\dist\example\index.html" />
+    <Content Include="WX\dist\example\snapshot\actionSheet.png" />
+    <Content Include="WX\dist\example\snapshot\button.png" />
+    <Content Include="WX\dist\example\snapshot\cell.png" />
+    <Content Include="WX\dist\example\snapshot\dialog1.png" />
+    <Content Include="WX\dist\example\snapshot\dialog2.png" />
+    <Content Include="WX\dist\example\snapshot\grid.png" />
+    <Content Include="WX\dist\example\snapshot\icons.png" />
+    <Content Include="WX\dist\example\snapshot\progress.png" />
+    <Content Include="WX\dist\example\snapshot\qrcode.png" />
+    <Content Include="WX\dist\example\snapshot\result.png" />
+    <Content Include="WX\dist\example\snapshot\text.png" />
+    <Content Include="WX\dist\example\snapshot\toast1.png" />
+    <Content Include="WX\dist\example\snapshot\toast2.png" />
+    <Content Include="WX\dist\example\zepto.min.js" />
+    <Content Include="WX\dist\style\weui.css" />
+    <Content Include="WX\dist\style\weui.min.css" />
+    <Content Include="WX\gongdan_server_info\bootstrap.min.css" />
+    <Content Include="WX\gongdan_server_info\gongdan_server_info.html" />
+    <Content Include="WX\gongdan_server_info\gongdan_server_info.js" />
+    <Content Include="WX\gongdan_server_info\WordOrder.css" />
+    <Content Include="WX\js\WordOrder.js" />
+    <Content Include="WX\css\yy_pagegps.css" />
+    <Content Include="WX\js\yy_pagegps.js" />
+    <Content Include="WX\icon\css\font-awesome.min.css" />
+    <Content Include="WX\icon\qiantao.html" />
+    <Content Include="WX\img\MT.png" />
+    <Content Include="WX\img\noavatar_big.gif" />
+    <Content Include="WX\img\photo11.jpg" />
+    <Content Include="WX\img\photo14.jpg" />
+    <Content Include="WX\img\photo4.jpg" />
+    <Content Include="WX\img\photo5.jpg" />
+    <Content Include="WX\img\photo6.jpg" />
+    <Content Include="WX\js\bangding.js" />
+    <Content Include="WX\js\calendar.js" />
+    <Content Include="WX\js\comment.js" />
+    <Content Include="WX\js\comment_content.js" />
+    <Content Include="WX\js\datetime.js" />
+    <Content Include="WX\js\demo.js" />
+    <Content Include="WX\js\jquery-1.11.3.min.js" />
+    <Content Include="WX\js\jquery.1.7.js" />
+    <Content Include="WX\js\jquery.calendar.js" />
+    <Content Include="WX\js\jquery.js" />
+    <Content Include="WX\js\lib.js" />
+    <Content Include="WX\js\main.js" />
+    <Content Include="WX\js\R0002.js" />
+    <Content Include="WX\js\weui.js" />
+    <Content Include="WX\js\weui.min.js" />
+    <Content Include="WX\js\zhuce.js" />
+    <Content Include="WX\page\admin_info.html" />
+    <Content Include="WX\page\admin_paigong.html" />
+    <Content Include="WX\page\admin_user.html" />
+    <Content Include="WX\page\auth.css" />
+    <Content Include="WX\page\auth.js" />
+    <Content Include="WX\page\create_gongdan.html" />
+    <Content Include="WX\page\css\1.css" />
+    <Content Include="WX\page\css\123.css" />
+    <Content Include="WX\page\css\2.css" />
+    <Content Include="WX\page\css\auth.css" />
+    <Content Include="WX\page\css\create_gongdan.css" />
+    <Content Include="WX\page\css\UserManage.css" />
+    <Content Include="WX\page\css\WordOrder.css" />
+    <Content Include="WX\page\css\yy_pagegps.css" />
+    <Content Include="WX\page\gongdan_list.html" />
+    <Content Include="WX\page\img\logo.jpg" />
+    <Content Include="WX\page\img\MT.png" />
+    <Content Include="WX\page\img\mtt.jpg" />
+    <Content Include="WX\page\img\noavatar_big.gif" />
+    <Content Include="WX\page\index.html" />
+    <Content Include="WX\page\info.html" />
+    <Content Include="WX\page\info_gongdan.html" />
+    <Content Include="WX\page\js\jquery-1.11.3.min.js" />
+    <Content Include="WX\page\re_login.html" />
+    <Content Include="WX\page\script\admin_info.js" />
+    <Content Include="WX\page\script\admin_paigong.js" />
+    <Content Include="WX\page\script\admin_user.js" />
+    <Content Include="WX\page\script\ImageManage.js" />
+    <Content Include="WX\page\script\info.js" />
+    <Content Include="WX\page\script\info_gongdan.js" />
+    <Content Include="WX\page\script\jquery-1.11.3.min.js" />
+    <Content Include="WX\page\script\jquery.1.7.js" />
+    <Content Include="WX\page\script\jquery.js" />
+    <Content Include="WX\page\script\UserManage.js" />
+    <Content Include="WX\page\script\WordOrder.js" />
+    <Content Include="WX\page\script\yy_pagegps.js" />
+    <Content Include="WX\page\script\zhuce.js" />
+    <Content Include="WX\page\zhuce.html" />
+    <Content Include="WX\question_click_info\question_click_info.html" />
+    <Content Include="WX\question_click_info\question_click_info.js" />
+    <Content Include="WX\question_click_info\scale.css" />
+    <Content Include="WX\question_click_info\scale.js" />
+    <Content Include="WX\register.aspx" />
+    <Content Include="WX\register\register.html" />
+    <Content Include="WX\register\register.js" />
+    <Content Include="WX\re_login.aspx" />
+    <Content Include="WX\shouquan.aspx" />
+    <Content Include="WX\UI\assets\css\add-ons.min.css" />
+    <Content Include="WX\UI\assets\css\bootstrap.min.css" />
+    <Content Include="WX\UI\assets\css\climacons-font.css" />
+    <Content Include="WX\UI\assets\css\filetypes.css" />
+    <Content Include="WX\UI\assets\css\font-awesome.min.css" />
+    <Content Include="WX\UI\assets\css\glyphicons.css" />
+    <Content Include="WX\UI\assets\css\halflings.css" />
+    <Content Include="WX\UI\assets\css\jquery.mmenu.css" />
+    <Content Include="WX\UI\assets\css\social.css" />
+    <Content Include="WX\UI\assets\css\style.min.css" />
+    <Content Include="WX\UI\assets\ico\favicon.ico" />
+    <Content Include="WX\UI\assets\ico\flags\Brazil.png" />
+    <Content Include="WX\UI\assets\ico\flags\Germany.png" />
+    <Content Include="WX\UI\assets\ico\flags\India.png" />
+    <Content Include="WX\UI\assets\ico\flags\Russia.png" />
+    <Content Include="WX\UI\assets\ico\flags\Spain.png" />
+    <Content Include="WX\UI\assets\ico\flags\USA.png" />
+    <Content Include="WX\UI\assets\img\avatar.jpg" />
+    <Content Include="WX\UI\assets\img\avatar1.jpg" />
+    <Content Include="WX\UI\assets\img\avatar2.jpg" />
+    <Content Include="WX\UI\assets\img\avatar3.jpg" />
+    <Content Include="WX\UI\assets\img\avatar4.jpg" />
+    <Content Include="WX\UI\assets\img\avatar5.jpg" />
+    <Content Include="WX\UI\assets\img\avatar6.jpg" />
+    <Content Include="WX\UI\assets\img\avatar7.jpg" />
+    <Content Include="WX\UI\assets\img\browser-chrome-big.png" />
+    <Content Include="WX\UI\assets\img\browser-firefox-big.png" />
+    <Content Include="WX\UI\assets\img\browser-ie.png" />
+    <Content Include="WX\UI\assets\img\browser-opera.png" />
+    <Content Include="WX\UI\assets\img\browser-safari.png" />
+    <Content Include="WX\UI\assets\img\gallery\photo1.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo10.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo11.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo12.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo13.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo14.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo15.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo2.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo3.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo4.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo5.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo6.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo7.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo8.jpg" />
+    <Content Include="WX\UI\assets\img\gallery\photo9.jpg" />
+    <Content Include="WX\UI\assets\img\logo1.png" />
+    <Content Include="WX\UI\assets\js\bootstrap.min.js" />
+    <Content Include="WX\UI\assets\js\core.min.js" />
+    <Content Include="WX\UI\assets\js\jquery-2.1.1.min.js" />
+    <Content Include="WX\UI\assets\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="WX\UI\assets\js\jquery.mmenu.min.js" />
+    <Content Include="WX\UI\assets\js\pages\calendar.js" />
+    <Content Include="WX\UI\assets\js\pages\charts-flot.js" />
+    <Content Include="WX\UI\assets\js\pages\charts-other.js" />
+    <Content Include="WX\UI\assets\js\pages\charts-xcharts.js" />
+    <Content Include="WX\UI\assets\js\pages\form-dropzone.js" />
+    <Content Include="WX\UI\assets\js\pages\form-wizard.js" />
+    <Content Include="WX\UI\assets\js\pages\form-x-editable-demo.js" />
+    <Content Include="WX\UI\assets\js\pages\form-x-editable.js" />
+    <Content Include="WX\UI\assets\js\pages\index.js" />
+    <Content Include="WX\UI\assets\js\SmoothScroll.js" />
+    <Content Include="WX\UI\assets\plugins\autosize\jquery.autosize.min.js" />
+    <Content Include="WX\UI\assets\plugins\chosen\js\chosen.jquery.min.js" />
+    <Content Include="WX\UI\assets\plugins\d3\d3.min.js" />
+    <Content Include="WX\UI\assets\plugins\datatables\js\dataTables.bootstrap.min.js" />
+    <Content Include="WX\UI\assets\plugins\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="WX\UI\assets\plugins\dropzone\css\dropzone.css" />
+    <Content Include="WX\UI\assets\plugins\dropzone\images\spritemap.png" />
+    <Content Include="WX\UI\assets\plugins\dropzone\js\dropzone.min.js" />
+    <Content Include="WX\UI\assets\plugins\easypiechart\js\jquery.easypiechart.min.js" />
+    <Content Include="WX\UI\assets\plugins\editable\css\bootstrap-editable.css" />
+    <Content Include="WX\UI\assets\plugins\editable\inputs-ext\address\address.min.js" />
+    <Content Include="WX\UI\assets\plugins\editable\inputs-ext\typeaheadjs\typeaheadjs.min.js" />
+    <Content Include="WX\UI\assets\plugins\editable\js\bootstrap-editable.min.js" />
+    <Content Include="WX\UI\assets\plugins\flot\jquery.flot.min.js" />
+    <Content Include="WX\UI\assets\plugins\flot\jquery.flot.pie.min.js" />
+    <Content Include="WX\UI\assets\plugins\flot\jquery.flot.resize.min.js" />
+    <Content Include="WX\UI\assets\plugins\flot\jquery.flot.spline.min.js" />
+    <Content Include="WX\UI\assets\plugins\flot\jquery.flot.stack.min.js" />
+    <Content Include="WX\UI\assets\plugins\flot\jquery.flot.time.min.js" />
+    <Content Include="WX\UI\assets\plugins\fullcalendar\css\fullcalendar.css" />
+    <Content Include="WX\UI\assets\plugins\fullcalendar\js\fullcalendar.min.js" />
+    <Content Include="WX\UI\assets\plugins\gauge\gauge.min.js" />
+    <Content Include="WX\UI\assets\plugins\jquery-ui\css\jquery-ui-1.10.4.min.css" />
+    <Content Include="WX\UI\assets\plugins\jquery-ui\js\jquery-ui-1.10.4.min.js" />
+    <Content Include="WX\UI\assets\plugins\justgage\justgage.1.0.1.min.js" />
+    <Content Include="WX\UI\assets\plugins\jvectormap\css\jquery-jvectormap-1.2.2.css" />
+    <Content Include="WX\UI\assets\plugins\jvectormap\js\gdp-data.js" />
+    <Content Include="WX\UI\assets\plugins\jvectormap\js\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="WX\UI\assets\plugins\jvectormap\js\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="WX\UI\assets\plugins\maskedinput\jquery.maskedinput.min.js" />
+    <Content Include="WX\UI\assets\plugins\mockjax\jquery.mockjax.min.js" />
+    <Content Include="WX\UI\assets\plugins\moment\moment.min.js" />
+    <Content Include="WX\UI\assets\plugins\morris\css\morris.css" />
+    <Content Include="WX\UI\assets\plugins\morris\js\morris.min.js" />
+    <Content Include="WX\UI\assets\plugins\placeholder\jquery.placeholder.min.js" />
+    <Content Include="WX\UI\assets\plugins\raphael\raphael.min.js" />
+    <Content Include="WX\UI\assets\plugins\select2\js\select2.min.js" />
+    <Content Include="WX\UI\assets\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="WX\UI\assets\plugins\touchpunch\jquery.ui.touch-punch.min.js" />
+    <Content Include="WX\UI\assets\plugins\wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="WX\UI\assets\plugins\xcharts\css\xcharts.min.css" />
+    <Content Include="WX\UI\assets\plugins\xcharts\js\xcharts.min.js" />
+    <Content Include="WX\UI\Image\head.jpg" />
+    <Content Include="WX\UI\Image\loading.gif" />
+    <Content Include="WX\UI\Image\logo.ico" />
+    <Content Include="WX\UI\Image\logo.png" />
+    <Content Include="WX\UI\Image\logo_head.png" />
+    <Content Include="WX\UI\Scripts\Basic.js" />
+    <Content Include="WX\UI\Scripts\Basic_info.js" />
+    <Content Include="WX\UI\Scripts\ExcelManage.js" />
+    <Content Include="WX\UI\Scripts\info_Basic.js" />
+    <Content Include="WX\UI\Scripts\jquery-1.11.3.min.js" />
+    <Content Include="WX\UI\Scripts\jquery-ui.min.js" />
+    <Content Include="WX\UI\Scripts\Loading.js" />
+    <Content Include="WX\UI\Style\Basic.css" />
+    <Content Include="WX\UI\Style\iconfont.css" />
+    <Content Include="WX\UI\Style\Loading.css" />
+    <Content Include="WX\bangding.aspx" />
+    <Content Include="WX\comment.aspx" />
+    <Content Include="WX\comment_content.aspx" />
+    <Content Include="WX\question_click_info.aspx" />
+    <Content Include="WX\weui.js-master\.gitignore" />
+    <Content Include="WX\weui.js-master\build\build.js" />
+    <Content Include="WX\weui.js-master\build\docs.js" />
+    <Content Include="WX\weui.js-master\build\webpack.example.config.js" />
+    <Content Include="WX\weui.js-master\build\webpack.mod.config.js" />
+    <Content Include="WX\weui.js-master\dist\example\example.js" />
+    <Content Include="WX\weui.js-master\dist\example\index.html" />
+    <Content Include="WX\weui.js-master\dist\weui.js" />
+    <Content Include="WX\weui.js-master\dist\weui.min.js" />
+    <Content Include="WX\weui.js-master\example\example.js" />
+    <Content Include="WX\weui.js-master\example\index.html" />
+    <Content Include="WX\weui.js-master\LICENSE.txt" />
+    <Content Include="WX\weui.js-master\src\actionSheet\actionSheet.html" />
+    <Content Include="WX\weui.js-master\src\actionSheet\actionSheet.js" />
+    <Content Include="WX\weui.js-master\src\alert\alert.js" />
+    <Content Include="WX\weui.js-master\src\confirm\confirm.js" />
+    <Content Include="WX\weui.js-master\src\dialog\dialog.html" />
+    <Content Include="WX\weui.js-master\src\dialog\dialog.js" />
+    <Content Include="WX\weui.js-master\src\form\form.js" />
+    <Content Include="WX\weui.js-master\src\gallery\gallery.html" />
+    <Content Include="WX\weui.js-master\src\gallery\gallery.js" />
+    <Content Include="WX\weui.js-master\src\loading\loading.html" />
+    <Content Include="WX\weui.js-master\src\loading\loading.js" />
+    <Content Include="WX\weui.js-master\src\picker\cron.js" />
+    <Content Include="WX\weui.js-master\src\picker\group.html" />
+    <Content Include="WX\weui.js-master\src\picker\picker.html" />
+    <Content Include="WX\weui.js-master\src\picker\picker.js" />
+    <Content Include="WX\weui.js-master\src\picker\scroll.js" />
+    <Content Include="WX\weui.js-master\src\picker\util.js" />
+    <Content Include="WX\weui.js-master\src\searchBar\searchBar.js" />
+    <Content Include="WX\weui.js-master\src\slider\slider.js" />
+    <Content Include="WX\weui.js-master\src\tab\tab.js" />
+    <Content Include="WX\weui.js-master\src\toast\toast.html" />
+    <Content Include="WX\weui.js-master\src\toast\toast.js" />
+    <Content Include="WX\weui.js-master\src\topTips\topTips.html" />
+    <Content Include="WX\weui.js-master\src\topTips\topTips.js" />
+    <Content Include="WX\weui.js-master\src\uploader\image.js" />
+    <Content Include="WX\weui.js-master\src\uploader\item.html" />
+    <Content Include="WX\weui.js-master\src\uploader\upload.js" />
+    <Content Include="WX\weui.js-master\src\uploader\uploader.js" />
+    <Content Include="WX\weui.js-master\src\util\util.js" />
+    <Content Include="WX\weui.js-master\src\weui.js" />
+    <Content Include="WX\weui.js-master\uploader-server\index.js" />
+    <Content Include="WX\weui.js-master\__tests__\actionsheet.js" />
+    <Content Include="WX\weui.js-master\__tests__\alert.js" />
+    <Content Include="WX\weui.js-master\__tests__\confirm.js" />
+    <Content Include="WX\weui.js-master\__tests__\form.js" />
+    <Content Include="WX\weui.js-master\__tests__\gallery.js" />
+    <Content Include="WX\weui.js-master\__tests__\lib\assert.js" />
+    <Content Include="WX\weui.js-master\__tests__\loading.js" />
+    <Content Include="WX\weui.js-master\__tests__\picker.js" />
+    <Content Include="WX\weui.js-master\__tests__\searchbar.js" />
+    <Content Include="WX\weui.js-master\__tests__\slider.js" />
+    <Content Include="WX\weui.js-master\__tests__\tab.js" />
+    <Content Include="WX\weui.js-master\__tests__\test.html" />
+    <Content Include="WX\weui.js-master\__tests__\toast.js" />
+    <Content Include="WX\weui.js-master\__tests__\toptips.js" />
+    <Content Include="WX\weui.js-master\__tests__\uploader.js" />
+    <Content Include="WX\WXadmin_click_info.aspx" />
+    <Content Include="WX\WXadmin_click_info\images\1.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\2.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\3.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\4.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\5.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\6.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\7.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\icon.jpg" />
+    <Content Include="WX\WXadmin_click_info\images\mtt.jpg" />
+    <Content Include="WX\WXadmin_click_info\scale.css" />
+    <Content Include="WX\WXadmin_click_info\scale.js" />
+    <Content Include="WX\WXadmin_click_info\WXadmin_click_info.html" />
+    <Content Include="WX\WXadmin_click_info\WXadmin_click_info.js" />
+    <Content Include="WX\WXadmin_href.aspx" />
+    <Content Include="WX\WXadmin_href\bootstrap.min.css" />
+    <Content Include="WX\WXadmin_href\WXadmin_href.html" />
+    <Content Include="WX\WXadmin_info.aspx" />
+    <Content Include="WX\WXadmin_info\bootstrap.min.css" />
+    <Content Include="WX\WXadmin_info\WordOrder.css" />
+    <Content Include="WX\WXadmin_info\WordOrder.js" />
+    <Content Include="WX\WXadmin_info\WXadmin_info.html" />
+    <Content Include="WX\WXadmin_info\WXadmin_info.js" />
+    <Content Include="WX\WXadmin_info\yy_pagegps.css" />
+    <Content Include="WX\WXadmin_info\yy_pagegps.js" />
+    <Content Include="WX\WXadmin_paigong.aspx" />
+    <Content Include="WX\WXadmin_paigong\bootstrap.min.css" />
+    <Content Include="WX\WXadmin_paigong\bootstrap.min.js" />
+    <Content Include="WX\WXadmin_paigong\dataTables.bootstrap.min.js" />
+    <Content Include="WX\WXadmin_paigong\WXadmin_paigong.html" />
+    <Content Include="WX\WXadmin_paigong\WXadmin_paigong.js" />
+    <Content Include="WX\WXadmin_user.aspx" />
+    <Content Include="WX\WXadmin_user\jquery-3.3.1.min.js" />
+    <Content Include="WX\WXadmin_user\popper.min.js" />
+    <Content Include="WX\WXadmin_user\WXadmin_user.html" />
+    <Content Include="WX\WXadmin_user\WXadmin_user.js" />
+    <Content Include="WX\zhuce.aspx" />
+    <Content Include="WX\侧边导航栏\css\bootstrap.min.css" />
+    <Content Include="WX\侧边导航栏\css\default.css" />
+    <Content Include="WX\侧边导航栏\css\offcanvas.min.css" />
+    <Content Include="WX\侧边导航栏\img\thumb-1.jpg" />
+    <Content Include="WX\侧边导航栏\img\thumb-2.jpg" />
+    <Content Include="WX\侧边导航栏\index.html" />
+    <Content Include="WX\侧边导航栏\js\index.js" />
+    <Content Include="WX\侧边导航栏\js\jquery-2.1.1.min.js" />
+    <Content Include="WX\侧边导航栏\js\offcanvas.js" />
+    <Content Include="WX\侧边导航栏\js\offcanvas.min.js" />
+    <Content Include="assets\fonts\climacons-webfont.eot" />
+    <Content Include="assets\fonts\climacons-webfont.svg" />
+    <Content Include="assets\fonts\climacons-webfont.ttf" />
+    <Content Include="assets\fonts\climacons-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="page\script\.subl528.tmp" />
+    <None Include="Properties\PublishProfiles\247服务器.pubxml" />
+    <None Include="Properties\PublishProfiles\WX.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到104服务器.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到104测试微信.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到微信188.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到服务器.pubxml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WX\assets\fonts\climacons-webfont.eot" />
+    <Content Include="WX\assets\fonts\climacons-webfont.svg" />
+    <Content Include="WX\assets\fonts\climacons-webfont.ttf" />
+    <Content Include="WX\assets\fonts\climacons-webfont.woff" />
+    <Content Include="WX\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="WX\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="WX\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="WX\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="WX\assets\fonts\FontAwesome.otf" />
+    <Content Include="WX\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="WX\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="WX\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="WX\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="WX\fonts\climacons-webfont.eot" />
+    <Content Include="WX\fonts\climacons-webfont.svg" />
+    <Content Include="WX\fonts\climacons-webfont.ttf" />
+    <Content Include="WX\fonts\climacons-webfont.woff" />
+    <Content Include="WX\fonts\fontawesome-webfont.eot" />
+    <Content Include="WX\fonts\fontawesome-webfont.svg" />
+    <Content Include="WX\fonts\fontawesome-webfont.ttf" />
+    <Content Include="WX\fonts\fontawesome-webfont.woff" />
+    <Content Include="WX\fonts\FontAwesome.otf" />
+    <Content Include="WX\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="WX\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="WX\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="WX\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="WX\icon\fonts\climacons-webfont.eot" />
+    <Content Include="WX\icon\fonts\climacons-webfont.svg" />
+    <Content Include="WX\icon\fonts\climacons-webfont.ttf" />
+    <Content Include="WX\icon\fonts\climacons-webfont.woff" />
+    <Content Include="WX\icon\fonts\fontawesome-webfont.eot" />
+    <Content Include="WX\icon\fonts\fontawesome-webfont.svg" />
+    <Content Include="WX\icon\fonts\fontawesome-webfont.ttf" />
+    <Content Include="WX\icon\fonts\fontawesome-webfont.woff" />
+    <Content Include="WX\icon\fonts\FontAwesome.otf" />
+    <Content Include="WX\icon\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="WX\icon\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="WX\icon\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="WX\icon\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="WX\page\script\.subl528.tmp" />
+    <Content Include="WX\UI\Style\iconfont.eot" />
+    <Content Include="WX\UI\Style\iconfont.svg" />
+    <Content Include="WX\UI\Style\iconfont.ttf" />
+    <Content Include="WX\UI\Style\iconfont.woff" />
+    <Content Include="WX\weui.js-master\.babelrc" />
+    <Content Include="WX\weui.js-master\.editorconfig" />
+    <Content Include="WX\weui.js-master\.eslintrc" />
+    <Content Include="WX\weui.js-master\CHANGELOG.md" />
+    <Content Include="WX\weui.js-master\docs\component\actionSheet.md" />
+    <Content Include="WX\weui.js-master\docs\component\alert.md" />
+    <Content Include="WX\weui.js-master\docs\component\confirm.md" />
+    <Content Include="WX\weui.js-master\docs\component\dialog.md" />
+    <Content Include="WX\weui.js-master\docs\component\form.md" />
+    <Content Include="WX\weui.js-master\docs\component\gallery.md" />
+    <Content Include="WX\weui.js-master\docs\component\loading.md" />
+    <Content Include="WX\weui.js-master\docs\component\picker.md" />
+    <Content Include="WX\weui.js-master\docs\component\searchBar.md" />
+    <Content Include="WX\weui.js-master\docs\component\slider.md" />
+    <Content Include="WX\weui.js-master\docs\component\tab.md" />
+    <Content Include="WX\weui.js-master\docs\component\toast.md" />
+    <Content Include="WX\weui.js-master\docs\component\topTips.md" />
+    <Content Include="WX\weui.js-master\docs\component\uploader.md" />
+    <Content Include="WX\weui.js-master\docs\README.md" />
+    <Content Include="WX\weui.js-master\package.json" />
+    <Content Include="WX\weui.js-master\README.md" />
+    <Content Include="WX\UI\assets\fonts\climacons-webfont.eot" />
+    <Content Include="WX\UI\assets\fonts\climacons-webfont.svg" />
+    <Content Include="WX\UI\assets\fonts\climacons-webfont.ttf" />
+    <Content Include="WX\UI\assets\fonts\climacons-webfont.woff" />
+    <Content Include="WX\UI\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="WX\UI\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="WX\UI\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="WX\UI\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="WX\UI\assets\fonts\FontAwesome.otf" />
+    <Content Include="WX\UI\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="WX\UI\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="WX\UI\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="WX\UI\assets\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiBasi.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WXAppBasic.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WXMaster.Master.cs">
+      <DependentUpon>WXMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WXMaster.Master.designer.cs">
+      <DependentUpon>WXMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="wxmsg.ashx.cs">
+      <DependentUpon>wxmsg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WXQRManage.aspx.cs">
+      <DependentUpon>WXQRManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WXQRManage.aspx.designer.cs">
+      <DependentUpon>WXQRManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\bangding.aspx.cs">
+      <DependentUpon>bangding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\bangding.aspx.designer.cs">
+      <DependentUpon>bangding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\comment.aspx.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\comment.aspx.designer.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\comment_content.aspx.cs">
+      <DependentUpon>comment_content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\comment_content.aspx.designer.cs">
+      <DependentUpon>comment_content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\create_gongdan\create_gongdan.aspx.cs">
+      <DependentUpon>create_gongdan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\create_gongdan\create_gongdan.aspx.designer.cs">
+      <DependentUpon>create_gongdan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\create_gongdan\create_gongdan__success.aspx.cs">
+      <DependentUpon>create_gongdan__success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\create_gongdan\create_gongdan__success.aspx.designer.cs">
+      <DependentUpon>create_gongdan__success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\gongdan_server_info.aspx.cs">
+      <DependentUpon>gongdan_server_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\gongdan_server_info.aspx.designer.cs">
+      <DependentUpon>gongdan_server_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\re_login.aspx.cs">
+      <DependentUpon>re_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\re_login.aspx.designer.cs">
+      <DependentUpon>re_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\shouquan.aspx.cs">
+      <DependentUpon>shouquan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\shouquan.aspx.designer.cs">
+      <DependentUpon>shouquan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\question_click_info.aspx.cs">
+      <DependentUpon>question_click_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\question_click_info.aspx.designer.cs">
+      <DependentUpon>question_click_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\WXadmin_click_info.aspx.cs">
+      <DependentUpon>WXadmin_click_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\WXadmin_click_info.aspx.designer.cs">
+      <DependentUpon>WXadmin_click_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\WXadmin_href.aspx.cs">
+      <DependentUpon>WXadmin_href.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\WXadmin_href.aspx.designer.cs">
+      <DependentUpon>WXadmin_href.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\WXadmin_info.aspx.cs">
+      <DependentUpon>WXadmin_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\WXadmin_info.aspx.designer.cs">
+      <DependentUpon>WXadmin_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\WXadmin_paigong.aspx.cs">
+      <DependentUpon>WXadmin_paigong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\WXadmin_paigong.aspx.designer.cs">
+      <DependentUpon>WXadmin_paigong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\WXadmin_user.aspx.cs">
+      <DependentUpon>WXadmin_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\WXadmin_user.aspx.designer.cs">
+      <DependentUpon>WXadmin_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WX\zhuce.aspx.cs">
+      <DependentUpon>zhuce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WX\zhuce.aspx.designer.cs">
+      <DependentUpon>zhuce.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\本机测试.pubxml" />
+    <Content Include="UI\Style\iconfont.eot" />
+    <Content Include="UI\Style\iconfont.svg" />
+    <Content Include="UI\Style\iconfont.ttf" />
+    <Content Include="UI\Style\iconfont.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="wxmsg.ashx" />
+    <Content Include="WXMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{92e87534-7cc3-4f4c-8d91-d7610456850f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e072dc3a-1485-4e45-8b67-baad54382ad4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{5fa57010-0c21-4bf4-ade4-4fe27b7ed671}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataOperator\DataOperator.csproj">
+      <Project>{5a757148-64f7-4baf-941d-e47a1ac47c1b}</Project>
+      <Name>DataOperator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{52426e3d-8d13-46ae-adb8-1a50113dd04e}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WXInterface\WXInterface.csproj">
+      <Project>{c591dab5-9ce5-4b1a-a456-464d9ff173ef}</Project>
+      <Name>WXInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5341</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5341/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

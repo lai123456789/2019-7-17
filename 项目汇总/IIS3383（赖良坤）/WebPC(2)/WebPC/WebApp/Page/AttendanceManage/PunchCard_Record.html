@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-物料明细</title>
+    <link href="UI/css/PunchCard_Record.css" rel="stylesheet" />
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <script src="UI/Scripts/PunchCard_Record.js"></script>
+   
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <!--<div id="query_title">
+            <div class="query_content">        
+
+                <select id="twotype">
+                    <option value="全部">全部</option>
+                    <option value="user_id">工号</option>
+                    <option value="user_name">姓名</option>
+                </select>
+                <input type="text" id="twoval" value="" placeholder="请输入" style="display:none" />
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="name">程序名</option>
+
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="start_time">启动时间</option>
+                    <option value="exit_time">结束时间</option>
+                </select>
+                <div id="datetype_date" style="display:none">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid">-</div>
+                    <input id="enddate" type="date" value="" />
+                    
+                </div>
+
+                <select id="rn_time">
+                    <option value="全部">全部</option>
+                    <option value="run_time">开始运行时长</option>
+                    <option value="run_time">结束运行时长</option>
+                </select>
+                <div id="rn_time_val" style="display:none">
+                    <input id="startdate1" type="number" value="" style="float:left" onkeyup="if( ! /^d*(?:.d{0,2})?$/.test(this.value)){alert('只能输入数字，小数点后只能保留两位');this.value='';}" />
+                    <div class="mid">-</div>
+                    <input id="enddate1" type="number" value="" onkeyup="if( ! /^d*(?:.d{0,2})?$/.test(this.value)){alert('只能输入数字，小数点后只能保留两位');this.value='';}" />
+                    
+                </div>
+              
+                <div class="query_btn" style="">查询</div>
+
+            </div>
+        </div>-->
+        <div style="padding-bottom:10px;border-bottom:1px solid #eee;width:100%;background:white;margin-bottom:5px;">
+            <input type="text" class="form-control Print-Txt" placeholder="请输入要查询的机加分类代码或者名字" style="width:30%;display:inline-block" />
+            <button class="btn btn-success queryPrint-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">打卡记录</h3>
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            
+
+
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th_Print">
+                            <tr>
+                                
+                                <th class="contor" data-type="num">工号<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num">姓名<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num">部门<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num">职位<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num">时间<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num">工号<i class="iconfont">&#xe733;</i></th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb_Print"></tbody>
+                    </table>
+
+                </div>
+                <ul class="pagination" id="pagination_PringPwd"></ul>  <!--分页ul-->
+            </div>
+           
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1054 @@
+﻿#infodata{
+    margin-top: 1.3rem;
+    width: 9.8rem;
+    border: 1px solid #eee;
+    margin-left: 0.1rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.1rem;
+}
+
+#infodata > .rows1{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows1 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows1 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows2{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows2 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows2 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows3{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows3 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows3 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows4{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows4 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows4 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows4 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows5{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows5 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows5 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows5 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows6{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows6 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows6 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows6 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows7{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows7 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows7 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows7 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows8{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows8 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows8 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+
+#infodata > .rows8 > .right.status1{
+    color:red;
+}
+
+#infodata > .rows8 > .right.status2
+{
+    color:#00C6E8;
+}
+
+#infodata > .rows8 > .right.status3
+{
+    color: #FFA924;
+}
+
+#infodata > .rows8 > .right.status4
+{
+    color: #4EDC21;
+}
+
+#infodata > .rows8 > .right.status5
+{
+    color: #F72ADC;
+}
+
+
+
+#infodata > .rows8 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+#infodata > .rows9{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows9 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows9 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows9 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+#infodata > .rows10{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows10 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows10 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows10 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+#operation_btn1{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    background: #EA3D3D;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+    display: none;
+}
+
+#operation_btn1.contor{
+    display: block;
+}
+
+#operation_btn1 > .submit_btn{
+    width: 100%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+#operation_btn1:active{
+    background: #A51212;
+}
+
+
+
+#operation_btn2{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+    display: none;
+}
+
+#operation_btn2.contor{
+    display: block;
+}
+
+#operation_btn2 > .submit_btn1{
+    width: 50%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+    background: #4195F1;
+    float:left;
+    border-radius: 0.1rem 0 0 0.1rem;
+}
+
+#operation_btn2 > .submit_btn2{
+    width: 50%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+    background: #EA3D3D;
+    float:left;
+    border-radius: 0 0.1rem 0.1rem 0;
+}
+
+#operation_btn2 > .submit_btn1:active{
+    background: #0066D6;
+}
+
+#operation_btn2 > .submit_btn2:active{
+    background: #A51212;
+}
+
+
+#operation_btn3{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    background: #23B720;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+    display: none;
+}
+
+#operation_btn3.contor{
+    display: block;
+}
+
+#operation_btn3 > .submit_btn{
+    width: 100%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+#operation_btn3:active{
+    background: #10960D;
+}
+
+
+
+
+
+
+#operation_btn4{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    background: #D89E1B;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+    display: none;
+}
+
+#operation_btn4.contor{
+    display: block;
+}
+
+#operation_btn4 > .submit_btn{
+    width: 100%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+#operation_btn4:active{
+    background: #986C0A;
+}
+
+
+
+
+
+
+#operation_btn5{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    background: #D89E1B;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+    display: none;
+}
+
+#operation_btn5.contor{
+    display: block;
+}
+
+#operation_btn5 > .submit_btn{
+    width: 100%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+#operation_btn5:active{
+    background: #986C0A;
+}
+
+
+
+
+
+
+
+
+
+#operation_btn6{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    background: #D89E1B;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+    display: none;
+}
+
+#operation_btn6.contor{
+    display: block;
+}
+
+#operation_btn6 > .submit_btn{
+    width: 100%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+#operation_btn6:active{
+    background: #986C0A;
+}
+
+
+
+#undo_modal{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.2rem;
+    z-index: 400;
+    background: #fff;
+    transition: all 0.3s linear;
+    top: -4rem;
+}
+
+#undo_modal.contor{
+    margin: auto;
+    transition: all 0.3s linear;
+    top: 0;
+    bottom: 0;
+}
+
+#undo_modal > .content{
+    width: 100%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+#undo_modal > .bottom{
+    width: 100%;
+    height: 1.2rem;
+}
+
+#undo_modal > .bottom > .btn_cancel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    border-radius: 0 0 0 0.2rem;
+}
+
+#undo_modal > .bottom > .btn_sure{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #EA3D3D;
+    color: #fff;
+    border-radius: 0 0 0.2rem 0;
+}
+
+
+#undo_modal > .bottom > .btn_cancel:active
+{
+    background:#999;
+}
+
+#undo_modal > .bottom > .btn_sure:active{
+    background:#A51212;
+}
+
+
+
+#mask300{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: #000;
+    opacity: 0.45;
+    display:none;
+}
+
+#mask300.contor{
+    display:block;
+}
+
+
+
+
+#approval_modal{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.2rem;
+    z-index: 400;
+    background: #fff;
+    transition: all 0.3s linear;
+    top: -5rem;
+}
+
+#approval_modal.contor{
+    margin: auto;
+    transition: all 0.3s linear;
+    top: 0;
+    bottom: 0;
+}
+
+#approval_modal > .top_title{
+        width: 100%;
+    height: 1rem;
+}
+
+#approval_modal > .top_title > .left{
+    width: 2.4rem;
+    height: 100%;
+    text-align: left;
+    line-height: 1rem;
+    float: left;
+    padding-left: 0.3rem;
+}
+
+#approval_modal > .top_title > .right{
+    width: calc(100% - 2.4rem);
+    height: 100%;
+    line-height: 1rem;
+    float: left;
+}
+
+#approval_modal > .content{
+    width: 100%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+
+
+#approval_modal > .bottom{
+    width: 100%;
+    height: 1.2rem;
+}
+
+#approval_modal > .bottom > .btn_cancel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    border-radius: 0 0 0 0.2rem;
+}
+
+#approval_modal > .bottom > .btn_sure{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #23B720;
+    color: #fff;
+    border-radius: 0 0 0.2rem 0;
+}
+
+
+#approval_modal > .bottom > .btn_cancel:active
+{
+    background:#999;
+}
+
+#approval_modal > .label{
+    height: 1rem;
+    background: #fff;
+    line-height: 1rem;
+    text-align: center;
+
+}
+
+#approval_modal > .label > .label_1{
+    float: left;
+    width: 34%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    border: 1px solid #A8AFAD;
+    text-align: center;
+    margin-left: 11%;
+}
+
+#approval_modal > .label > .label_2{
+       float: left;
+    width: 34%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    border: 1px solid #A8AFAD;
+    text-align: center;
+    margin-left: 11%;
+}
+
+#approval_modal > .label > .label_1.contor{
+       border: 1px solid #15E5EC;
+       color: #15E5EC;
+}
+
+#approval_modal > .label > .label_2.contor{
+        border: 1px solid #15E5EC;
+        color: #15E5EC;
+}
+
+
+#approval_modal > .bottom > .btn_sure:active{
+    background:#10960D;
+}
+
+#selectcar_dummy{
+    width: calc(100% - 0.3rem);
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+#selectcar1_dummy{
+    width: calc(100% - 0.3rem);
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#remark{
+    width: 100%;
+    height: calc(100% - 0.3rem) !important;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+#remark1{
+    width: 100%;
+    height: calc(100% - 0.3rem) !important;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+
+#approval_remark{
+    width: 100%;
+    height: calc(100% - 0.3rem) !important;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+#approval_remark1{
+    width: 100%;
+    height: calc(100% - 0.3rem) !important;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+
+
+#approval_modal{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.2rem;
+    z-index: 400;
+    background: #fff;
+    transition: all 0.3s linear;
+    top: -5rem;
+}
+
+#approval_modal.contor{
+    margin: auto;
+    transition: all 0.3s linear;
+    top: 0;
+    bottom: 0;
+}
+
+#approval_modal > .top_title{
+        width: 100%;
+    height: 1rem;
+}
+
+#approval_modal > .top_title > .left{
+    width: 2.4rem;
+    height: 100%;
+    text-align: left;
+    line-height: 1rem;
+    float: left;
+    padding-left: 0.3rem;
+}
+
+#approval_modal > .top_title > .right{
+    width: calc(100% - 2.4rem);
+    height: 100%;
+    line-height: 1rem;
+    float: left;
+}
+
+#approval_modal > .content{
+    width: 100%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+
+
+#approval_modal > .bottom{
+    width: 100%;
+    height: 1.2rem;
+}
+
+#approval_modal > .bottom > .btn_cancel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    border-radius: 0 0 0 0.2rem;
+}
+
+#approval_modal > .bottom > .btn_sure{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #23B720;
+    color: #fff;
+    border-radius: 0 0 0.2rem 0;
+}
+
+
+#approval_modal > .bottom > .btn_cancel:active
+{
+    background:#999;
+}
+
+#approval_modal > .bottom > .btn_sure:active{
+    background:#10960D;
+}
+
+#selectcar_dummy{
+    width: calc(100% - 0.3rem);
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#operation_btn3{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    background: #23B720;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+    display: none;
+}
+
+#operation_btn3.contor{
+    display: block;
+}
+
+#operation_btn3 > .submit_btn{
+    width: 100%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+#operation_btn3:active{
+    background: #10960D;
+}
+
+#approval_moda2{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.2rem;
+    z-index: 400;
+    background: #fff;
+    transition: all 0.3s linear;
+    top: -5rem;
+}
+
+#approval_moda2.contor{
+    margin: auto;
+    transition: all 0.3s linear;
+    top: 0;
+    bottom: 0;
+}
+
+#approval_moda2 > .top_title{
+        width: 100%;
+    height: 1rem;
+}
+
+#approval_moda2 > .top_title > .left{
+    width: 2.4rem;
+    height: 100%;
+    text-align: left;
+    line-height: 1rem;
+    float: left;
+    padding-left: 0.3rem;
+}
+
+#approval_moda2 > .top_title > .right{
+    width: calc(100% - 2.4rem);
+    height: 100%;
+    line-height: 1rem;
+    float: left;
+}
+
+#approval_moda2 > .content{
+    width: 100%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+
+
+#approval_moda2 > .bottom{
+    width: 100%;
+    height: 1.2rem;
+}
+
+#approval_moda2 > .bottom > .btn_cancel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    border-radius: 0 0 0 0.2rem;
+}
+
+#approval_moda2 > .bottom > .btn_sure{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #23B720;
+    color: #fff;
+    border-radius: 0 0 0.2rem 0;
+}
+
+
+#approval_moda2 > .bottom > .btn_cancel:active
+{
+    background:#999;
+}
+
+#approval_moda2 > .bottom > .btn_sure:active{
+    background:#10960D;
+}

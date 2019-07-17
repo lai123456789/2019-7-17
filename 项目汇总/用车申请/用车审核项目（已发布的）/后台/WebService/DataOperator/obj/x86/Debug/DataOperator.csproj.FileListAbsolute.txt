@@ -1,0 +1,9 @@
+C:\Users\hp\Desktop\WebService\DataOperator\bin\x86\Debug\DataOperator.dll
+C:\Users\hp\Desktop\WebService\DataOperator\bin\x86\Debug\DataOperator.pdb
+C:\Users\hp\Desktop\WebService\DataOperator\obj\x86\Debug\DataOperator.dll
+C:\Users\hp\Desktop\WebService\DataOperator\obj\x86\Debug\DataOperator.pdb
+E:\WebService\DataOperator\bin\x86\Debug\DataOperator.dll
+E:\WebService\DataOperator\bin\x86\Debug\DataOperator.pdb
+E:\WebService\DataOperator\obj\x86\Debug\DataOperator.dll
+E:\WebService\DataOperator\obj\x86\Debug\DataOperator.pdb
+E:\WebService\DataOperator\obj\x86\Debug\DataOperator.csprojResolveAssemblyReference.cache

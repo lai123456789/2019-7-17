@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FBB3537-80AB-4A6F-852C-7437AD1C693A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Api\ExportExcel.aspx" />
+    <Content Include="Api\WebApi.aspx" />
+    <Content Include="assets\css\add-ons.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\climacons-font.css" />
+    <Content Include="assets\css\filetypes.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\glyphicons.css" />
+    <Content Include="assets\css\halflings.css" />
+    <Content Include="assets\css\jquery.mmenu.css" />
+    <Content Include="assets\css\social.css" />
+    <Content Include="assets\css\style.min.css" />
+    <Content Include="assets\fonts\climacons-webfont.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\ico\favicon.ico" />
+    <Content Include="assets\ico\flags\Brazil.png" />
+    <Content Include="assets\ico\flags\Germany.png" />
+    <Content Include="assets\ico\flags\India.png" />
+    <Content Include="assets\ico\flags\Russia.png" />
+    <Content Include="assets\ico\flags\Spain.png" />
+    <Content Include="assets\ico\flags\USA.png" />
+    <Content Include="assets\img\avatar.jpg" />
+    <Content Include="assets\img\avatar1.jpg" />
+    <Content Include="assets\img\avatar2.jpg" />
+    <Content Include="assets\img\avatar3.jpg" />
+    <Content Include="assets\img\avatar4.jpg" />
+    <Content Include="assets\img\avatar5.jpg" />
+    <Content Include="assets\img\avatar6.jpg" />
+    <Content Include="assets\img\avatar7.jpg" />
+    <Content Include="assets\img\browser-chrome-big.png" />
+    <Content Include="assets\img\browser-firefox-big.png" />
+    <Content Include="assets\img\browser-ie.png" />
+    <Content Include="assets\img\browser-opera.png" />
+    <Content Include="assets\img\browser-safari.png" />
+    <Content Include="assets\img\gallery\photo1.jpg" />
+    <Content Include="assets\img\gallery\photo10.jpg" />
+    <Content Include="assets\img\gallery\photo11.jpg" />
+    <Content Include="assets\img\gallery\photo12.jpg" />
+    <Content Include="assets\img\gallery\photo13.jpg" />
+    <Content Include="assets\img\gallery\photo14.jpg" />
+    <Content Include="assets\img\gallery\photo15.jpg" />
+    <Content Include="assets\img\gallery\photo2.jpg" />
+    <Content Include="assets\img\gallery\photo3.jpg" />
+    <Content Include="assets\img\gallery\photo4.jpg" />
+    <Content Include="assets\img\gallery\photo5.jpg" />
+    <Content Include="assets\img\gallery\photo6.jpg" />
+    <Content Include="assets\img\gallery\photo7.jpg" />
+    <Content Include="assets\img\gallery\photo8.jpg" />
+    <Content Include="assets\img\gallery\photo9.jpg" />
+    <Content Include="assets\img\logo1.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\core.min.js" />
+    <Content Include="assets\js\jquery-2.1.1.min.js" />
+    <Content Include="assets\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="assets\js\jquery.mmenu.min.js" />
+    <Content Include="assets\js\pages\calendar.js" />
+    <Content Include="assets\js\pages\charts-flot.js" />
+    <Content Include="assets\js\pages\charts-other.js" />
+    <Content Include="assets\js\pages\charts-xcharts.js" />
+    <Content Include="assets\js\pages\form-dropzone.js" />
+    <Content Include="assets\js\pages\form-wizard.js" />
+    <Content Include="assets\js\pages\form-x-editable-demo.js" />
+    <Content Include="assets\js\pages\form-x-editable.js" />
+    <Content Include="assets\js\pages\index.js" />
+    <Content Include="assets\js\SmoothScroll.js" />
+    <Content Include="assets\plugins\autosize\jquery.autosize.min.js" />
+    <Content Include="assets\plugins\chosen\js\chosen.jquery.min.js" />
+    <Content Include="assets\plugins\d3\d3.min.js" />
+    <Content Include="assets\plugins\datatables\js\dataTables.bootstrap.min.js" />
+    <Content Include="assets\plugins\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="assets\plugins\dropzone\css\dropzone.css" />
+    <Content Include="assets\plugins\dropzone\images\spritemap.png" />
+    <Content Include="assets\plugins\dropzone\js\dropzone.min.js" />
+    <Content Include="assets\plugins\easypiechart\js\jquery.easypiechart.min.js" />
+    <Content Include="assets\plugins\editable\css\bootstrap-editable.css" />
+    <Content Include="assets\plugins\editable\inputs-ext\address\address.min.js" />
+    <Content Include="assets\plugins\editable\inputs-ext\typeaheadjs\typeaheadjs.min.js" />
+    <Content Include="assets\plugins\editable\js\bootstrap-editable.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.pie.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.resize.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.spline.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.stack.min.js" />
+    <Content Include="assets\plugins\flot\jquery.flot.time.min.js" />
+    <Content Include="assets\plugins\fullcalendar\css\fullcalendar.css" />
+    <Content Include="assets\plugins\fullcalendar\js\fullcalendar.min.js" />
+    <Content Include="assets\plugins\gauge\gauge.min.js" />
+    <Content Include="assets\plugins\jquery-ui\css\jquery-ui-1.10.4.min.css" />
+    <Content Include="assets\plugins\jquery-ui\js\jquery-ui-1.10.4.min.js" />
+    <Content Include="assets\plugins\justgage\justgage.1.0.1.min.js" />
+    <Content Include="assets\plugins\jvectormap\css\jquery-jvectormap-1.2.2.css" />
+    <Content Include="assets\plugins\jvectormap\js\gdp-data.js" />
+    <Content Include="assets\plugins\jvectormap\js\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="assets\plugins\jvectormap\js\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="assets\plugins\maskedinput\jquery.maskedinput.min.js" />
+    <Content Include="assets\plugins\mockjax\jquery.mockjax.min.js" />
+    <Content Include="assets\plugins\moment\moment.min.js" />
+    <Content Include="assets\plugins\morris\css\morris.css" />
+    <Content Include="assets\plugins\morris\js\morris.min.js" />
+    <Content Include="assets\plugins\placeholder\jquery.placeholder.min.js" />
+    <Content Include="assets\plugins\raphael\raphael.min.js" />
+    <Content Include="assets\plugins\select2\js\select2.min.js" />
+    <Content Include="assets\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="assets\plugins\touchpunch\jquery.ui.touch-punch.min.js" />
+    <Content Include="assets\plugins\wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="assets\plugins\xcharts\css\xcharts.min.css" />
+    <Content Include="assets\plugins\xcharts\js\xcharts.min.js" />
+    <Content Include="calendar.html" />
+    <Content Include="chart-flot.html" />
+    <Content Include="chart-other.html" />
+    <Content Include="chart-xchart.html" />
+    <Content Include="form-dropzone.html" />
+    <Content Include="form-elements.html" />
+    <Content Include="form-wizard.html" />
+    <Content Include="form-x-editable.html" />
+    <Content Include="gallery.html" />
+    <Content Include="HtmlPage.html" />
+    <Content Include="icons-climacons.html" />
+    <Content Include="icons-font-awesome.html" />
+    <Content Include="index.html" />
+    <Content Include="page-404.html" />
+    <Content Include="page-500.html" />
+    <Content Include="page-activity.html" />
+    <Content Include="page-inbox-compose.html" />
+    <Content Include="page-inbox-message.html" />
+    <Content Include="page-inbox.html" />
+    <Content Include="page-invoice.html" />
+    <Content Include="page-lockscreen.html" />
+    <Content Include="page-lockscreen2.html" />
+    <Content Include="page-login.html" />
+    <Content Include="page-pricing-tables.html" />
+    <Content Include="page-profile.html" />
+    <Content Include="page-register.html" />
+    <Content Include="Page\ActivityBenefit\AB0001.html" />
+    <Content Include="Page\ActivityBenefit\AB0002.html" />
+    <Content Include="Page\ActivityBenefit\UI\Script\AB0001.js" />
+    <Content Include="Page\ActivityBenefit\UI\Script\AB0002.js" />
+    <Content Include="Page\ActivityBenefit\UI\Style\AB0001.css" />
+    <Content Include="Page\ActivityBenefit\UI\Style\AB0002.css" />
+    <Content Include="Page\AttManage\AttDevice.html" />
+    <Content Include="Page\AttManage\AttLogs.html" />
+    <Content Include="Page\AttManage\UI\css\AttDevice.css" />
+    <Content Include="Page\AttManage\UI\css\AttLogs.css" />
+    <Content Include="Page\AttManage\UI\Scripts\AttDevice.js" />
+    <Content Include="Page\AttManage\UI\Scripts\AttLogs.js" />
+    <Content Include="Page\BasicData\DepartmentArchives.html" />
+    <Content Include="Page\BasicData\ErrorTypeDefine.html" />
+    <Content Include="Page\BasicData\PersonalInfo.html" />
+    <Content Include="Page\BasicData\UI\Image\add.png" />
+    <Content Include="Page\BasicData\UI\Script\DepartmentArchives.js" />
+    <Content Include="Page\BasicData\UI\Script\ErrorTypeDefine.js" />
+    <Content Include="Page\BasicData\UI\Script\PersonalInfo.js" />
+    <Content Include="Page\BasicData\UI\Script\WorkCalendar.js" />
+    <Content Include="Page\BasicData\UI\Style\DepartmentArchives.css" />
+    <Content Include="Page\BasicData\UI\Style\ErrorTypeDefine.css" />
+    <Content Include="Page\BasicData\UI\Style\PersonalInfo.css" />
+    <Content Include="Page\BasicData\UI\Style\WorkCalendar.css" />
+    <Content Include="Page\BasicData\WorkCalendar.html" />
+    <Content Include="Page\Console\BusinessNotifySetting.html" />
+    <Content Include="Page\Console\ErrorHandlingUser.html" />
+    <Content Include="Page\Console\PageManage.html" />
+    <Content Include="Page\Console\RoleAuthority.html" />
+    <Content Include="Page\Console\RoleExcel.html" />
+    <Content Include="Page\Console\RoleWXAuthority.html" />
+    <Content Include="Page\Console\TableFieldSetting.html" />
+    <Content Include="Page\Console\UI\Script\BusinessNotifySetting.js" />
+    <Content Include="Page\Console\UI\Script\ErrorHandlingUser.js" />
+    <Content Include="Page\Console\UI\Script\PageManage.js" />
+    <Content Include="Page\Console\UI\Script\RoleAuthority.js" />
+    <Content Include="Page\Console\UI\Script\RoleExcel.js" />
+    <Content Include="Page\Console\UI\Script\RoleWXAuthority.js" />
+    <Content Include="Page\Console\UI\Script\TableFieldSetting.js" />
+    <Content Include="Page\Console\UI\Script\UserManage.js" />
+    <Content Include="Page\Console\UI\Script\WXPageManage.js" />
+    <Content Include="Page\Console\UI\Style\BusinessNotifySetting.css" />
+    <Content Include="Page\Console\UI\Style\ErrorHandlingUser.css" />
+    <Content Include="Page\Console\UI\Style\PageManage.css" />
+    <Content Include="Page\Console\UI\Style\RoleAuthority.css" />
+    <Content Include="Page\Console\UI\Style\RoleExcel.css" />
+    <Content Include="Page\Console\UI\Style\RoleWXAuthority.css" />
+    <Content Include="Page\Console\UI\Style\TableFieldSetting.css" />
+    <Content Include="Page\Console\UI\Style\UserManage.css" />
+    <Content Include="Page\Console\UI\Style\WXPageManage.css" />
+    <Content Include="Page\Console\UserManage.html" />
+    <Content Include="Page\Console\WXPageManage.html" />
+    <Content Include="Page\DeviceManage\DeviceManage.html" />
+    <Content Include="Page\DeviceManage\P0016.html" />
+    <Content Include="Page\DeviceManage\UI\Scripts\DeviceManage.js" />
+    <Content Include="Page\DeviceManage\UI\Scripts\P0016.js" />
+    <Content Include="Page\DeviceManage\UI\Style\DeviceManage.css" />
+    <Content Include="Page\DeviceManage\UI\Style\P0016.css" />
+    <Content Include="Page\index.html" />
+    <Content Include="Page\Login.html" />
+    <Content Include="Page\ProductionManage\M0001.html" />
+    <Content Include="Page\ProductionManage\M0002.html" />
+    <Content Include="Page\ProductionManage\M0003.html" />
+    <Content Include="Page\ProductionManage\M0004.html" />
+    <Content Include="Page\ProductionManage\M0005.html" />
+    <Content Include="Page\ProductionManage\M0006.html" />
+    <Content Include="Page\ProductionManage\M0007.html" />
+    <Content Include="Page\ProductionManage\M0008.html" />
+    <Content Include="Page\ProductionManage\M0009.html" />
+    <Content Include="Page\ProductionManage\M0010.html" />
+    <Content Include="Page\ProductionManage\M0011.html" />
+    <Content Include="Page\ProductionManage\M0012.html" />
+    <Content Include="Page\ProductionManage\PF0002.html" />
+    <Content Include="Page\ProductionManage\PF0001.html" />
+    <Content Include="Page\ProductionManage\UI\Script\M0001.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0002.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0003.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0004.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0005.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0006.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0007.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0008.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0009.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0010.js" />
+    <Content Include="Page\ProductionManage\UI\Script\M0011.js" />
+    <Content Include="Page\ProductionManage\UI\Script\PF0002.js" />
+    <Content Include="Page\ProductionManage\UI\Script\PF0001.js" />
+    <Content Include="Page\ProductionManage\UI\Style\M0001.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0002.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0003.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0004.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0005.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0006.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0007.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0008.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0009.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0010.css" />
+    <Content Include="Page\ProductionManage\UI\Style\M0011.css" />
+    <Content Include="Page\Machining\M0001.html" />
+    <Content Include="Page\Machining\M0010.html" />
+    <Content Include="Page\Machining\M0002.html" />
+    <Content Include="Page\Machining\M0003.html" />
+    <Content Include="Page\Machining\M0004.html" />
+    <Content Include="Page\Machining\M0005.html" />
+    <Content Include="Page\Machining\M0006.html" />
+    <Content Include="Page\Machining\M0007.html" />
+    <Content Include="Page\Machining\M0008.html" />
+    <Content Include="Page\Machining\M0009.html" />
+    <Content Include="Page\Machining\M0011.html" />
+    <Content Include="Page\Machining\UI\Script\M0001.js" />
+    <Content Include="Page\Machining\UI\Script\M0010.js" />
+    <Content Include="Page\Machining\UI\Script\M0002.js" />
+    <Content Include="Page\Machining\UI\Script\M0003.js" />
+    <Content Include="Page\Machining\UI\Script\M0004.js" />
+    <Content Include="Page\Machining\UI\Script\M0005.js" />
+    <Content Include="Page\Machining\UI\Script\M0006.js" />
+    <Content Include="Page\Machining\UI\Script\M0007.js" />
+    <Content Include="Page\Machining\UI\Script\M0008.js" />
+    <Content Include="Page\Machining\UI\Script\M0009.js" />
+    <Content Include="Page\Machining\UI\Script\M0011.js" />
+    <Content Include="Page\Machining\UI\Style\M0001.css" />
+    <Content Include="Page\Machining\UI\Style\M0010.css" />
+    <Content Include="Page\Machining\UI\Style\M0002.css" />
+    <Content Include="Page\Machining\UI\Style\M0003.css" />
+    <Content Include="Page\Machining\UI\Style\M0004.css" />
+    <Content Include="Page\Machining\UI\Style\M0005.css" />
+    <Content Include="Page\Machining\UI\Style\M0006.css" />
+    <Content Include="Page\Machining\UI\Style\M0007.css" />
+    <Content Include="Page\Machining\UI\Style\M0008.css" />
+    <Content Include="Page\Machining\UI\Style\M0009.css" />
+    <Content Include="Page\Machining\UI\Style\M0011.css" />
+    <Content Include="Page\NotifySetting\BusinessNotify.html" />
+    <Content Include="Page\NotifySetting\SalesNotify.html" />
+    <Content Include="Page\NotifySetting\UI\Scripts\BusinessNotify.js" />
+    <Content Include="Page\NotifySetting\UI\Scripts\SalesNotify.js" />
+    <Content Include="Page\NotifySetting\UI\Style\BusinessNotify.css" />
+    <Content Include="Page\NotifySetting\UI\Style\SalesNotify.css" />
+    <Content Include="Page\OrderManage\D0001.html" />
+    <Content Include="Page\OrderManage\D0001Log.html" />
+    <Content Include="Page\OrderManage\D0002.html" />
+    <Content Include="Page\OrderManage\D0003.html" />
+    <Content Include="Page\OrderManage\D0004.html" />
+    <Content Include="Page\OrderManage\D0005.html" />
+    <Content Include="Page\OrderManage\D0006.html" />
+    <Content Include="Page\OrderManage\D0007.html" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0001.js" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0001Log.js" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0002.js" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0003.js" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0004.js" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0005.js" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0006.js" />
+    <Content Include="Page\OrderManage\UI\Scripts\D0007.js" />
+    <Content Include="Page\OrderManage\UI\Style\D0001.css" />
+    <Content Include="Page\OrderManage\UI\Style\D0001Log.css" />
+    <Content Include="Page\OrderManage\UI\Style\D0002.css" />
+    <Content Include="Page\OrderManage\UI\Style\D0003.css" />
+    <Content Include="Page\OrderManage\UI\Style\D0004.css" />
+    <Content Include="Page\OrderManage\UI\Style\D0005.css" />
+    <Content Include="Page\OrderManage\UI\Style\D0006.css" />
+    <Content Include="Page\OrderManage\UI\Style\D0007.css" />
+    <Content Include="Page\ProductionManage\UI\Style\PF0002.css" />
+    <Content Include="Page\ProductionManage\UI\Style\PF0001.css" />
+    <Content Include="Page\ProjectManage\P0001.html" />
+    <Content Include="Page\ProjectManage\P0002.html" />
+    <Content Include="Page\ProjectManage\P0003.html" />
+    <Content Include="Page\ProjectManage\P0004.html" />
+    <Content Include="Page\ProjectManage\P0005.html" />
+    <Content Include="Page\ProjectManage\P0006.html" />
+    <Content Include="Page\ProjectManage\P0007.html" />
+    <Content Include="Page\ProjectManage\P0008.html" />
+    <Content Include="Page\ProjectManage\P0009.html" />
+    <Content Include="Page\ProjectManage\P0010.html" />
+    <Content Include="Page\ProjectManage\P0011.html" />
+    <Content Include="Page\ProjectManage\P0012.html" />
+    <Content Include="Page\ProjectManage\P0013.html" />
+    <Content Include="Page\ProjectManage\P0014.html" />
+    <Content Include="Page\ProjectManage\P0015.html" />
+    <Content Include="Page\ProjectManage\P0016.html" />
+    <Content Include="Page\ProjectManage\P0017.html" />
+    <Content Include="Page\ProjectManage\P0018.html" />
+    <Content Include="Page\ProjectManage\UI\Script\P0001.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0002.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0003.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0004.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0005.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0006.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0007.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0008.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0009.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0010.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0011.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0012.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0013.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0014.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0015.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0016.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0017.js" />
+    <Content Include="Page\ProjectManage\UI\Script\P0018.js" />
+    <Content Include="Page\ProjectManage\UI\Script\split.min.js" />
+    <Content Include="Page\ProjectManage\UI\Style\P0001.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0002.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0003.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0004.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0005.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0006.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0007.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0008.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0009.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0010.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0011.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0012.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0013.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0014.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0015.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0016.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0017.css" />
+    <Content Include="Page\ProjectManage\UI\Style\P0018.css" />
+    <Content Include="Page\ReportTable\R0007.html" />
+    <Content Include="Page\ReportTable\R0002.html" />
+    <Content Include="Page\ReportTable\R0003.html" />
+    <Content Include="Page\ReportTable\R0004.html" />
+    <Content Include="Page\ReportTable\R0005.html" />
+    <Content Include="Page\ReportTable\R0006.html" />
+    <Content Include="Page\ReportTable\R0008.html" />
+    <Content Include="Page\ReportTable\R0009.html" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0002.js" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0003.js" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0004.js" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0005.js" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0006.js" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0007.js" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0008.js" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0009.js" />
+    <Content Include="Page\ReportTable\UI\Style\R0002.css" />
+    <Content Include="Page\ReportTable\UI\Style\R0003.css" />
+    <Content Include="Page\ReportTable\UI\Style\R0004.css" />
+    <Content Include="Page\ReportTable\UI\Style\R0005.css" />
+    <Content Include="Page\ReportTable\UI\Style\R0006.css" />
+    <Content Include="Page\ReportTable\UI\Style\R0007.css" />
+    <Content Include="Page\ReportTable\UI\Style\R0008.css" />
+    <Content Include="Page\ReportTable\UI\Style\R0009.css" />
+    <Content Include="Page\Spectaculars\S0002.html" />
+    <Content Include="Page\Spectaculars\S0003.html" />
+    <Content Include="Page\Spectaculars\S0004.html" />
+    <Content Include="Page\Spectaculars\UI\Scripts\S0002.js" />
+    <Content Include="Page\Spectaculars\UI\Scripts\S0003.js" />
+    <Content Include="Page\Spectaculars\UI\Scripts\S0004.js" />
+    <Content Include="Page\Spectaculars\UI\Style\S0002.css" />
+    <Content Include="Page\Spectaculars\UI\Style\S0003.css" />
+    <Content Include="Page\Spectaculars\UI\Style\S0004.css" />
+    <Content Include="Page\ReportTable\R0001.html" />
+    <Content Include="Page\ReportTable\UI\Scripts\R0001.js" />
+    <Content Include="Page\ReportTable\UI\Style\R0001.css" />
+    <Content Include="Page\Spectaculars\S0001.html" />
+    <Content Include="Page\Spectaculars\UI\Scripts\S0001.js" />
+    <Content Include="Page\Spectaculars\UI\Style\S0001.css" />
+    <Content Include="Page\Task\AssemblyError.html" />
+    <Content Include="Page\Task\AssemblyErrornow.html" />
+    <Content Include="Page\Task\input-autocomplete.js" />
+    <Content Include="Page\Task\MyAcceptTastList.html" />
+    <Content Include="Page\Task\MyAcceptTastListnow.html" />
+    <Content Include="Page\Task\MyRemind.html" />
+    <Content Include="Page\Task\MyTastList.html" />
+    <Content Include="Page\Task\MyTastListnow.html" />
+    <Content Include="Page\Task\QueryAssemblyErrorInfo.html" />
+    <Content Include="Page\Task\UI\Script\AssemblyError.js" />
+    <Content Include="Page\Task\UI\Script\AssemblyErrornow.js" />
+    <Content Include="Page\Task\UI\Script\colResizable-1.6.min.js" />
+    <Content Include="Page\Task\UI\Script\jquery.js" />
+    <Content Include="Page\Task\UI\Script\MyRemind.js" />
+    <Content Include="Page\Task\UI\Script\MyTastList.js" />
+    <Content Include="Page\Task\UI\Script\MyTastListnow.js" />
+    <Content Include="Page\Task\UI\Script\QueryAssemblyErrorInfo.js" />
+    <Content Include="Page\Task\UI\Script\split.min.js" />
+    <Content Include="Page\Task\UI\Style\AssemblyError.css" />
+    <Content Include="Page\Task\UI\Style\AssemblyErrornow.css" />
+    <Content Include="Page\Task\UI\Style\MyRemind.css" />
+    <Content Include="Page\Task\UI\Style\MyTastList.css" />
+    <Content Include="Page\Task\UI\Style\MyTastListnow.css" />
+    <Content Include="Page\Task\UI\Style\QueryAssemblyErrorInfo.css" />
+    <Content Include="Page\Test.html" />
+    <Content Include="Page\UI\Script\index.js" />
+    <Content Include="Page\UI\Script\Login.js" />
+    <Content Include="Page\UI\Style\index.css" />
+    <Content Include="Page\UI\Style\Login.css" />
+    <None Include="Properties\PublishProfiles\tttt.pubxml" />
+    <None Include="Properties\PublishProfiles\信息化平台—本地前端.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到188.pubxml" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="table.html" />
+    <Content Include="TestHtmlPage.html" />
+    <Content Include="typography.html" />
+    <Content Include="ui-buttons.html" />
+    <Content Include="ui-elements.html" />
+    <Content Include="ui-nestable-list.html" />
+    <Content Include="ui-panels.html" />
+    <Content Include="ui-sliders-progress.html" />
+    <Content Include="UI\Image\head.jpg" />
+    <Content Include="UI\Image\loading.gif" />
+    <Content Include="UI\Image\logo.ico" />
+    <Content Include="UI\Image\logo.png" />
+    <Content Include="UI\Image\logo_head.png" />
+    <Content Include="UI\Image\异常.png" />
+    <Content Include="UI\Scripts\Basic.js" />
+    <Content Include="UI\Scripts\data.js" />
+    <Content Include="UI\Scripts\DateFormat.js" />
+    <Content Include="UI\Scripts\demo.js" />
+    <Content Include="UI\Scripts\dialog.js" />
+    <Content Include="UI\Scripts\Echarts\echarts.common.min.js" />
+    <Content Include="UI\Scripts\Echarts\echarts.js" />
+    <Content Include="UI\Scripts\Echarts\echarts.min.js" />
+    <Content Include="UI\Scripts\Echarts\echarts.simple.min.js" />
+    <Content Include="UI\Scripts\ExcelManage.js" />
+    <Content Include="UI\Scripts\freeze-table.js" />
+    <Content Include="UI\Scripts\input-autocomplete.js" />
+    <Content Include="UI\Scripts\jquery-1.11.3.min.js" />
+    <Content Include="UI\Scripts\jquery-ui.min.js" />
+    <Content Include="UI\Scripts\jquery.ResizableColumns.js" />
+    <Content Include="UI\Scripts\Loading.js" />
+    <Content Include="UI\Scripts\pagination.min.js" />
+    <Content Include="UI\Scripts\store.js" />
+    <Content Include="UI\Scripts\superTables.js" />
+    <Content Include="UI\Scripts\sweetalert2.js" />
+    <Content Include="UI\Scripts\sweetalert2.min.js" />
+    <Content Include="UI\Scripts\TableSetting.js" />
+    <Content Include="UI\Style\Basic.css" />
+    <Content Include="UI\Style\iconfont.css" />
+    <Content Include="UI\Style\iconfont.svg" />
+    <Content Include="UI\Style\input-autocomplete.css" />
+    <Content Include="UI\Style\jquery.resizableColumns.css" />
+    <Content Include="UI\Style\Loading.css" />
+    <Content Include="UI\Style\style.css" />
+    <Content Include="UI\Style\stylecheckbox.css" />
+    <Content Include="UI\Style\superTables.css" />
+    <Content Include="UI\Style\sweetalert2.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="widgets.html" />
+    <Content Include="UI\Style\iconfont.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\ExportExcel.aspx.cs">
+      <DependentUpon>ExportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Api\ExportExcel.aspx.designer.cs">
+      <DependentUpon>ExportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Api\WebApi.aspx.cs">
+      <DependentUpon>WebApi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Api\WebApi.aspx.designer.cs">
+      <DependentUpon>WebApi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\climacons-webfont.eot" />
+    <Content Include="assets\fonts\climacons-webfont.ttf" />
+    <Content Include="assets\fonts\climacons-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UI\Style\iconfont.eot" />
+    <Content Include="UI\Style\iconfont.ttf" />
+    <Content Include="UI\Style\iconfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{6ee8bbcd-f2c4-49a4-ac5c-bebac1dbebd1}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{56049657-6f37-4e7a-87e6-47698a049b16}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{7860fb0e-a22b-4299-a32b-781c76d4ab81}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Api\Excel\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62049/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

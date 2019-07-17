@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-我的任务列表</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190324"></script>
+    <link href="/Page/Task/UI/Style/QueryAssemblyErrorInfo.css" rel="stylesheet" />
+    <script src="/Page/Task/UI/Script/QueryAssemblyErrorInfo.js?20190307"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        
+        <div class="panel panel-default" id="datalist">
+            <div id="replydetails">
+
+                <!--<div class="centre">
+                    <div class="showdate">2019/03/10 15:54</div>
+                </div>
+
+                <div class="right">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">陈良忠</div>
+                            <div class="account">3380</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了哗啦呼啦哗啦</div>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">林展浩</div>
+                            <div class="account">3350</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了</div>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">林展浩</div>
+                            <div class="account">3350</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了哗啦呼啦哗啦</div>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">林展浩</div>
+                            <div class="account">3350</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了</div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">陈良忠</div>
+                            <div class="account">3380</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了哗啦呼啦哗啦</div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">陈良忠</div>
+                            <div class="account">3380</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了哗啦呼啦哗啦</div>
+                    </div>
+                </div>
+
+                <div class="centre">
+                    <div class="showdate">2019/03/10 16:54</div>
+                </div>
+
+                <div class="right">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">陈良忠</div>
+                            <div class="account">3380</div>
+                        </div>
+                        <div class="img">
+                            <img src="/UI/Image/head.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">陈良忠</div>
+                            <div class="account">3380</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了哗啦呼啦哗啦</div>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">林展浩</div>
+                            <div class="account">3350</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了哗啦呼啦哗啦</div>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">林展浩</div>
+                            <div class="account">3350</div>
+                        </div>
+                        <div class="img">
+                            <img src="/UI/Image/head.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="content">
+                        <div class="userinfo">
+                            <div class="username">陈良忠</div>
+                            <div class="account">3380</div>
+                        </div>
+                        <div class="msg">测试一下<br />这里厉害了哗啦呼啦哗啦</div>
+                    </div>
+                </div>-->
+
+
+
+            </div>
+            <div id="replyoperation">
+                <div class="left">
+                    <i class="iconfont">&#xe679;</i>
+                </div>
+                <div class="mid">
+                    <textarea></textarea>
+                </div>
+                <div class="right">
+                    <div class="sure_ok">提交</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist1">
+            <div class="panel-heading">
+                <h3 class="panel-title"></h3>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th1">
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb1">
+                            <!--<tr>
+                                <td>PJ</td>
+                                <td>190001002</td>
+                            </tr>
+                            <tr>
+                                <td>名称</td>
+                                <td>夹具-DKBA44324715-手机-Vogue 整机指纹和压感半自动测试夹具箱体部分标准架(非标_F-A_12)</td>
+                            </tr>
+                            <tr>
+                                <td>异常提交时间</td>
+                                <td>2019/3/10 11:45:04</td>
+                            </tr>
+                            <tr>
+                                <td>异常提交人</td>
+                                <td>潘锦勇</td>
+                            </tr>
+                            <tr>
+                                <td>异常分类</td>
+                                <td>其他异常</td>
+                            </tr>
+                            <tr>
+                                <td>异常原因</td>
+                                <td>测试一下数据</td>
+                            </tr>
+                            <tr>
+                                <td>异常工序</td>
+                                <td>接线</td>
+                            </tr>
+                            <tr>
+                                <td>工序负责人</td>
+                                <td>陈良忠,向光安,林展浩,易玉武,唐志东</td>
+                            </tr>
+                            <tr>
+                                <td>异常负责人</td>
+                                <td>陈良忠</td>
+                            </tr>
+                            <tr>
+                                <td>异常处理人</td>
+                                <td>林展浩</td>
+                            </tr>
+                            <tr>
+                                <td>异常结束时间</td>
+                                <td></td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="WorkDispatching" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <img src="" />
+        </div>
+    </div>
+
+    <input id="inputimg" type="file" style="display: none" />
+    <img id="divPartImgs" style="display: none" />
+</body>
+</html>

@@ -1,0 +1,838 @@
+﻿错误时间 : 2019-01-29 08:12:11
+错误对象 : Oracle.DataAccess
+异常方法 : Void .ctor(System.String, Oracle.DataAccess.Client.OracleDbType)
+错误信息 : 指定的参数已超出有效值的范围。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleParameter..ctor(String parameterName, OracleDbType oraType)
+   在 Oracle.DataAccess.Client.OracleParameterCollection.Add(String name, OracleDbType dbType)
+   在 DataOperator.OracleDBO.FillCmdParam(OracleCommand& MyComm, OracleCmdParam[] cmdParm) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 324
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 385
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:12:44
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01722: 无效数字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:14:23
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01722: 无效数字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:18:44
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01722: 无效数字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:22:40
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01722: 无效数字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:24:49
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01722: 无效数字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:25:00
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01722: 无效数字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:25:13
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01722: 无效数字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:30:36
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:30:44
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:30:53
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:31:41
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:34:10
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:40:08
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:40:15
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:40:25
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:40:36
+错误对象 : mscorlib
+异常方法 : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+错误信息 : 输入字符串的格式不正确。
+堆栈内容 : 
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ToInt32(Object value)
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind_Int32()
+   在 Oracle.DataAccess.Client.OracleParameter.PreBind(OracleConnection conn, IntPtr errCtx, Int32 arraySize)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:41:12
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:41:43
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:41:48
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:41:51
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:42:09
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:50:08
+错误对象 : Oracle.DataAccess
+异常方法 : Void .ctor(System.String, Oracle.DataAccess.Client.OracleDbType)
+错误信息 : 指定的参数已超出有效值的范围。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleParameter..ctor(String parameterName, OracleDbType oraType)
+   在 Oracle.DataAccess.Client.OracleParameterCollection.Add(String name, OracleDbType dbType)
+   在 DataOperator.OracleDBO.FillCmdParam(OracleCommand& MyComm, OracleCmdParam[] cmdParm) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 324
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 385
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:50:24
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01745: 无效的主机/绑定变量名
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:51:29
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01745: 无效的主机/绑定变量名
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:52:05
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:52:27
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:52:40
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:53:49
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:53:52
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:54:01
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 08:54:12
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:00:54
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:04:19
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:04:47
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:04:51
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:12:01
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:12:02
+错误对象 : Oracle.DataAccess
+异常方法 : Void Commit()
+错误信息 : 对象的当前状态使该操作无效。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleTransaction.Commit()
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:13:06
+错误对象 : DataOperator
+异常方法 : Void Commit()
+错误信息 : 未将对象引用设置到对象的实例。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.Commit() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 237
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:15:57
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01745: 无效的主机/绑定变量名
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:16:46
+错误对象 : Oracle.DataAccess
+异常方法 : Void .ctor(System.String, Oracle.DataAccess.Client.OracleDbType)
+错误信息 : 指定的参数已超出有效值的范围。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleParameter..ctor(String parameterName, OracleDbType oraType)
+   在 Oracle.DataAccess.Client.OracleParameterCollection.Add(String name, OracleDbType dbType)
+   在 DataOperator.OracleDBO.FillCmdParam(OracleCommand& MyComm, OracleCmdParam[] cmdParm) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 324
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 385
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:17:09
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01745: 无效的主机/绑定变量名
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:17:35
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01745: 无效的主机/绑定变量名
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:19:37
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01747: user.table.column, table.column 或列说明无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:20:31
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00917: 缺失逗号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:21:00
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01858: 在要求输入数字处找到非数字字符
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:21:15
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01745: 无效的主机/绑定变量名
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:23:01
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:23:18
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:23:42
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 09:23:45
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 11:50:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 11:51:02
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 11:51:07
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 11:51:12
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 11:52:16
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 13:56:50
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00923: 未找到要求的 FROM 关键字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 13:59:12
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00923: 未找到要求的 FROM 关键字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 13:59:15
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00923: 未找到要求的 FROM 关键字
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 14:01:31
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 14:07:52
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 14:08:45
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01008: 并非所有变量都已绑定
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   在 Oracle.DataAccess.Client.OracleDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 737
+
+**********************************************************************
+
+错误时间 : 2019-01-29 14:14:34
+错误对象 : Oracle.DataAccess
+异常方法 : Void .ctor(System.String, Oracle.DataAccess.Client.OracleDbType)
+错误信息 : 指定的参数已超出有效值的范围。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleParameter..ctor(String parameterName, OracleDbType oraType)
+   在 Oracle.DataAccess.Client.OracleParameterCollection.Add(String name, OracleDbType dbType)
+   在 DataOperator.OracleDBO.FillCmdParam(OracleCommand& MyComm, OracleCmdParam[] cmdParm) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 324
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 531
+
+**********************************************************************
+
+错误时间 : 2019-01-29 14:14:34
+错误对象 : Oracle.DataAccess
+异常方法 : Void .ctor(System.String, Oracle.DataAccess.Client.OracleDbType)
+错误信息 : 指定的参数已超出有效值的范围。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 536
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-01-29 16:00:38
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01745: 无效的主机/绑定变量名
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 16:01:16
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-01036: 非法的变量名/编号
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 17:33:01
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00904: "USERNAME": 标识符无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-01-29 17:33:09
+错误对象 : Oracle Data Provider for .NET
+异常方法 : Void HandleErrorHelper(Int32, Oracle.DataAccess.Client.OracleConnection, IntPtr, Oracle.DataAccess.Client.OpoSqlValCtx*, System.Object, System.String, Boolean)
+错误信息 : ORA-00904: "USERNAME": 标识符无效
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+

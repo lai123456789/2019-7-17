@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-任务消息</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190324"></script>
+    <link href="/Page/Task/UI/Style/AssemblyError.css" rel="stylesheet" />
+    <script src="/Page/Task/UI/Script/AssemblyError.js"></script>
+    <!--<script src="/Page/Task/UI/Script/jquery.js"></script>-->
+    <script src="/Page/Task/UI/Script/colResizable-1.6.min.js"></script>
+
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">异常模组</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered col-selectable row-selectable">
+                        <thead id="form_th">
+                            <tr>
+                                <th style="width:50px">序号</th>
+                                <th>异常模组</th>
+                                <th>异常个数</th>
+                                <!--<th>操作</th>-->
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_AssemblyGroup"></ul>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default" id="datalist2">
+            <div class="panel-heading">
+                <h3 class="panel-title">异常模组详细</h3>
+
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+                <!--<div class="edit">添加负责人</div>-->
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table2" class="table table-small-font table-bordered col-selectable row-selectable">
+                        <thead id="form_th2">
+                            <tr>
+                                <th style="width:50px">序号</th>
+                                <th>PJ号</th>
+                                <th>异常类型</th>
+                                <th>异常原因</th>
+                                <th>异常开始时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb2"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_AlyGroupDetail"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加页面</h5>
+                </div>
+                <div class="modal-body">
+                    <input id="user_account" type="text" class="form-control" placeholder="请输入工号" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="addAssembly_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+</html>

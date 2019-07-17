@@ -1,0 +1,21 @@
+﻿/*加载*/
+#Loading{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2) url('/UI/Image/loading.gif') no-repeat center center;
+  background-size: 6rem;
+  z-index: 99994;
+}
+/*遮罩层*/
+#mask{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 99994;
+}

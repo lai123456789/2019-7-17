@@ -1,0 +1,10 @@
+F:\linzhanhao\MES\WX\WX\DAL\bin\x64\Debug\DAL.dll
+F:\linzhanhao\MES\WX\WX\DAL\bin\x64\Debug\DAL.pdb
+F:\linzhanhao\MES\WX\WX\DAL\bin\x64\Debug\Common.dll
+F:\linzhanhao\MES\WX\WX\DAL\bin\x64\Debug\DataOperator.dll
+F:\linzhanhao\MES\WX\WX\DAL\bin\x64\Debug\Oracle.DataAccess.dll
+F:\linzhanhao\MES\WX\WX\DAL\bin\x64\Debug\Common.pdb
+F:\linzhanhao\MES\WX\WX\DAL\bin\x64\Debug\DataOperator.pdb
+F:\linzhanhao\MES\WX\WX\DAL\obj\x64\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\linzhanhao\MES\WX\WX\DAL\obj\x64\Debug\DAL.dll
+F:\linzhanhao\MES\WX\WX\DAL\obj\x64\Debug\DAL.pdb

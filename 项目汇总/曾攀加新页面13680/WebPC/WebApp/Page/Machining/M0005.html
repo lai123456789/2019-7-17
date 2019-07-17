@@ -1,0 +1,952 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>每通信息化平台-生产任务（机加1）</title>
+        <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+        <script src="/UI/Scripts/Basic.js?20190425"></script>
+        <link href="/UI/Style/input-autocomplete.css" rel="stylesheet" />
+        <link href="UI/Style/M0005.css" rel="stylesheet" />
+        <script src="/UI/Scripts/input-autocomplete.js"></script>
+        <script src="UI/Script/M0005.js"></script>
+        
+    </head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="modulename">
+                    <option value="图纸状况">图纸状况</option>
+                    <option value="人员状况">人员状况</option>
+                    <option value="CNC机台状况">CNC机台状况</option>
+                </select>
+                <input value="" id="moduleval" />
+                <div class="query_btn">定位</div>
+
+                <div id="Yesterday">上一天</div>
+                <input type="date" value="" id="plandate" />
+                <div id="Tomorrow">下一天</div>
+
+                <div id="delplan">删除</div>
+                <div id="editplan">编辑</div>
+                <div id="scheduling" class="contor">排班</div>
+            </div>
+        </div>
+        <div class="panel panel-default" id="datalist0">
+            <div class="panel-heading">
+                <h3 class="panel-title">图纸状况</h3>
+            </div>
+            <div class="panel-body" id="panel_table1">
+                <div class="table-responsive" id="div_form_table1">
+                    <!--
+                    <div class="infolist successcolor contor">
+                        <div class="left">
+                            <div class="drawingcode">191990001</div>
+                            <div class="drawingname">压力值压头-1</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">2</div>
+                            <div class="progressval">100%</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">2019/06/04</div>
+                            <div class="right">
+                                <i class="fa fa-pencil-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist goingcolor">
+                        <div class="left">
+                            <div class="drawingcode">191990002</div>
+                            <div class="drawingname">定位块</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">1</div>
+                            <div class="progressval">30%</div>
+                        </div>
+                    </div>
+                    <div class="infolist notcolor">
+                        <div class="left">
+                            <div class="drawingcode">191990003</div>
+                            <div class="drawingname">固定板</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">1</div>
+                            <div class="progressval">0%</div>
+                        </div>
+                    </div>
+                    <div class="infolist notcolor">
+                        <div class="left">
+                            <div class="drawingcode">191990004</div>
+                            <div class="drawingname">手柄</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">6</div>
+                            <div class="progressval">0%</div>
+                        </div>
+                    </div>
+                    <div class="infolist notcolor">
+                        <div class="left">
+                            <div class="drawingcode">191990005</div>
+                            <div class="drawingname">抽屉-027</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">4</div>
+                            <div class="progressval">0%</div>
+                        </div>
+                    </div>
+                    <div class="infolist notcolor">
+                        <div class="left">
+                            <div class="drawingcode">191990006</div>
+                            <div class="drawingname">前侧板</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">100</div>
+                            <div class="progressval">0%</div>
+                        </div>
+                    </div>
+                    <div class="infolist notcolor">
+                        <div class="left">
+                            <div class="drawingcode">191990007</div>
+                            <div class="drawingname">导向轴</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">1000</div>
+                            <div class="progressval">0%</div>
+                        </div>
+                    </div>
+                    <div class="infolist notcolor">
+                        <div class="left">
+                            <div class="drawingcode">J.BZJ.044A-001A</div>
+                            <div class="drawingname">固定座</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">1000</div>
+                            <div class="progressval">0%</div>
+                        </div>
+                    </div>
+                    <div class="infolist notcolor">
+                        <div class="left">
+                            <div class="drawingcode">J.BZJ.001A-031A</div>
+                            <div class="drawingname">直线轴承限位套</div>
+                        </div>
+                        <div class="right">
+                            <div class="ordernum">1000</div>
+                            <div class="progressval">0%</div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <!--<div class="panel-heading">
+                <h3 class="panel-title">人员状况</h3>
+                <div class="plannedtime">2019/05/10</div>
+            </div>
+            <div class="panel-body" id="panel_table2">
+                <div class="table-responsive" id="div_form_table2">
+                    <div class="infolist successcolor">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist goingcolor">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="left">
+                            <div class="account">3350</div>
+                            <div class="name">林展浩</div>
+                        </div>
+                        <div class="right">
+                            <div class="actualhour">6h</div>
+                            <div class="sumhour">16.23h</div>
+                            <div class="skills">车床/铣床/磨床</div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">生产排程</h3>
+                <div class="plannedtime">2019/05/10</div>
+                <div class="panel-options">
+                    <div id="processlist">
+                        <!--<div class="process process1"></div>
+                        <div class="processname">工序1</div>
+                        <div class="process process2"></div>
+                        <div class="processname">工序2</div>
+                        <div class="process process3"></div>
+                        <div class="processname">工序3</div>
+                        <div class="process process4"></div>
+                        <div class="processname">工序4</div>
+                        <div class="process process5"></div>
+                        <div class="processname">工序5</div>
+                        <div class="process process6"></div>
+                        <div class="processname">工序6</div>
+                        <div class="process process7"></div>
+                        <div class="processname">工序7</div>
+                        <div class="process process8"></div>
+                        <div class="processname">工序8</div>
+                        <div class="process process9"></div>
+                        <div class="processname">工序9</div>-->
+                    </div>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th colspan="120">0:00</th>
+                                <th colspan="120">2:00</th>
+                                <th colspan="120">4:00</th>
+                                <th colspan="120">6:00</th>
+                                <th colspan="120">8:00</th>
+                                <th colspan="120">10:00</th>
+                                <th colspan="120">12:00</th>
+                                <th colspan="120">14:00</th>
+                                <th colspan="120">16:00</th>
+                                <th colspan="120">18:00</th>
+                                <th colspan="120">20:00</th>
+                                <th colspan="120">22:00</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb">
+                            <!--<tr>
+                                <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                <td colspan="36" class="scheduling process7" title="赖良坤 &#10;数量：15 &#10;用时：180分钟">15</td>
+                                <td colspan="48" class="scheduling process8" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                <td colspan="48" class="scheduling process9" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                            </tr>
+                            <tr>
+                                <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                <td colspan="36" class="scheduling process7" title="赖良坤 &#10;数量：15 &#10;用时：180分钟">15</td>
+                                <td colspan="48" class="scheduling process8" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                <td colspan="48" class="scheduling process9" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                            </tr>
+                            <tr>
+                                <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                <td colspan="150" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="288"></td>
+                            </tr>-->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel-heading" style="width:50%;float:left;">
+                <h3 class="panel-title">CNC机台状况</h3>
+            </div>
+            <div class="panel-heading" style="width:50%;float:left;">
+                <h3 class="panel-title">最近七天排程</h3>
+            </div>
+            <div class="panel-body" id="panel_table4">
+                <div class="table-responsive" id="div_form_table4">
+                    <!--
+                    <div class="infolist successcolor">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist successcolor">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist goingcolor">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist goingcolor">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infolist">
+                        <div class="top">
+                            <div class="left">
+                                <div class="box1">MC-02</div>
+                                <div class="box2">三菱（乌龟机）</div>
+                            </div>
+                            <div class="right">
+                                <div class="box1">16h</div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="left">
+                                <div class="box1">400*400*350</div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table5">
+                <div class="table-responsive" id="div_form_table5">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SchedulingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">人员排班</h5>
+                </div>
+                <div class="modal-body" style="max-height: 520px;overflow-y: auto;">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PJ号</td>
+                                <td id="scheduling_pj"></td>
+                            </tr>
+                            <tr>
+                                <td>名称</td>
+                                <td id="scheduling_name"></td>
+                            </tr>
+                            <tr>
+                                <td>计划完成数量</td>
+                                <td>
+                                    <input type="number"  id="scheduling_number" value="1" min="1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>工序</td>
+                                <td>
+                                    <input id="scheduling_flow" class="input-default" autocomplete="off" />
+                                </td>
+                            </tr>
+                            <tr class="cncnumber">
+                                <td>机床</td>
+                                <td>
+                                    <input id="scheduling_cncnumber" class="input-default" autocomplete="off" />
+                                </td>
+                            </tr>
+                            <tr class="yieldnumber">
+                                <td>单次生产数量</td>
+                                <td>
+                                    <input type="number" id="scheduling_yieldnumber" value="1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>计划开始时间</td>
+                                <td>
+                                    <input type="time" value="00:00" id="scheduling_startdate">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>计划工时/h</td>
+                                <td>
+                                    <input type="number" value="0" min="0" id="scheduling_workhours">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="UserSchedulingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="cesmodalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">人员排产计划</h5>
+                </div>
+                <div class="modal-body" style="max-height: 520px;overflow-y: auto;">
+                    <div class="panel-body" id="panel_table">
+                        <div class="table-responsive" id="div_form_table">
+                            <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                <thead id="form_th">
+                                    <tr>
+                                        <th colspan="120">0:00</th>
+                                        <th colspan="120">2:00</th>
+                                        <th colspan="120">4:00</th>
+                                        <th colspan="120">6:00</th>
+                                        <th colspan="120">8:00</th>
+                                        <th colspan="120">10:00</th>
+                                        <th colspan="120">12:00</th>
+                                        <th colspan="120">14:00</th>
+                                        <th colspan="120">16:00</th>
+                                        <th colspan="120">18:00</th>
+                                        <th colspan="120">20:00</th>
+                                        <th colspan="120">22:00</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="form_tb">
+
+                                    <!--<tr>
+                                        <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                        <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="36" class="scheduling process7" title="赖良坤 &#10;数量：15 &#10;用时：180分钟">15</td>
+                                        <td colspan="48" class="scheduling process8" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                        <td colspan="48" class="scheduling process9" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                        <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="36" class="scheduling process7" title="赖良坤 &#10;数量：15 &#10;用时：180分钟">15</td>
+                                        <td colspan="48" class="scheduling process8" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                        <td colspan="48" class="scheduling process9" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                        <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="150" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="288"></td>
+                                    </tr>-->
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="CNCSchedulingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="cesmodalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">机床排产计划</h5>
+                </div>
+                <div class="modal-body" style="max-height: 520px;overflow-y: auto;">
+                    <div class="panel-body" id="panel_table">
+                        <div class="table-responsive" id="div_form_table">
+                            <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                <thead id="form_th">
+                                    <tr>
+                                        <th colspan="120">0:00</th>
+                                        <th colspan="120">2:00</th>
+                                        <th colspan="120">4:00</th>
+                                        <th colspan="120">6:00</th>
+                                        <th colspan="120">8:00</th>
+                                        <th colspan="120">10:00</th>
+                                        <th colspan="120">12:00</th>
+                                        <th colspan="120">14:00</th>
+                                        <th colspan="120">16:00</th>
+                                        <th colspan="120">18:00</th>
+                                        <th colspan="120">20:00</th>
+                                        <th colspan="120">22:00</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="form_tb">
+                                    <!--<tr>
+                                        <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                        <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="36" class="scheduling process7" title="赖良坤 &#10;数量：15 &#10;用时：180分钟">15</td>
+                                        <td colspan="48" class="scheduling process8" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                        <td colspan="48" class="scheduling process9" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                        <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="36" class="scheduling process7" title="赖良坤 &#10;数量：15 &#10;用时：180分钟">15</td>
+                                        <td colspan="48" class="scheduling process8" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                        <td colspan="48" class="scheduling process9" title="赖良坤 &#10;数量：15 &#10;用时：240分钟">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" class="scheduling process1" title="陈良忠 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="30" class="scheduling process2" title="陈良忠 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="12" class="scheduling process3" title="谢木龙 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="18" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                        <td colspan="30" class="scheduling process4" title="林展浩 &#10;数量：15 &#10;用时：150分钟">15</td>
+                                        <td colspan="24" class="scheduling process5" title="刘毅 &#10;数量：15 &#10;用时：120分钟">15</td>
+                                        <td colspan="12" class="scheduling process6" title="刘毅 &#10;数量：15 &#10;用时：60分钟">15</td>
+                                        <td colspan="150" class="scheduling" title="中场休息&#10;用时：90分钟"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="288"></td>
+                                    </tr>-->
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal fade" id="EditSchedulingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">人员排班</h5>
+                </div>
+                <div class="modal-body" style="max-height: 520px;overflow-y: auto;">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PJ号</td>
+                                <td id="editscheduling_pj"></td>
+                            </tr>
+                            <tr>
+                                <td>名称</td>
+                                <td id="editscheduling_name"></td>
+                            </tr>
+                            <tr>
+                                <td>数量</td>
+                                <td>
+                                    <input type="number" id="editscheduling_number" value="1" min="1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>工序</td>
+                                <td>
+                                    <select id="editscheduling_flow">
+                                        <option value="工序1">工序1</option>
+                                        <option value="工序2">工序2</option>
+                                        <option value="工序3">工序3</option>
+                                        <option value="工序4">工序4</option>
+                                        <option value="工序5">工序5</option>
+                                        <option value="工序6">工序6</option>
+                                        <option value="工序7">工序7</option>
+                                        <option value="工序8">工序8</option>
+                                        <option value="工序9">工序9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>计划开始时间</td>
+                                <td>
+                                    <input type="time" value="00:00" id="editscheduling_startdate">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>计划工时</td>
+                                <td>
+                                    <input type="number" value="0" min="0" id="editscheduling_workhours">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background: #ddd;">人员</th>
+                                <th style="background: #ddd;">机床号</th>
+                                <th style="background: #ddd;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="editflowinfo"></tbody>
+                    </table>
+                    <button id="editaddnewuser">添加工序</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="edit_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="modal fade" id="BindSchedulingFlowModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">绑定生产工序</h5>
+                </div>
+                <div class="modal-body" style="max-height: 520px;overflow-y: auto;">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 200px;">名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PJ号</td>
+                                <td id="bind_pj"></td>
+                            </tr>
+                            <tr>
+                                <td>名称</td>
+                                <td id="bind_name"></td>
+                            </tr>
+                            <tr>
+                                <td>数量</td>
+                                <td id="bind_number"></td>
+                            </tr>
+                            <tr>
+                                <td>要求配件到货时间</td>
+                                <td id="bind_askdeliverydate"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background: #ddd;">工序</th>
+                                <th style="background: #ddd;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bindflowinfo"></tbody>
+                    </table>
+                    <button id="editaddnewuser">添加工序</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="edit_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

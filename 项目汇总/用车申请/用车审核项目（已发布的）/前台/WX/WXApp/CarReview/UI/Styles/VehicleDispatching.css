@@ -1,0 +1,239 @@
+﻿#infodata{
+    margin-top: 1.3rem;
+    width: 9.8rem;
+    border: 1px solid #eee;
+    margin-left: 0.1rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.1rem;
+}
+
+#infodata > .rows1{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows1 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows1 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows2{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows2 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows2 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows3{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows3 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows3 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows4{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows4 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows4 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows4 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows5{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows5 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows5 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows5 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows6{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows6 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows6 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows6 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows7{
+    width: 100%;
+    height: 1rem;
+}
+
+#infodata > .rows7 > .left{
+    padding-left: 0.2rem;
+    width: 2rem;
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+#infodata > .rows7 > .right{
+    width: calc(100% - 2.2rem);
+    height: 100%;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#infodata > .rows7 > .right input{
+    width:100%;
+    height:1rem;
+    text-align:center;
+    border:none;
+    resize:none;
+    outline:none;
+    border-bottom: 1px solid #eee;
+}
+
+#operation_btn{
+    width: 9.8rem;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0.1rem;
+    background: #4195F1;
+    border-radius: 0.15rem;
+    left: 0.1rem;
+}
+
+#operation_btn > .submit_btn{
+    width: 100%;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+#operation_btn:active{
+    background: #0066D6;
+}

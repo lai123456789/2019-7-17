@@ -1,0 +1,758 @@
+﻿
+
+#search_content{
+    width: 210px;
+}
+
+#adduserinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adduserinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:right;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+#add_sex > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+#add_sex > .label.label-default.contor{
+    background: #79c447;
+    color: #fff;
+}
+
+#add_sex > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#SetUserModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+select{
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    outline: none;
+    resize:none;
+    -webkit-box-shadow: none !important;
+}
+
+#addnewuser{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #5994ce;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+#addnewuser:focus{
+    background:#1a62a9;
+}
+
+#scheduling_flow:focus{
+    background:#f9f9f9;
+}
+
+#datalist0{
+    float: left;
+    width: 200px;
+}
+
+
+#datalist{
+    float: left;
+    width: calc(100% - 200px);
+}
+
+#div_form_table1{
+    height: 574px;
+    max-height: 574px;
+    border: 1px solid #eee;
+}
+
+
+#div_form_table2{
+    height:270px;
+    max-height:270px;
+    border: 1px solid #eee;
+}
+
+#panel_table1{
+    padding-top:0;
+}
+
+#panel_table2{
+    padding-top:0;
+}
+
+#panel_table{
+    height:340px;
+}
+
+#panel_table4{
+    width: 50%;
+    height: 200px;
+    max-height: 200px;
+    overflow: auto;
+    float: left;
+    padding-bottom: 5px;
+}
+
+#panel_table5{
+    width: 50%;
+    height: 200px;
+    float:left;
+}
+
+#form_table{
+    margin-top:0;
+}
+
+
+#processlist{
+    float: left;
+}
+
+#processlist .processname{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right: 8px;
+}
+
+
+#processlist .process{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 6px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+
+.process1{
+    background:#caecff !important;
+}
+
+.process2{
+    background:#c3c4fb !important;
+}
+
+.process3{
+    background:#c9f3b8 !important;
+}
+
+.process4{
+    background:#eaf1b3 !important;
+}
+
+.process5{
+    background:#ffe4bc !important;
+}
+
+.process6{
+    background:#fcd3ff !important;
+}
+
+.process7{
+    background:#64c7ff !important;
+}
+
+.process8{
+    background: #ffa500 !important;
+}
+
+.process9{
+    background: #fd67ff !important;
+}
+
+.process10{
+    background: #6787ff !important;
+}
+
+.process11{
+    background: #fffb67 !important;
+}
+
+.process12{
+    background: #ff6797 !important;
+}
+
+#div_form_table1 > .infolist{
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#div_form_table1 > .infolist.notcolor{
+    
+}
+
+
+#div_form_table1 > .infolist.goingcolor{
+    background: #fff2ce !important;
+}
+
+#div_form_table1 > .infolist.successcolor{
+    background:#ceffe0 !important;
+}
+
+
+#div_form_table1 > .infolist > .left{
+    width: calc(100% - 35px);
+    float: left;
+    height: 36px;
+}
+
+#div_form_table1 > .infolist > .left > .drawingcode{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 1px;
+    height: 18px;
+}
+
+
+#div_form_table1 > .infolist > .left > .drawingname{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+#div_form_table1 > .infolist > .right{
+    width: 35px;
+    float: left;
+    height: 36px;
+}
+
+
+#div_form_table1 > .infolist > .right > .progressval{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+#div_form_table1 > .infolist > .right > .ordernum{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height:18px;
+    padding-top:1px;
+}
+
+
+
+.panel.panel-default{
+    padding: 2px 6px;
+    margin-bottom: 0px;
+}
+
+.panel .panel-heading .panel-title{
+    line-height:32px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.panel .panel-heading > .panel-options{
+    float: right;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+
+#modulename{
+    width:100px;
+}
+
+#div_form_table1 > .infolist.contor{
+    border:1px solid #5994ce;
+}
+
+#Yesterday{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background: #20a8d8;
+    color: #fff;
+    border: 1px solid #eee;
+    cursor:pointer;
+    user-select: none;
+}
+
+#plandate{
+    margin-right: 0 !important;
+        user-select: none;
+}
+
+#Tomorrow{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background: #20a8d8;
+    color: #fff;
+    cursor:pointer;
+    border: 1px solid #eee;
+        user-select: none;
+}
+
+.plannedtime{
+    float: left;
+    margin-left: 15px;
+    color: red;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+}
+
+#editplan{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #eee;
+    margin-right: 3px;
+}
+
+#editplan.contor{
+    background: #20a8d8;
+}
+
+
+#delplan{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #eee;
+    margin-right: 8px;
+}
+
+
+#delplan.contor{
+    background: #d64949;
+}
+
+
+
+#scheduling{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #eee;
+    margin-right: 3px;
+}
+
+#scheduling.contor{
+    background: #830dff;
+}
+
+#scheduling.contor:hover{
+    background: #641fad;
+}
+
+
+
+#div_form_table2 > .infolist{
+    width: 100%;
+    height: 36px;
+    float: left;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+
+#div_form_table2 > .infolist:hover{
+    border: 1px solid #5994ce;
+}
+
+
+
+#div_form_table2 > .infolist.notcolor{
+    
+}
+
+
+#div_form_table2 > .infolist.goingcolor{
+    background: #fff2ce !important;
+}
+
+#div_form_table2 > .infolist.successcolor{
+    background:#ceffe0 !important;
+}
+
+#div_form_table2 > .infolist > .left{
+    width: 50px;
+    height: 100%;
+    float: left;
+}
+
+
+#div_form_table2 > .infolist > .left > .account{
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    height: 18px;
+    padding-top: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#div_form_table2 > .infolist > .left > .name{
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#div_form_table2 > .infolist > .right{
+    width: calc(100% - 50px);
+    height: 100%;
+    float: left;
+}
+
+
+#div_form_table2 > .infolist > .right > .actualhour{
+    width: 50%;
+    text-align: center;
+    height: 18px;
+    padding-top: 1px;
+    float: left;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: red;
+}
+
+#div_form_table2 > .infolist > .right > .sumhour{
+    width: 50%;
+    text-align: center;
+    height: 18px;
+    padding-top: 1px;
+    float: left;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#div_form_table2 > .infolist > .right > .skills{
+    width: 100%;
+    text-align: center;
+    height: 18px;
+    padding-top: 1px;
+    float: left;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.panel .panel-body{
+    padding-top: 0px; 
+}
+
+#div_form_table4 > .infolist{
+    width: 33.33%;
+    height: 59px;
+    float: left;
+    border: 1px solid #eee;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#div_form_table4 > .infolist:hover{
+    border: 1px solid #5994ce;
+}
+
+
+#div_form_table4 > .infolist.goingcolor{
+    background: #fff2ce !important;
+}
+
+#div_form_table4 > .infolist.successcolor{
+    background:#ceffe0 !important;
+}
+
+
+#div_form_table4 > .infolist > .top{
+    width: 100%;
+    height: 36px;
+    float: left;
+}
+
+#div_form_table4 > .infolist > .top > .left{
+    width: calc(100% - 36px);
+    height: 100%;
+    float: left;
+}
+
+#div_form_table4 > .infolist > .top > .left > .box1{
+    width:100%;
+    height:18px;
+    line-height:18px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#div_form_table4 > .infolist > .top > .left > .box2{
+    width:100%;
+    height:18px;
+    line-height:18px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#div_form_table4 > .infolist > .top > .right{
+    width: 36px;
+    height: 100%;
+    float: left;
+    line-height: 36px;
+}
+
+#div_form_table4 > .infolist > .top > .right > .box1{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+#div_form_table4 > .infolist > .down{
+    width: 100%;
+    height: 18px;
+    float: left;
+}
+
+
+#div_form_table4 > .infolist > .down > .left{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+#div_form_table4 > .infolist > .down > .left > .box1{
+    width: 100%;
+    height: 100%;
+    line-height:18px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#div_form_table5{
+    width:100%;
+    height:200px;
+}
+
+#SchedulingModal input{
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    resize:none;
+}
+
+
+#form_tb .scheduling{
+    user-select: none;
+    opacity:0.8;
+    border:none;
+}
+
+#form_tb .scheduling.process1,#form_tb .scheduling.process2,#form_tb .scheduling.process3,#form_tb .scheduling.process4,
+#form_tb .scheduling.process5,#form_tb .scheduling.process6,#form_tb .scheduling.process7,#form_tb .scheduling.process8,
+#form_tb .scheduling.process9,#form_tb .scheduling.process10,#form_tb .scheduling.process11,#form_tb .scheduling.process12
+{
+    cursor: pointer;
+}
+
+#form_tb .scheduling.contor{
+    opacity: 1;
+    font-weight: bold;
+    color: #fff;
+    background: #5db870 !important;
+}
+
+
+
+#EditSchedulingModal input{
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    resize:none;
+}
+
+
+
+#editaddnewuser{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #5994ce;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+#editaddnewuser:focus{
+    background:#1a62a9;
+}
+
+#editscheduling_flow:focus{
+    background:#f9f9f9;
+}
+
+
+#form_tb td{
+    height:24px;
+}
+
+
+#div_form_table1 > .infolist > .bottom{
+    width: 100%;
+    height: 18px;
+    float: left;
+}
+
+#div_form_table1 > .infolist > .bottom > .left{
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 1px;
+    height: 18px;
+    width: calc(100% - 35px);
+    float: left;
+}
+
+#div_form_table1 > .infolist > .bottom > .right{
+        width: 35px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+#div_form_table1 > .infolist > .bottom > .right .fa{
+    cursor:pointer;
+    color: #20a8d8;
+    font-size: 17px;
+}
+
+
+.bindflowlist{
+    width:100%;
+    height:100%;
+    outline:none;
+    resize:none;
+    border:none;
+}

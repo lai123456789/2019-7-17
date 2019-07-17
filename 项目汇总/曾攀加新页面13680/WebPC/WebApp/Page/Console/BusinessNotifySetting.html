@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-业务通知设置</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/Page/Console/UI/Style/BusinessNotifySetting.css" rel="stylesheet" />
+    <script src="/Page/Console/UI/Script/BusinessNotifySetting.js"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="panel panel-default" id="businesstype">
+            <div class="dd" id="department_list">
+                <ol class="dd-list">
+                    <li class="dd-item dd3-item">
+                        <div class="dd-handle dd3-handle"><i class="fa fa-minus"></i></div>
+                        <div class="dd3-content">
+                            <div class="left_content">业务类型</div>
+                        </div>
+                        <ol class="dd-list">
+                            <li class="dd-item dd3-item">
+                                <div class="dd-handle dd3-handle"><i class="fa fa-minus"></i></div>
+                                <div class="dd3-content">
+                                    <div class="left_content">装配</div>
+                                </div>
+                                <ol class="dd-list">
+                                    <li class="dd-item dd3-item libtn" data-businesstype="装配" data-processname="结构">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">结构</div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item dd3-item libtn" data-businesstype="装配" data-processname="接线">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">接线</div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item dd3-item libtn" data-businesstype="装配" data-processname="绒布">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">绒布</div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item dd3-item libtn" data-businesstype="装配" data-processname="调试">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">调试</div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item dd3-item libtn" data-businesstype="装配" data-processname="QA">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">QA</div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item dd3-item libtn" data-businesstype="装配" data-processname="打包">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">打包</div>
+                                        </div>
+                                    </li>
+                                    <li class="dd-item dd3-item libtn" data-businesstype="装配" data-processname="发货">
+                                        <div class="dd-handle dd3-handle"></div>
+                                        <div class="dd3-content">
+                                            <div class="left_content">发货</div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">用户管理</h3>
+                <div class="panel-options">
+                    <div id="adduserinfo">添加用户</div>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>业务类型</th>
+                                <th>工序</th>
+                                <th>工号</th>
+                                <th>名称</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加用户</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>业务类型</td>
+                                <td><span id="add_businesstype"></span></td>
+                            </tr>
+                            <tr>
+                                <td>工序名称</td>
+                                <td><span id="add_processname"></span></td>
+                            </tr>
+                            <tr>
+                                <td>用户工号</td>
+                                <td><input id="add_account" type="text" placeholder="请输入用户工号" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

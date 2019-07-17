@@ -1,0 +1,10 @@
+﻿错误时间 : 2019-04-16 10:04:34
+错误对象 : BLL
+异常方法 : System.String PalmCoreAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreAPI(String url, Dictionary`2 postData, String requestmethod) 位置 c:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-04\WebPC\BLL\PalmAPIHelper.cs:行号 173
+   在 BLL.BLLUserManage.LoginRequest(String account, String password, String& json, String& errmsg) 位置 c:\Users\hp\Documents\WeChat Files\cz403441381\FileStorage\File\2019-04\WebPC\BLL\BLLUserManage.cs:行号 53
+
+***************************************************************
+

@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>每通信息化平台-物料明细</title>
+        <link href="UI/css/LeaveForm.css" rel="stylesheet" />
+        <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+        <script src="/UI/Scripts/Basic.js?20190405"></script>
+        <script src="UI/Scripts/LeaveForm.js"></script>
+        <script src="UI/My97DatePicker/WdatePicker.js"></script> <!--时间插件-->
+        
+    </head>
+    <body>
+
+        <input type="hidden" id="account" value="" />
+        <div class="main" id="main">
+
+            <!--<div style="padding-bottom:10px;border-bottom:1px solid #eee;width:100%;background:white;margin-bottom:5px;">
+                <input type="text" class="form-control Print-Txt" placeholder="请输入要查询的机加分类代码或者名字" style="width:30%;display:inline-block" />
+                <button class="btn btn-success queryPrint-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+            </div>-->
+
+            <div class="panel panel-default" id="datalist">
+                <div class="panel-heading">
+                    <h3 class="panel-title">请假申请</h3>
+                    <div class="panel-options">
+                        <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                        <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                        <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                        <a id="dlink" style="display:none;"></a>
+                        <a href="javascript:;" class="download">
+                            <i class="fa fa-download" title="下载"></i>
+                        </a>
+                        <a href="javascript:;" class="fullscreen">
+                            <i class="fa fa-arrows-alt" title="全屏"></i>
+                        </a>
+                    </div>
+                </div>
+
+               
+
+                <div class="panel-body" id="panel_table">
+
+                    <div class="index" style="">
+                        <div class="content">
+                            <img src="UI/images/2.png" class="img-responsive" style="position:absolute;top:0;right:0;width:10rem;height:10rem" />
+                            <div style="display:flex;margin:2rem 0 2rem 0;width:100%">
+                                <div class="one">
+                                    <!--第一块-->
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label >工号：</label>
+                                            <label class="" id="account" style="margin-left:10px;">3383</label>
+                                        </div>
+                                    </form>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label >姓名：</label>
+                                            <label class="" id="name" style="margin-left:10px;">赖良坤</label>
+                                        </div>
+                                    </form>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label>部门：</label>
+                                            <label class="" id="department" style="margin-left:10px;">咨询部</label>
+                                        </div>
+
+
+                                    </form>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label>职务：</label>
+                                            <label class="" id="department_position" style="margin-left:10px;">技术员</label>
+                                            <!--<input class="form-control" type="text" placeholder="" id="department_position">-->
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+
+                                <div class="two">
+                                    <form class="form-inline">
+                                        <div class="form-group" id="leibie">
+                                            <label class="">请假类别：</label>
+                                            <i class="iconfont choice contor">&#xe639;</i><span>事假</span>
+                                            <i class="iconfont choice">&#xe639;</i><span>病假</span>
+                                            <i class="iconfont choice">&#xe639;</i><span>产假</span>
+                                            <i class="iconfont choice">&#xe639;</i><span>工伤</span>
+                                            <i class="iconfont choice">&#xe639;</i><span>调休</span>
+                                            <i class="iconfont choice">&#xe639;</i><span>其他</span>
+                                        </div>
+                                    </form>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label>请假原因：</label>
+                                            <input class="form-control" type="text" placeholder="" id="result" style="width:29rem !important">
+                                           
+                                        </div>
+                                    </form>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label>请假时间：</label>
+                                            <!--<input class="" type="datetime-local" placeholder="" id="time" style="width:113px;">
+                                            <span>—</span>
+                                            <input class="" type="date" placeholder="" id="time" style="width:113px;">-->
+                                            <input style="width:13.5rem !important" id="startDate" type="text" class="Wdate" onfocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'endDate\')}'})">
+                                            <span>--</span>
+                                            <input style="width:13.5rem !important" id="endDate" type="text" class="Wdate" onfocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm',minDate:'#F{$dp.$D(\'startDate\')}'})">
+                                        </div>
+                                    </form>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label>请假时长：</label>
+                                            <span>1天</span><span>0时</span><span>0分</span>
+                                        </div>
+                                    </form>
+                                    
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label>职位代理人：</label>
+                                            <input class="form-control" type="text" placeholder="请选择" id="position_ren" style="width:29rem;">
+                                        </div>
+                                    </form>
+                                    
+                                    
+                                    <!--<form class="form-inline">
+                                        <div class="form-group">
+                                            <label>职位代理人确认：</label>
+                                            <input class="form-control" type="text" placeholder="" id="position_ren_sure" style="width:250px;">
+                                            <label class="btn btn-success" id="name" style="margin-left:10px;">同意</label>
+                                            <label class="btn btn-danger" id="name" style="margin-left:10px;">拒绝</label>
+                                        </div>
+                                    </form>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label>申请人或代理人确认：</label>
+                                            <input class="form-control" type="text" placeholder="" id="position_ren_sure1" style="width:250px;">
+                                            <label class="btn btn-success" id="name" style="margin-left:10px;">同意</label>
+                                            <label class="btn btn-danger" id="name" style="margin-left:10px;">拒绝</label>
+                                        </div>
+                                    </form>-->
+                                </div>
+
+                                
+                            </div>
+                            <!--
+                            <div class="three">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label class="control-label">林经理：</label> 部门经理/主管批核
+                                        <label class="btn btn-success" id="name" style="margin-left:10px;">同意</label>
+
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label class="control-label">刘经理：</label> 人事行政经理批核
+                                        <label class="btn btn-success" id="name" style="margin-left:10px;">同意</label>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label class="control-label">刘总：</label>  公司领导审批
+                                        <label class="btn btn-danger" id="name" style="margin-left:10px;">反驳</label>
+                                    </div>
+                                </form>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+    </html>

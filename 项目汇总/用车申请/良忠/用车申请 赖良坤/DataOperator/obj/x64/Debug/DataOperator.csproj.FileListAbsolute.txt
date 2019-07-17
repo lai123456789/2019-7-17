@@ -1,0 +1,6 @@
+F:\linzhanhao\MES\WX\WX\DataOperator\bin\x64\Debug\DataOperator.dll
+F:\linzhanhao\MES\WX\WX\DataOperator\bin\x64\Debug\DataOperator.pdb
+F:\linzhanhao\MES\WX\WX\DataOperator\bin\x64\Debug\Oracle.DataAccess.dll
+F:\linzhanhao\MES\WX\WX\DataOperator\obj\x64\Debug\DataOperator.csprojResolveAssemblyReference.cache
+F:\linzhanhao\MES\WX\WX\DataOperator\obj\x64\Debug\DataOperator.dll
+F:\linzhanhao\MES\WX\WX\DataOperator\obj\x64\Debug\DataOperator.pdb

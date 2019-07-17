@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0E70A41-D921-4E2D-B924-D359890E2290}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WXApp</RootNamespace>
+    <AssemblyName>WXApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdvanceOrder\AddAdvanceOrder.aspx" />
+    <Content Include="AdvanceOrder\NotFigure.aspx" />
+    <Content Include="AdvanceOrder\QueryAdvanceOrder.aspx" />
+    <Content Include="AdvanceOrder\QueryDesign.aspx" />
+    <Content Include="AdvanceOrder\SelectAllAdvanceOrder.aspx" />
+    <Content Include="AdvanceOrder\UI\Scripts\NotFigure.js" />
+    <Content Include="AdvanceOrder\UI\Scripts\QueryAdvanceOrder.js" />
+    <Content Include="AdvanceOrder\UI\Scripts\QueryDesign.js" />
+    <Content Include="AdvanceOrder\UI\Scripts\SelectAllAdvanceOrder.js" />
+    <Content Include="AdvanceOrder\UI\Scripts\UpdataAdvanceOrder.js" />
+    <Content Include="AdvanceOrder\UI\Styles\NotFigure.css" />
+    <Content Include="AdvanceOrder\UI\Styles\QueryAdvanceOrder.css" />
+    <Content Include="AdvanceOrder\UI\Styles\QueryDesign.css" />
+    <Content Include="AdvanceOrder\UI\Styles\SelectAllAdvanceOrder.css" />
+    <Content Include="AdvanceOrder\UI\Styles\UpdataAdvanceOrder.css" />
+    <Content Include="AdvanceOrder\UpdataAdvanceOrder.aspx" />
+    <Content Include="Use_car\adminAll_application_index.aspx" />
+    <Content Include="Use_car\admin_look_application.aspx" />
+    <Content Include="Use_car\css\adminAll_application_index.css" />
+    <Content Include="Use_car\css\application_index.css" />
+    <Content Include="Use_car\images\right.png" />
+    <Content Include="Use_car\images\department.png" />
+    <Content Include="Use_car\js\fastclick.js" />
+    <Content Include="Use_car\js\jquery-2.1.4.js" />
+    <Content Include="Use_car\js\jquery-weui.js" />
+    <Content Include="Use_car\refuse_result.aspx" />
+    <Content Include="Use_car\script\adminAll_application_index.js" />
+    <Content Include="Use_car\script\admin_look_application.js" />
+    <Content Include="Use_car\script\refuse_result.js" />
+    <Content Include="Use_car\script\shuaixuan_car.js" />
+    <Content Include="Use_car\shuaixuan_car.aspx" />
+    <Content Include="Use_car\application_index.aspx" />
+    <Content Include="Assembly\A001.aspx" />
+    <Content Include="Assembly\UI\Scripts\A001.js" />
+    <Content Include="Assembly\UI\Styles\A001.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Permissions\404.html" />
+    <Content Include="Permissions\UI\Styles\404_s-divider.jpg" />
+    <Content Include="Permissions\UI\Styles\404_search.png" />
+    <Content Include="Permissions\UI\Styles\bg_noise.jpg" />
+    <Content Include="Permissions\UI\Styles\main.css" />
+    <Content Include="UI\Image\每通-2.gif" />
+    <Content Include="UI\Scripts\jquery.mobile-1.4.5.js" />
+    <Content Include="UI\Styles\jquery.mobile-1.4.5.css" />
+    <Content Include="Use_car\admin_return_car_notice.aspx" />
+    <Content Include="Use_car\car_application.aspx" />
+    <Content Include="Use_car\car_application_submit.aspx" />
+    <Content Include="Use_car\css\font-awesome.min.css" />
+    <Content Include="Use_car\images\add.png" />
+    <Content Include="Use_car\images\address.png" />
+    <Content Include="Use_car\images\chepai.png" />
+    <Content Include="Use_car\images\icon_footer.png" />
+    <Content Include="Use_car\images\icon_footer_link.png" />
+    <Content Include="Use_car\images\icon_intro.png" />
+    <Content Include="Use_car\images\icon_nav_actionSheet.png" />
+    <Content Include="Use_car\images\icon_nav_article.png" />
+    <Content Include="Use_car\images\icon_nav_button.png" />
+    <Content Include="Use_car\images\icon_nav_cell.png" />
+    <Content Include="Use_car\images\icon_nav_dialog.png" />
+    <Content Include="Use_car\images\icon_nav_feedback.png" />
+    <Content Include="Use_car\images\icon_nav_flow.png" />
+    <Content Include="Use_car\images\icon_nav_form.png" />
+    <Content Include="Use_car\images\icon_nav_icons.png" />
+    <Content Include="Use_car\images\icon_nav_layout.png" />
+    <Content Include="Use_car\images\icon_nav_msg.png" />
+    <Content Include="Use_car\images\icon_nav_nav.png" />
+    <Content Include="Use_car\images\icon_nav_panel.png" />
+    <Content Include="Use_car\images\icon_nav_progress.png" />
+    <Content Include="Use_car\images\icon_nav_search.png" />
+    <Content Include="Use_car\images\icon_nav_search_bar.png" />
+    <Content Include="Use_car\images\icon_nav_special.png" />
+    <Content Include="Use_car\images\icon_nav_tab.png" />
+    <Content Include="Use_car\images\icon_nav_toast.png" />
+    <Content Include="Use_car\images\icon_nav_z-index.png" />
+    <Content Include="Use_car\images\icon_nav_zindex.png" />
+    <Content Include="Use_car\images\icon_tabbar.png" />
+    <Content Include="Use_car\images\logo.png" />
+    <Content Include="Use_car\images\pic_160.png" />
+    <Content Include="Use_car\images\pic_article.png" />
+    <Content Include="Use_car\images\time.png" />
+    <Content Include="Use_car\images\User.png" />
+    <Content Include="Use_car\images\vcode.jpg" />
+    <Content Include="Use_car\images\yonghu.png" />
+    <Content Include="Use_car\images\yuanyin.png" />
+    <Content Include="Use_car\images\zhuangtai.png" />
+    <Content Include="Use_car\images\chepai1.png" />
+    <Content Include="Use_car\images\result.png" />
+    <Content Include="Use_car\images\sure.png" />
+    <Content Include="Use_car\images\zhuangtai1.png" />
+    <Content Include="Use_car\js\example.js" />
+    <Content Include="Use_car\js\jquery-1.11.3.min.js" />
+    <Content Include="Use_car\js\weui.js" />
+    <Content Include="Use_car\js\weui.min.js" />
+    <Content Include="Use_car\js\zepto.min.js" />
+    <Content Include="Use_car\look_car.aspx" />
+    <Content Include="Use_car\style\demos.css" />
+    <Content Include="Use_car\style\jquery-weui.css" />
+    <Content Include="Use_car\user_look_application.aspx" />
+    <Content Include="Use_car\return_car.aspx" />
+    <Content Include="Use_car\return_car_notice.aspx" />
+    <Content Include="Use_car\script\admin_return_car_notice.js" />
+    <Content Include="Use_car\script\application_index.js" />
+    <Content Include="Use_car\script\car_application.js" />
+    <Content Include="Use_car\script\car_application_submit.js" />
+    <Content Include="Use_car\script\look_car.js" />
+    <Content Include="Use_car\script\user_look_application.js" />
+    <Content Include="Use_car\script\return_car.js" />
+    <Content Include="Use_car\script\return_car_notice.js" />
+    <Content Include="Use_car\script\success_application.js" />
+    <Content Include="Use_car\style\example.css" />
+    <Content Include="Use_car\style\weui.css" />
+    <Content Include="Use_car\style\weui.min.css" />
+    <Content Include="Use_car\success_application.aspx" />
+    <Content Include="Warranty\DailyWarranty.aspx" />
+    <Content Include="Warranty\GetWarranty.aspx" />
+    <Content Include="Warranty\GetWarrantyInfo.aspx" />
+    <Content Include="Warranty\GetWarrantyInfos.aspx" />
+    <Content Include="Warranty\IssueTracking.aspx" />
+    <Content Include="Warranty\Message.aspx" />
+    <Content Include="Warranty\Processed.aspx" />
+    <Content Include="Warranty\UI\Scripts\DailyWarranty.js" />
+    <Content Include="Warranty\UI\Scripts\GetWarranty.js" />
+    <Content Include="Warranty\UI\Scripts\GetWarrantyInfo.js" />
+    <Content Include="Warranty\UI\Scripts\GetWarrantyInfos.js" />
+    <Content Include="Warranty\UI\Scripts\IssueTracking.js" />
+    <Content Include="Warranty\UI\Scripts\Message.js" />
+    <Content Include="Warranty\UI\Scripts\Processed.js" />
+    <Content Include="Warranty\UI\Scripts\UpdateWarranty.js" />
+    <Content Include="Warranty\UI\Scripts\Warranty.js" />
+    <Content Include="Warranty\UI\Styles\DailyWarranty.css" />
+    <Content Include="Warranty\UI\Styles\GetWarranty.css" />
+    <Content Include="Warranty\UI\Styles\GetWarrantyInfo.css" />
+    <Content Include="Warranty\UI\Styles\GetWarrantyInfos.css" />
+    <Content Include="Warranty\UI\Styles\IssueTracking.css" />
+    <Content Include="Warranty\UI\Styles\Message.css" />
+    <Content Include="Warranty\UI\Styles\Processed.css" />
+    <Content Include="Warranty\UI\Styles\UpdateWarranty.css" />
+    <Content Include="Warranty\UI\Styles\Warranty.css" />
+    <Content Include="Warranty\UpdateWarranty.aspx" />
+    <Content Include="Warranty\Warranty.aspx" />
+    <Content Include="Web\WebApi.aspx" />
+    <Content Include="WXQRManage.aspx" />
+    <Content Include="Permissions\UI\Styles\main.css.bak" />
+    <Content Include="Permissions\UI\Styles\texgyreschola-bold-webfont.ttf" />
+    <Content Include="Permissions\UI\Styles\texgyreschola-regular-webfont.woff" />
+    <None Include="Properties\PublishProfiles\247服务器.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到104服务器.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到104测试微信号.pubxml" />
+    <None Include="Properties\PublishProfiles\发布到服务器.pubxml" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="UI\Image\ico.png" />
+    <Content Include="UI\Image\loading.gif" />
+    <Content Include="UI\Image\logo.png" />
+    <Content Include="AdvanceOrder\UI\Scripts\AddAdvanceOrder.js" />
+    <Content Include="UI\Scripts\basic.js" />
+    <Content Include="UI\Scripts\flexible.js" />
+    <Content Include="UI\Scripts\mobiscroll.custom.min.js" />
+    <Content Include="UI\Scripts\phonekey\phonekey.js" />
+    <Content Include="UI\Scripts\QueryAdvanceOrder.js" />
+    <Content Include="UI\Scripts\WXAccredit.js" />
+    <Content Include="UI\Scripts\jquery-1.11.3.min.js" />
+    <Content Include="UI\Scripts\Login.js" />
+    <Content Include="UI\Scripts\textpage.js" />
+    <Content Include="AdvanceOrder\UI\Styles\AddAdvanceOrder.css" />
+    <Content Include="UI\Styles\basic.css" />
+    <Content Include="UI\Styles\iconfont.css" />
+    <Content Include="UI\Styles\iconfont.svg" />
+    <Content Include="UI\Styles\mobiscroll.custom.min.css" />
+    <Content Include="UI\Styles\phonekey\phonekey.css" />
+    <Content Include="UI\Styles\QueryAdvanceOrder.css" />
+    <Content Include="UI\Styles\WXAccredit.css" />
+    <Content Include="UI\Styles\Login.css" />
+    <Content Include="UI\Styles\textpage.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvanceOrder\AddAdvanceOrder.aspx.cs">
+      <DependentUpon>AddAdvanceOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvanceOrder\AddAdvanceOrder.aspx.designer.cs">
+      <DependentUpon>AddAdvanceOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceOrder\NotFigure.aspx.cs">
+      <DependentUpon>NotFigure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvanceOrder\NotFigure.aspx.designer.cs">
+      <DependentUpon>NotFigure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceOrder\QueryAdvanceOrder.aspx.cs">
+      <DependentUpon>QueryAdvanceOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvanceOrder\QueryAdvanceOrder.aspx.designer.cs">
+      <DependentUpon>QueryAdvanceOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceOrder\QueryDesign.aspx.cs">
+      <DependentUpon>QueryDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvanceOrder\QueryDesign.aspx.designer.cs">
+      <DependentUpon>QueryDesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceOrder\SelectAllAdvanceOrder.aspx.cs">
+      <DependentUpon>SelectAllAdvanceOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvanceOrder\SelectAllAdvanceOrder.aspx.designer.cs">
+      <DependentUpon>SelectAllAdvanceOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceOrder\UpdataAdvanceOrder.aspx.cs">
+      <DependentUpon>UpdataAdvanceOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvanceOrder\UpdataAdvanceOrder.aspx.designer.cs">
+      <DependentUpon>UpdataAdvanceOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\adminAll_application_index.aspx.cs">
+      <DependentUpon>adminAll_application_index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\adminAll_application_index.aspx.designer.cs">
+      <DependentUpon>adminAll_application_index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\admin_look_application.aspx.cs">
+      <DependentUpon>admin_look_application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\admin_look_application.aspx.designer.cs">
+      <DependentUpon>admin_look_application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\refuse_result.aspx.cs">
+      <DependentUpon>refuse_result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\refuse_result.aspx.designer.cs">
+      <DependentUpon>refuse_result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\shuaixuan_car.aspx.cs">
+      <DependentUpon>shuaixuan_car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\shuaixuan_car.aspx.designer.cs">
+      <DependentUpon>shuaixuan_car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\application_index.aspx.cs">
+      <DependentUpon>application_index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\application_index.aspx.designer.cs">
+      <DependentUpon>application_index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assembly\A001.aspx.cs">
+      <DependentUpon>A001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assembly\A001.aspx.designer.cs">
+      <DependentUpon>A001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Use_car\admin_return_car_notice.aspx.cs">
+      <DependentUpon>admin_return_car_notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\admin_return_car_notice.aspx.designer.cs">
+      <DependentUpon>admin_return_car_notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\car_application.aspx.cs">
+      <DependentUpon>car_application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\car_application.aspx.designer.cs">
+      <DependentUpon>car_application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\car_application_submit.aspx.cs">
+      <DependentUpon>car_application_submit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\car_application_submit.aspx.designer.cs">
+      <DependentUpon>car_application_submit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\look_car.aspx.cs">
+      <DependentUpon>look_car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\look_car.aspx.designer.cs">
+      <DependentUpon>look_car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\user_look_application.aspx.cs">
+      <DependentUpon>user_look_application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\user_look_application.aspx.designer.cs">
+      <DependentUpon>user_look_application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\return_car.aspx.cs">
+      <DependentUpon>return_car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\return_car.aspx.designer.cs">
+      <DependentUpon>return_car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\return_car_notice.aspx.cs">
+      <DependentUpon>return_car_notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\return_car_notice.aspx.designer.cs">
+      <DependentUpon>return_car_notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Use_car\success_application.aspx.cs">
+      <DependentUpon>success_application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Use_car\success_application.aspx.designer.cs">
+      <DependentUpon>success_application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\DailyWarranty.aspx.cs">
+      <DependentUpon>DailyWarranty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\DailyWarranty.aspx.designer.cs">
+      <DependentUpon>DailyWarranty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\GetWarranty.aspx.cs">
+      <DependentUpon>GetWarranty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\GetWarranty.aspx.designer.cs">
+      <DependentUpon>GetWarranty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\GetWarrantyInfo.aspx.cs">
+      <DependentUpon>GetWarrantyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\GetWarrantyInfo.aspx.designer.cs">
+      <DependentUpon>GetWarrantyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\GetWarrantyInfos.aspx.cs">
+      <DependentUpon>GetWarrantyInfos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\GetWarrantyInfos.aspx.designer.cs">
+      <DependentUpon>GetWarrantyInfos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\IssueTracking.aspx.cs">
+      <DependentUpon>IssueTracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\IssueTracking.aspx.designer.cs">
+      <DependentUpon>IssueTracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\Processed.aspx.cs">
+      <DependentUpon>Processed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\Processed.aspx.designer.cs">
+      <DependentUpon>Processed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\UpdateWarranty.aspx.cs">
+      <DependentUpon>UpdateWarranty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\UpdateWarranty.aspx.designer.cs">
+      <DependentUpon>UpdateWarranty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warranty\Warranty.aspx.cs">
+      <DependentUpon>Warranty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warranty\Warranty.aspx.designer.cs">
+      <DependentUpon>Warranty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WebApi.aspx.cs">
+      <DependentUpon>WebApi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebApi.aspx.designer.cs">
+      <DependentUpon>WebApi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WXAccredit.aspx.cs">
+      <DependentUpon>WXAccredit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WXAccredit.aspx.designer.cs">
+      <DependentUpon>WXAccredit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WXAppBasic.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WXMaster.Master.cs">
+      <DependentUpon>WXMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WXMaster.Master.designer.cs">
+      <DependentUpon>WXMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="wxmsg.ashx.cs">
+      <DependentUpon>wxmsg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WXQRManage.aspx.cs">
+      <DependentUpon>WXQRManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WXQRManage.aspx.designer.cs">
+      <DependentUpon>WXQRManage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\本机测试.pubxml" />
+    <Content Include="UI\Styles\iconfont.eot" />
+    <Content Include="UI\Styles\iconfont.ttf" />
+    <Content Include="UI\Styles\iconfont.woff" />
+    <Content Include="UI\Styles\iconfont.woff2" />
+    <Content Include="Use_car\fonts\climacons-webfont.eot" />
+    <Content Include="Use_car\fonts\climacons-webfont.svg" />
+    <Content Include="Use_car\fonts\climacons-webfont.ttf" />
+    <Content Include="Use_car\fonts\climacons-webfont.woff" />
+    <Content Include="Use_car\fonts\fontawesome-webfont.eot" />
+    <Content Include="Use_car\fonts\fontawesome-webfont.svg" />
+    <Content Include="Use_car\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Use_car\fonts\fontawesome-webfont.woff" />
+    <Content Include="Use_car\fonts\FontAwesome.otf" />
+    <Content Include="Use_car\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Use_car\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Use_car\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Use_car\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Use_car\fonts\SIMSUNB.TTF" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WXAccredit.aspx" />
+    <Content Include="wxmsg.ashx" />
+    <Content Include="WXMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{92e87534-7cc3-4f4c-8d91-d7610456850f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e072dc3a-1485-4e45-8b67-baad54382ad4}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{52426e3d-8d13-46ae-adb8-1a50113dd04e}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WXInterface\WXInterface.csproj">
+      <Project>{c591dab5-9ce5-4b1a-a456-464d9ff173ef}</Project>
+      <Name>WXInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5341</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5341/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,117 @@
+﻿#search_content{
+    width: 210px;
+}
+
+#adduserinfo{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #eee;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: #8b449c;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#adduserinfo:hover{
+    background: #5e256b;
+}
+
+.pagination{
+    float:left;
+    margin:0;
+}
+
+
+.btn-default{
+    color: #666;
+    background: #ccc;
+    border: 1px solid #bbb;
+}
+
+.btn-default:hover, .btn-default.disabled, .btn-default[disabled]{
+    background-color: #7c7c7c;
+    border-color: #7b7b7b;
+    color: #fff;
+}
+
+
+
+#add_sex > .label.label-default{
+    padding: 5px 18px;
+    margin-right: 8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+
+#add_sex > .label.label-default.
+
+{
+    background: #79c447;
+    color: #fff;
+}
+
+#add_sex > .label.label-default:hover{
+    opacity:1;
+}
+
+
+#AddUserModal input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#WorkDispatching input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+input[type=date]{
+    line-height: 19px;
+}
+
+#add_department{
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0px;
+}
+
+.iconfont, .progress_white, .progress_red, .progress_yellow, .progress_green{
+     cursor: pointer;
+}
+
+.mid {
+    float:left;
+    margin-right:10px;
+}
+
+#form_th > tr > th > i {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+    
+}
+
+#form_th > tr > th.contor > i {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    margin-right: 2px;
+}

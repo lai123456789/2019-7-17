@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-表格字段定义</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/UI/Style/input-autocomplete.css" rel="stylesheet" />
+    <script src="/UI/Scripts/input-autocomplete.js"></script>
+    <link href="UI/Style/TableFieldSetting.css" rel="stylesheet" />
+    <script src="UI/Script/TableFieldSetting.js"></script>
+</head>
+<body>
+
+    <div class="main" id="main">
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">表单名称</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+                <div id="adduserinfo">添加</div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>代码</th>
+                                <th>URL类型</th>
+                                <th>页面URL</th>
+                                <th>备注</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default" id="datalist2">
+            <div class="panel-heading">
+                <h2><strong>字段属性</strong></h2>
+                <div class="binduser disabled">添加</div>
+            </div>
+            <div class="panel-body clearfix">
+                <div class="dd" id="department_list">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th2">
+                            <tr>
+                                <th>字段名</th>
+                                <th>别名</th>
+                                <th>是否显示</th>
+                                <th>宽度大小</th>
+                                <th>排序</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb2"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加表</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>URL类型</td>
+                                <td><input id="add_urltype" type="text" placeholder="请输入URL类型" /></td>
+                            </tr>
+                            <tr>
+                                <td>页面URL</td>
+                                <td><input id="add_pageurl" type="text" placeholder="请输入页面URL" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td><input id="add_remark" type="text" placeholder="请输入备注" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SetUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">编辑表</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>代码</td>
+                                <td id="set_tbcode"></td>
+                            </tr>
+                            <tr>
+                                <td>URL类型</td>
+                                <td><input id="set_urltype" type="text" placeholder="请输入URL类型" /></td>
+                            </tr>
+                            <tr>
+                                <td>页面URL</td>
+                                <td><input id="set_pageurl" type="text" placeholder="请输入页面URL" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td><input id="set_remark" type="text" placeholder="请输入备注" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="BindUserModule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加字段</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>表代码</td>
+                                <td id="addf_tbcode"></td>
+                            </tr>
+                            <tr>
+                                <td>字段名</td>
+                                <td><input id="addf_fieldname" type="text" placeholder="请输入字段名" /></td>
+                            </tr>
+                            <tr>
+                                <td>排序</td>
+                                <td><input id="addf_sort" type="text" placeholder="请输入排序" /></td>
+                            </tr>
+                            <tr>
+                                <td>别名</td>
+                                <td><input id="addf_alias" type="text" placeholder="请输入别名" /></td>
+                            </tr>
+                            <tr>
+                                <td>是否显示</td>
+                                <td><input id="addf_isshow" type="text" placeholder="请输入是否显示（0不显示，1显示）" /></td>
+                            </tr>
+                            <tr>
+                                <td>宽度</td>
+                                <td><input id="addf_widthsize" type="text" placeholder="请输入宽度" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_bindusersure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

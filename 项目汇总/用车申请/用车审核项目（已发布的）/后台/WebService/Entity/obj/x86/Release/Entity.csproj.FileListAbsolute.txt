@@ -1,0 +1,4 @@
+E:\WebService\Entity\bin\x86\Release\Entity.dll
+E:\WebService\Entity\bin\x86\Release\Entity.pdb
+E:\WebService\Entity\obj\x86\Release\Entity.dll
+E:\WebService\Entity\obj\x86\Release\Entity.pdb

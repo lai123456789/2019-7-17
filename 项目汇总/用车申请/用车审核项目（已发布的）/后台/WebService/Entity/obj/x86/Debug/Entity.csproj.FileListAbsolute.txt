@@ -1,0 +1,10 @@
+C:\Users\hp\Desktop\WebService\Entity\bin\x86\Debug\Entity.dll
+C:\Users\hp\Desktop\WebService\Entity\bin\x86\Debug\Entity.pdb
+C:\Users\hp\Desktop\WebService\Entity\obj\x86\Debug\Entity.dll
+C:\Users\hp\Desktop\WebService\Entity\obj\x86\Debug\Entity.pdb
+C:\Users\hp\Desktop\WebService\Entity\obj\x86\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\WebService\Entity\bin\x86\Debug\Entity.dll
+E:\WebService\Entity\bin\x86\Debug\Entity.pdb
+E:\WebService\Entity\obj\x86\Debug\Entity.dll
+E:\WebService\Entity\obj\x86\Debug\Entity.pdb
+E:\WebService\Entity\obj\x86\Debug\Entity.csprojResolveAssemblyReference.cache

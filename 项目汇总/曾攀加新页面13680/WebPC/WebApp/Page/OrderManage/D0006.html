@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-【装配】每日SLA物料及报告事件</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+
+    <link href="UI/Style/D0006.css?1215111212" rel="stylesheet" />
+    <script src="UI/Scripts/D0006.js?20161988"></script>
+</head>
+<body>
+
+    <div class="main" id="main">
+
+        
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <!--<h3 class="panel-title">物料日志</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>-->
+                <div id="query_title">
+                    <div class="query_content">
+                        <select id="onetype">
+                            <option value="全部">全部</option>
+                            <option value="物料代码">物料代码</option>
+                            <option value="物料名称">物料名称</option>
+                            <option value="数量">数量</option>
+                        </select>
+                        <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+
+                        <div class="query_btn">查询</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>序号</th>
+                                <th>物料代码</th>
+                                <th>物料名称</th>
+                                <th>数量</th>
+                                <th>创建人</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_P0010"></ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

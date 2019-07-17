@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-每通网盘</title>
+    <link href="UI/Style/zhongzi.css" rel="stylesheet" />
+    <script src="/ui/scripts/jquery-1.11.3.min.js"></script>
+    <script src="/ui/scripts/basic.js?20190405"></script>
+    <script src="UI/Scripts/zhongzi.js"></script>
+    <!--这里是fileinput控件的-->
+    <link href="UI/css/fileinput.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">-->
+    <!--<link href="UI/explorer-fas/theme.css" rel="stylesheet" />-->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>-->
+    <script src="UI/js/piexif.js"></script>
+    <script src="UI/js/sortable.js"></script>
+    <script src="UI/js/fileinput.js"></script>
+    <script src="UI/js/fr.js"></script>
+    <script src="UI/js/es.js"></script>
+    <script src="UI/js/theme.js"></script>
+    <script src="UI/explorer-fas/theme.js"></script>
+
+</head>
+<body>
+
+    <div class="main" id="main">
+
+        <div class="top_div">
+            <div class="top_contor" id="wangpan">网盘</div>
+            <div id="share">分享</div>
+            <div id="more">更多</div>
+        </div>
+
+        <div class="pan">
+
+
+            <div class="nbaner">
+                <div class="upload">
+                    <div class="tutxt">
+                        <i class="fa fa-upload"></i>
+                        <span style="margin-left:10px;" title="上传">上传</span>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="tutxt1">
+                        <i class="fa fa-book"></i>
+                        <span style="margin-left:10px;" title="新建文件夹">新建文件夹</span>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="tutxt1">
+                        <i class="fa fa-cloud-download"></i>
+                        <span style="margin-left:10px;" title="离线下载">离线下载</span>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="tutxt1">
+                        <i class="fa fa-tablet"></i>
+                        <span style="margin-left:10px;" title="我的设备">我的设备</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="right">
+                <div class="ico">
+
+                    <img src="UI/images/1.png" style="width:28px;height:22px;" />
+                    <img src="UI/images/2.png" style="width:25px;height:22px;" />
+
+                </div>
+                <div class="inp">
+                    <input type="text" id="btn" placeholder="搜索您的文件" />
+                    <i class="fa fa-search"></i>
+                </div>
+
+            </div>
+
+            <div class="quan">
+                <div class="allfiel">
+                    全部文件
+                </div>
+                <div class="allload">
+                    已全部加载，共几个
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="name" value=" " />
+                <label style="margin-left:10px;font-family:宋体;font-size:12px;">全选</label>
+            </div>
+
+
+            <div class="container my-4" style="width:100%;">
+                <!--这里控件开始-->
+                <!--<form enctype="multipart/form-data">
+                    <div class="file-loading">
+                        <input id="kv-explorer" type="file" multiple>
+                    </div>
+                    <br>
+                </form>  <!--竖排表格展示-->
+
+
+                <form enctype="multipart/form-data">
+                    <!--<label>French Input</label>
+                    <div class="file-loading">
+                        <input id="file-fr" name="file-fr[]" type="file" multiple>
+                    </div>
+                    <hr style="border: 2px dotted">-->
+                    <div class="file-loading">
+                        <input id="file-es" name="file-es[]" type="file" multiple>
+                    </div>
+                </form>
+                <hr>
+                <br>
+            </div>
+        </div>
+        <div class="share_div" style="display:none">
+            <div id="share_index">
+                <div id="share_left">
+                    <div id="share_left_text">
+                        <div class="share_contor session"><p><i class="fa fa-comment"></i>会话</p></div>
+                        <div class="friend"><p><i class="fa fa-user"></i>好友</p></div>
+                    </div>
+
+                    <div class="session_div">还没有会话记录</div>
+                    <div class="friend_div" style="display:none">你还没有好友,快添加好友愉快的分享吧</div>
+
+
+                </div>
+                <div id="share_right">
+                    <div class="tuwen">
+                        <div><img src="UI/images/4.jpg" alt="Alternate Text" class="img-responsive" /></div>
+                        <div class="anniu">
+                            <button class="btn btn-primary" style="height:40px;">给好友分享文件</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="more_div" style="display:none">
+            这是更多的页面
+        </div>
+
+        <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">修改信息</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+
+                            <div class="container my-4" style="width:100%;">
+
+                                <form enctype="multipart/form-data">
+
+                                    <div class="file-loading">
+                                        <input id="file-es" name="file-es[]" type="file" multiple>
+                                    </div>
+                                </form>
+                                <hr>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" id="add_sure_edit" data-dismiss="modal">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="zzsc-container">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <input type="file" multiple id="ssi-upload" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>无预览图效果：</h3>
+                        <input type="file" multiple id="ssi-upload2" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>不带拖放区域：</h3>
+                        <input type="file" multiple id="ssi-upload3" />
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+
+    </div>
+    <!--<script type="text/javascript">
+    $('#ssi-upload').ssi_uploader({ url: '#', maxFileSize: 6, allowed: ['jpg', 'gif', 'txt', 'png', 'pdf'] });
+    $('#ssi-upload2').ssi_uploader({ url: '#', preview: false, allowed: ['jpg', 'gif', 'txt', 'png', 'pdf'] });
+    $('#ssi-upload3').ssi_uploader({ url: '#', dropZone: false, allowed: ['jpg', 'gif', 'txt', 'png', 'pdf'] });
+    </script>-->
+    <script>
+    $('#file-fr').fileinput({
+        theme: 'fas',
+        language: 'fr',
+        uploadUrl: '#',
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg']
+    });
+    $('#file-es').fileinput({
+        theme: 'fas',
+        language: 'es',
+        uploadUrl: '#',
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg']  //这里设置支持的格式
+    });
+    </script>
+</body>
+
+</html>

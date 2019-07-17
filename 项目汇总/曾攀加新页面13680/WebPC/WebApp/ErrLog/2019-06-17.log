@@ -1,0 +1,230 @@
+﻿错误时间 : 2019-06-17 18:31:00
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 请求被中止: 操作超时。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:31:22
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:31:43
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:31:43
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:31:44
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:31:59
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:32:14
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:32:30
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:32:45
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:33:00
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:33:16
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:33:31
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:33:46
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:34:02
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:34:17
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:34:32
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:34:48
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:35:03
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:35:18
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:35:33
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 无法连接到远程服务器
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetUserUnNotifyV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 263
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:38:14
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 基础连接已经关闭: 服务器关闭了本应保持活动状态的连接。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetMyTaskUnfinishedListV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 314
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:39:01
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 基础连接已经关闭: 接收时发生错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetMyAcceptTaskListV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 340
+
+***************************************************************
+
+错误时间 : 2019-06-17 18:43:54
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3676API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 基础连接已经关闭: 服务器关闭了本应保持活动状态的连接。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3676API(String url, Dictionary`2 postData, String requestmethod) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\PalmAPIHelper.cs:行号 105
+   在 BLL.BLLUserManage.GetMyAcceptTaskListV2(String usercode, String& json, String& errmsg) 位置 E:\Pain\3738(zenpan)front\WebPC\BLL\BLLUserManage.cs:行号 340
+
+***************************************************************
+

@@ -1,0 +1,20 @@
+﻿错误时间 : 2019-03-20 10:04:07
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (404) 未找到。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 f:\linzhanhao\信息化平台(192.168.1.247)\信息化平台\PC端\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String data, String& json, String& errmsg) 位置 f:\linzhanhao\信息化平台(192.168.1.247)\信息化平台\PC端\WebPC\BLL\BLLRequestData.cs:行号 26
+
+***************************************************************
+
+错误时间 : 2019-03-20 10:06:07
+错误对象 : BLL
+异常方法 : System.String PalmCoreIISAPI(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (404) 未找到。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIISAPI(String url, Dictionary`2 postData, String requestmethod) 位置 f:\linzhanhao\信息化平台(192.168.1.247)\信息化平台\PC端\WebPC\BLL\PalmAPIHelper.cs:行号 39
+   在 BLL.BLLRequestData.RequestIISData(String pageurl, String data, String& json, String& errmsg) 位置 f:\linzhanhao\信息化平台(192.168.1.247)\信息化平台\PC端\WebPC\BLL\BLLRequestData.cs:行号 26
+
+***************************************************************
+

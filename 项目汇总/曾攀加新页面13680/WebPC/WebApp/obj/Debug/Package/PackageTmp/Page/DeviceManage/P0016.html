@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-设备定义</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190324"></script>
+    <link href="/Page/DeviceManage/UI/Style/P0016.css?20190614" rel="stylesheet" />
+    <script src="/Page/DeviceManage/UI/Scripts/P0016.js?20190614"></script>
+    <script src="../../UI/Scripts/dialog.js"></script>
+    <link href="../../UI/Style/stylecheckbox.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="设备名称">设备名称</option>
+                    <option value="设备唯一码">设备唯一码</option>
+                    <option value="工序名称">工序名称</option>
+                    <option value="创建人">创建人</option>
+                    <option value="修改人">修改人</option>
+                    <option value="备注">备注</option>
+                    <option value="版本号">版本号</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+
+
+
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="创建时间">创建时间</option>
+                    <option value="修改时间">修改时间</option>
+                    <option value="心跳时间">最后心跳时间</option>
+                </select>
+                <div id="datetype_date" style="display:none;">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid" style="width:auto;">-</div>
+                    <input id="enddate" type="date" value="" />
+                </div>
+              
+                <select id="numbertype">
+                    <option value="全部">全部</option>
+                    <option value="装配">装配</option>
+                    <option value="机加">机加</option>
+                    <option value="门禁">门禁</option>
+                </select>
+                <input type="text" id="numberval" value="" placeholder="请输入" style="display:none" />
+
+            
+                <select id="twotype">
+                    <option value="全部">全部</option>
+                    <option value="在线">在线</option>
+                    <option value="离线">离线</option>
+                </select>
+
+                <div class="query_btn">
+                    <span class=" glyphicon glyphicon-search" aria-hidden="true"></span>
+                    查询
+                </div>
+
+
+
+
+  </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">设备定义</h3>
+
+                <!--<div id="progress1">
+
+                </div>-->
+               
+                <div class="panel-options">
+                    <button class="btn btn-success bindMedef" >
+                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 
+                       绑定
+                    </button>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered col-selectable row-selectable" style="width:calc(100% - 2px);table-layout:auto!important;text-align: left;" >
+                        <thead id="form_th">
+                            <tr>
+                                <th data-val="序号" >序号</th>
+                                <th data-val="操作">操作<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="状态">状态<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="设备名称">设备名称<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="设备唯一码" >设备唯一码<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="类型" >类型<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="工序名称">工序名称<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="版本号" >版本号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="心跳时间" >最后心跳时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="备注">备注<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="创建人">创建人<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="创建时间">创建时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="修改人" >修改人<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="修改时间" >修改时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="修改次数">修改次数<i class="iconfont">&#xe733;</i></th>
+                               
+
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+
+                </div>
+                <ul class="pagination" id="pagination_P0016"></ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="AddMacDefModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加设备信息</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>设备名称</td>
+                                <td><input id="add_mcdefcode"  class="ipt"  type="text" placeholder="请输入设备名称" /></td>
+                            </tr>
+
+                            <tr>
+                                <td>类型</td>
+                                <td style="text-align: left;">
+                                    
+                                    <input type="radio" name="grop" class="blue  radiobtn" id="r2" value="0" checked><label for="r2">装配</label>
+                                    <input type="radio" name="grop" class="blue  radiobtn" id="r3" value="1"> <label for="r3">机加</label>
+                                    <input type="radio" name="grop" class="blue  radiobtn" id="r4" value="2"> <label for="r4">门禁</label>
+
+                                </td>
+
+                            </tr>
+
+                            <tr id="flowInput">
+                                <td>工序名称</td>
+                                <td>
+                                <select id="flows">
+                                    
+                                </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>设备唯一码</td>
+                                <td><input id="add_machineuqcode" class="ipt"   type="text" placeholder="请输入设备唯一码" /></td>
+                            </tr>
+
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <textarea class="form-control des" rows="3"></textarea>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_macdefSure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="UpdateMacDefModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialogupdate" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">修改设备信息</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>设备名称</td>
+                                <td><input id="update_mcdefcode" class="ipt" type="text" placeholder="请输入设备名称" /></td>
+                            </tr>
+                            <tr >
+                                <td>类型</td>
+                                <td style="text-align: left;">
+                                    <input type="radio" name="grop1" class="blue  radiobtn" id="r22" value="0"> <label for="r22">装配</label>
+                                    <input type="radio" name="grop1" class="blue  radiobtn" id="r33" value="1"> <label for="r33">机加</label>
+                                    <input type="radio" name="grop1" class="blue  radiobtn" id="r44" value="2"> <label for="r44">门禁</label>
+
+                                </td>
+
+                            </tr>
+
+                            <tr id="updateflowInput">
+                                <td>工序名称</td>
+                                <td>
+                                    <select id="update_flows"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>设备唯一码</td>
+                                <td><input id="update_machineuqcode" class="ipt"   type="text" placeholder="请输入设备唯一码" /></td>
+                            </tr>
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <textarea class="form-control update_des" rows="3"></textarea>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="update_macdefSure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <button id="showNoti">显示通知</button>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#showNoti").click(function () {
+                if (!window.Notification) {
+                    alert("浏览器不支持通知！");
+                }
+                console.log(window.Notification.permission);
+                if (window.Notification.permission != 'granted') {
+                    Notification.requestPermission(function (status) {
+                        //status是授权状态，如果用户允许显示桌面通知，则status为'granted'
+                        console.log('status: ' + status);
+                        //permission只读属性:
+                        //  default 用户没有接收或拒绝授权 不能显示通知
+                        //  granted 用户接受授权 允许显示通知
+                        //  denied  用户拒绝授权 不允许显示通知
+                        var permission = Notification.permission;
+                        console.log('permission: ' + permission);
+                    });
+                }
+                var n = new Notification("您有一条消息！", { "icon": "", "body": "您一分钟后将有好运气" });
+                n.onshow = function () {
+                    console.log("显示通知");
+                    //setTimeout(function () { n.close() }, 2000);
+                };
+                n.onclick = function () {
+                    //alert("打开相关视图");
+                    window.open("/Page/Test.html");
+                    n.close();
+                };
+                n.onclose = function () { console.log("通知关闭"); };
+                n.onerror = function (err) {
+                    console.log(err);
+                };
+            });
+        });
+    </script>
+</body>
+</html>

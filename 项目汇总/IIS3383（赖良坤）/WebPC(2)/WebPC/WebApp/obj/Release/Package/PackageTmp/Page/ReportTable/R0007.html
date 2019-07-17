@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-订单明细</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/UI/Style/superTables.css" rel="stylesheet" />
+    <script src="/UI/Scripts/supertables.js"></script>
+    <link href="/Page/ReportTable/UI/Style/R0007.css?20190406" rel="stylesheet" />
+    <script src="/Page/ReportTable/UI/Scripts/R0007.js?20190406"></script>
+    
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="购货单位">购货单位</option>
+                    <option value="PJ">PJ</option>
+                    <option value="申购单号">申购单号</option>
+                    <option value="part编码">part编码</option>
+                    <option value="PO">PO</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+                <select id="twotype">
+                    <option value="全部">全部</option>
+                    <option value="产品料号">产品料号</option>
+                    <option value="产品名称">产品名称</option>
+                    <option value="项目名称">项目名称</option>
+                    <option value="业务员">业务员</option>
+                    <option value="part编码">part编码</option>
+                    <option value="研发量产">研发/量产</option>
+                    <!--<option value="类别一">类别一</option>
+                    <option value="类别二">类别二</option>
+                    <option value="收货人">收货人</option>
+                    <option value="夹具分类">夹具分类</option>
+                    <option value="版本">版本</option>
+                    <option value="备注">备注</option>-->
+                </select>
+                <input type="text" id="twoval" value="" placeholder="请输入" style="display:none" />
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="接单日期">接单日期</option>
+                    <option value="文控下图日期">下图日期</option>
+                    <option value="承诺客户日期">承诺日期</option>
+                    <option value="最大齐套时间">最大齐套时间</option>
+                    <option value="要求配件到货日期">配件到货日期</option>
+                </select>
+                <div id="datetype_date" style="display:none">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid">-</div>
+                    <input id="enddate" type="date" value="" />
+                </div>
+                <select id="numbertype">
+                    <option>全部</option>
+                    <option value="未下图">未下图</option>
+                    <option value="未完成">未完成</option>
+                    <option value="已完成">已完成</option>
+                    <option value="已入库未出货">已入库未出货</option>
+                    <option value="全部">全部</option>
+                    <option value="暂停">暂停</option>
+                    <option value="取消">取消</option>
+                </select>
+
+                <select id="fourtype">
+                    <option value="全部">全部</option>
+                    <option value="PJ">PJ</option>
+                    <option value="申购单号">申购单号</option>
+                    <option value="part编码">part编码</option>
+                    <option value="PO">PO</option>
+                    <option value="购货单位">购货单位</option>
+                    <option value="业务员">业务员</option>
+                    <option value="项目名称">项目名称</option>
+                    <option value="类别一">类别一</option>
+                    <option value="类别二">类别二</option>
+                    <option value="收货人">收货人</option>
+                    <option value="夹具分类">夹具分类</option>
+                    <option value="产品料号">产品料号</option>
+                    <option value="产品名称">产品名称</option>
+                    <option value="版本">版本</option>
+                    <option value="备注">备注</option>
+                    <option value="文控下图日期">文控下图日期</option>
+                    <option value="接单日期">接单日期</option>
+                    <option value="要求配件到货日期">要求配件到货日期</option>
+                    <option value="订单数量">订单数量</option>
+                    <option value="发货数量">发货数量</option>
+                    <option value="欠数">欠数</option>
+                    <option value="总入库数">总入库数</option>
+                    <option value="已入库未出货">已入库未出货</option>
+                    <option value="物料齐套数">物料齐套数</option>
+                </select>
+                <input type="text" id="fourval" value="" placeholder="请输入" style="display:none" />
+
+                <select id="fivetype">
+                    <option value="非每通">非每通</option>
+                    <option value="每通">每通</option>
+                    <option value="全部">全部</option>
+                </select>
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">订单明细</h3>
+                <div id="progress1">
+                    
+                </div>
+                <div id="progress2">
+                    
+                </div>
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="editcontent">启用修改</a>
+                    <a href="JavaScript:;" id="closeeditcontent">关闭修改</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th data-type="num">序号</th>
+                                <th data-val="购货单位">购货单位<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="业务员">业务员<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="PJ">PJ<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="项目名称">项目名称<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="类别一">类别一<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="类别二">类别二<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="申购单号">申购单号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="研发量产">研发/量产<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="承诺客户日期">承诺客户日期<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="交货地址">交货地址<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="收货人">收货人<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="夹具分类">夹具分类<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="产品料号">产品料号<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="产品名称">产品名称<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="part编码">part编码<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="版本">版本<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="订单数量">订单数量<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="发货数量">发货数量<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="欠数">欠数<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="总入库数">总入库数<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="已入库未出货">已入库未出货<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="文控下图日期">文控下图日期<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="接单日期">接单日期<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="PO">PO<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="备注">备注<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="要求配件到货日期">要求配件到货日期<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="配件实际齐套时间">配件实际齐套时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="物料齐套数">物料齐套数<i class="iconfont">&#xe733;</i></th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_9">
+                    <!--<li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

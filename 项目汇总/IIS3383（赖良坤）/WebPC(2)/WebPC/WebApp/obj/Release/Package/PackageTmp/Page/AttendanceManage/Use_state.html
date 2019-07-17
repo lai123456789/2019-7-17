@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>每通信息化平台-物料明细</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/Page/ReportTable/UI/Style/R0001.css?20190404" rel="stylesheet" />
+    <link href="UI/Style/WordOrder.css" rel="stylesheet" />
+    <link href="UI/Style/yy_pagegps.css" rel="stylesheet" />
+    <script src="UI/Scripts/Use_state.js"></script>
+    <script src="UI/Scripts/yy_pagegps.js"></script>
+
+    <link href="UI/Style/gallery.css" rel="stylesheet" />
+    <link href="UI/Style/uploader-font.css" rel="stylesheet" />
+    <link href="UI/Style/weui.css" rel="stylesheet" />
+    <script src="UI/Scripts/weui-uploader.js"></script>
+    <script src="UI/Scripts/zepto.min.js"></script>
+
+
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <input type="text" id="gonghao" value="" autocomplete="off" placeholder="请输入工号或者姓名" />
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">使用状态</h3>
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th class="contor" data-type="string" data-val="user_id">工号<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="user_name">姓名<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="num" data-val="IP">IP<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="MD5_ID" style="display:none">MD5_ID<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="GUID">GUID<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="UUID">UUID<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="status">状态<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="操作">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb1"></tbody>
+                    </table>
+                </div>
+                <div id="yy_pagegps01" class="yy_pagegps" data-page="1" data-pagenums="1" style="bottom:30px;position:fixed;width:100%;text-align:center !important"></div>
+
+                
+            </div>
+        </div>
+
+        <!--测试表格导出-->
+        <table id="tableExcel" width="100%" class="table table-hover" style="display:none">
+            <thead id="form_th">
+                <tr>
+                    <th class="contor" data-type="string" data-val="user_id">工号</th>
+                    <th class="contor" data-type="string" data-val="user_name">姓名</th>
+                    <th class="contor" data-type="num" data-val="IP">IP</th>
+                    <th class="contor" data-type="string" data-val="MD5_ID" style="display:none">MD5_ID</th>
+                    <th class="contor" data-type="string" data-val="GUID">GUID</th>
+                    <th class="contor" data-type="string" data-val="UUID">UUID</th>
+                    <th class="contor" data-type="string" data-val="status">状态</th>
+                   
+                </tr>
+            </thead>
+            <tbody id="excel"></tbody>
+        </table>
+        <a id="dlink" style="display:none;"></a>
+        <input type="text" name="" value="请输入文件名" class="center-block form-control" style="margin-bottom: 20px;display:none; text-align: center" id="submit" onclick="submt()">
+       
+        <!--测试表格导出-->
+
+       
+
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">推送消息</h5>
+                </div>
+                <div class="modal-body" style="">
+
+                    <div class="container">
+                        <!--上传图片开始-->
+                        <!--gallery start 预览图-->
+                        <div class="weui-gallery" id="gallery">
+                            <span class="weui-gallery__img" id="galleryImg"></span>
+                            <div class="weui-gallery__opr">
+                                <a href="javascript:" class="weui-gallery__del">
+                                    <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--gallery end-->
+                        <!--upload start-->
+
+                        <div class="weui_cells weui_cells_form" style="max-width:400px;margin-left:50px;">
+                            <div class="weui_cell">
+                                <div class="weui_cell_bd weui_cell_primary" style="margin-left:10px;">
+                                    <div class="weui_uploader">
+                                        
+                                        <div style="float:left;margin-right:30px;margin-top:30px;font-size:14px">图片上传</div>
+                                        <div class="weui_uploader_bd">
+                                            <ul class="weui_uploader_files"></ul>
+                                            <div class="weui_uploader_input_wrp" style="bottom:10px;">
+                                                <input class="weui_uploader_input js_file" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--upload end-->
+                    </div><br/>   <!--上传图片结束-->
+                    <div class="form-group" style="margin-left:90px;">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" style="display:inline-flex">
+                                    <div style="width:110px;margin-right:-30px;">标题：</div>
+                                    <input type="text" id="biaoti" maxlength="11" onkeyup="displayResult()" placeholder="请输入10个字以内的标题" class="form-control" style="width:300px;">
+                                    <span id="error" style="display:none;color:red;">输入字符长度不得大于10！</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-left:90px;">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" style="display:inline-flex">
+                                    <div style="width:80px;">消息内容：</div>
+                                    <div class="weui-cells weui-cells_form">
+                                        <div class="weui-cell">
+                                            <div class="weui-cell__bd">
+                                                <textarea class="form-control" style="width:300px;" placeholder="请在此处输入消息内容" rows="5" id="descrip_content" onkeyup="wordStatic(this);"></textarea>
+                                                <span class="weui-textarea-counter weui_cells_title" style="bottom:0;"><span id="cnt">0</span></span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-left:90px;">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" style="display:inline-flex">
+                                    <div style="width:110px;margin-right:-30px;">URL地址：</div>
+                                    <input type="text" id="url1" placeholder="请输入URL地址" class="form-control" style="width:300px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="MD5_ID_edit" style="display:none"></div>
+                    <div id="uname" style="display:none"></div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="upload_info" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

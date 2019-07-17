@@ -1,0 +1,8 @@
+C:\Users\hp\Desktop\WebService\Common\bin\x86\Debug\Common.dll
+C:\Users\hp\Desktop\WebService\Common\bin\x86\Debug\Common.pdb
+C:\Users\hp\Desktop\WebService\Common\obj\x86\Debug\Common.dll
+C:\Users\hp\Desktop\WebService\Common\obj\x86\Debug\Common.pdb
+E:\WebService\Common\bin\x86\Debug\Common.dll
+E:\WebService\Common\bin\x86\Debug\Common.pdb
+E:\WebService\Common\obj\x86\Debug\Common.dll
+E:\WebService\Common\obj\x86\Debug\Common.pdb

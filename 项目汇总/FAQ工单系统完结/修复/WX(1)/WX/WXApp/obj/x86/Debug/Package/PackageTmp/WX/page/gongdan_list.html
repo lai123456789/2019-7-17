@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="script/jquery-1.11.3.min.js"></script> 
+    <script src="../../UI/Scripts/Basic.js"></script>       
+    <link href="css/yy_pagegps.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="css/UserManage.css" rel="stylesheet" />
+    <link href="css/123.css" rel="stylesheet"> 
+    <link href="css/WordOrder.css" rel="stylesheet" />
+    <script src="script/yy_pagegps.js"></script>
+    <script src="script/WordOrder.js"></script>
+    <!--<script src="script/ImageManage.js"></script>
+    <script src="script/info_gongdan.js"></script>-->
+</head>
+<body>
+<div class="page-wrapper">
+
+    <!--左边导航-->
+    
+<!-- 页面左边导航开始 -->
+<div class="page-sidebar">
+    <div class="logo-wrap">
+        <a href="" class="block">
+            <img class="img-oray" src="img/MT.png" width="70px" height="31px">
+        </a>
+    </div>
+    <ul class="menu-level-1" id="index">
+        <!--<li class="level-1-item">
+            <a href='' class="toggle-item">
+                <i class="iconfont"></i>
+                <span>首页</span>
+            </a>
+        </li>-->               
+        <li class="level-1-item">
+            <a class="toggle-item" href="create_gongdan.html">
+                <i class="iconfont"></i>
+                <span>创建工单</span>
+            </a>
+        </li>
+        <li class="level-1-item active">
+            <a class="toggle-item" href="gongdan_list.html">
+                <i class="iconfont"></i>
+                <span>工单分页列表</span>
+            </a>
+        </li>
+        <!--<li class="level-1-item">
+            <a class="toggle-item" href="info_gongdan.html">
+                <i class="iconfont"></i>
+                <span>工单详情</span>
+            </a>
+            
+        </li>-->
+        
+    </ul>
+    <div class="packup-btn-wrap">
+        <div class="packup-btn-box">
+            <a data-open="true" id="packup-btn" href="javascript:void(0);"  class="iconfont" style="font-size: 20px;color: #fff;">&#xe844;</a>
+        </div>
+    </div>
+</div>
+<!-- 页面左边导航结束 -->
+    <!--右边内容-->
+    <div class="page-main">
+        <!-- 页面右边顶部导航栏开始 -->
+<div class="top-bar">
+    <ul class="nav-menu-list" id="console-header">
+        <li class="item no-border">
+            <a href="javascript:void(0);" style="width: 160px;">
+                账号信息： <span id="list_user"></span>
+                <i class="iconfont more-icon"></i>
+            </a>            
+        </li> 
+        <li class="item">
+            <a href="javascript:;"><span id="list_layout">注销</span></a>
+        </li>        
+        <li class="item">
+            <a href="http://www.mtworld.cn/index.asp"><span>每通
+                </span><i class="iconfont more-icon"></i></a>
+            
+        </li>
+    </ul>
+</div>
+<!-- 页面右边顶部导航栏结束 -->
+        <div id="query_title">
+            <div class="query_content">
+                <input type="text" id="search_content1" value="" placeholder="请输入工单号" />
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+
+    <!-- 页面中间内容开始-->
+    <!-- 分页列表项 -->
+   
+           
+        <div id="di1">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:center">产品</th>
+                        <th style="text-align:center">状态</th>
+                        <th style="text-align:center">工单编号</th>                                               
+                        <th style="text-align:center">创建时间</th>
+                        <th style="text-align:center">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="tb_account">
+                </tbody>
+            </table>
+
+            <div id="yy_pagegps01" class="yy_pagegps" data-page="1" data-pagenums="1"></div>
+        </div>        
+  
+
+
+    <!-- 页面中间内容结束-->
+
+        
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-长交期审核设置</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/UI/Style/superTables.css" rel="stylesheet" />
+    <script src="/UI/Scripts/supertables.js"></script>
+    <link href="/UI/Style/style.css" rel="stylesheet" />
+    <link href="/UI/Style/input-autocomplete.css" rel="stylesheet" />
+    <script src="/UI/Scripts/input-autocomplete.js"></script>
+    <script src="/UI/Scripts/pagination.min.js"></script>
+    <link href="/Page/OrderManage/UI/Style/D0003.css?201905201" rel="stylesheet" />
+    <script src="/Page/OrderManage/UI/Scripts/D0003.js?201905201"></script>
+</head>
+<body>
+
+    <div class="main" id="main">
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">审核级别</h3>
+                <div class="add-audit">添加</div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>审核顺序</th>
+                                <th>审核名称</th>
+                                <th>编辑</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb">
+                            <!--<tr>
+                                <td>1</td>
+                                <td>一审</td>
+                                <td>
+                                    <a class="删除"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>二审</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>三审</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>四审</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>五审</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>六审</td>
+                                <td>0</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default" id="datalist2">
+            <div class="panel-heading">
+                <h2><strong>业务通知人员</strong></h2>
+                <div class="binduser disabled">绑定</div>
+            </div>
+            <div class="panel-body clearfix">
+                <div class="dd" id="department_list">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th2">
+                            <tr>
+                                <th>工号</th>
+                                <th>姓名</th>
+                                <th>微信</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb2"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加审核</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>审核类型名称</td>
+                                <td><input id="add_bname" type="text" placeholder="请输入审核名称" /></td>
+                            </tr>
+                            <!--<tr>
+                                <td>审核级别</td>
+                                <td>
+                                    <select id="audit">
+                                        <option value="1">一审</option>
+                                        <option value="2">二审</option>
+                                        <option value="3">三审</option>
+                                        <option value="4">四审</option>
+                                        <option value="5">五审</option>
+                                        <option value="6">六审</option>
+                                        <option value="7">七审</option>
+                                        <option value="8">八审</option>
+                                    </select>
+                                </td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SetUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">审核编辑</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>审核类型代码</td>
+                                <td id="set_bcode"></td>
+                            </tr>
+                            <tr>
+                                <td>审核类型名称</td>
+                                <td><input id="set_bname" type="text" placeholder="请输入审核名称" /></td>
+                            </tr>
+                            <tr>
+                                <td>审核级别</td>
+                                <td>
+                                    <input id="set_audit" type="text" placeholder="请输入审核级别" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="BindUserModule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">添加人员</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>绑定用户</td>
+                                <td id="set_binduser">
+                                    <input id="binduserlist" class="input-default" autocomplete="off" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="set_bindusersure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

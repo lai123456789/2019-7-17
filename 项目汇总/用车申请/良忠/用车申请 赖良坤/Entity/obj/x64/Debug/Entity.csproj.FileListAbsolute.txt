@@ -1,0 +1,5 @@
+F:\linzhanhao\MES\WX\WX\Entity\bin\x64\Debug\Entity.dll
+F:\linzhanhao\MES\WX\WX\Entity\bin\x64\Debug\Entity.pdb
+F:\linzhanhao\MES\WX\WX\Entity\obj\x64\Debug\Entity.csprojResolveAssemblyReference.cache
+F:\linzhanhao\MES\WX\WX\Entity\obj\x64\Debug\Entity.dll
+F:\linzhanhao\MES\WX\WX\Entity\obj\x64\Debug\Entity.pdb

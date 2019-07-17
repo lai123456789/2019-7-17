@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WXMaster.master.cs" Inherits="WXApp.WXMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=4)" />  
+    <title></title>
+    <link href="UI/Styles/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <link href="/UI/Styles/iconfont.css?20190415011" rel="stylesheet" />
+    <link href="/UI/Styles/basic.css?20190416" rel="stylesheet" />
+    <link href="/UI/Styles/phonekey/phonekey.css" rel="stylesheet" />
+    <link href="/UI/Styles/mobiscroll.custom.min.css" rel="stylesheet" />
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/jquery.mobile-1.4.5.js"></script>
+    <script src="/UI/Scripts/mobiscroll.custom.min.js"></script>
+    <script src="/UI/Scripts/flexible.js"></script>
+    <script src="/UI/Scripts/basic.js?20190416"></script>
+    <script src="/UI/Scripts/phonekey/phonekey.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body> 
+    <div id="maindiv"  data-role="page"  style="overflow-y: scroll;width:100%;max-height:100%" >
+        <div id="top">
+            <div class="title">
+                <div class="control1">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+                    <%--<i class="iconfont">&#xe613;</i>--%>
+                </div>
+                <div class="control2"></div>
+                <div class="control3">
+                    <div class="titlename">每通信息(试用)</div>
+                </div>
+                <div class="control4">
+                    <i class="iconfont">&#xe67a;</i>
+                </div>
+                <div class="control5">
+                    <i class="iconfont">&#xe616;</i>
+                </div>
+            </div>
+        </div>
+        
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    </div>
+
+    
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+</body>
+</html>

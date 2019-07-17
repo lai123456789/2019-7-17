@@ -1,0 +1,40 @@
+﻿错误时间 : 2019-04-12 09:22:07
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3380API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3380API(String url, Dictionary`2 postData, String requestmethod) 位置 f:\信息化平台\testWX\WX\BLL\PalmAPIHelper.cs:行号 144
+   在 BLL.BLLRequestData.RequestIIS3380Data(String pageurl, String data, String& json, String& errmsg) 位置 f:\信息化平台\testWX\WX\BLL\BLLRequestData.cs:行号 54
+
+***************************************************************
+
+错误时间 : 2019-04-12 09:23:01
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3380API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3380API(String url, Dictionary`2 postData, String requestmethod) 位置 f:\信息化平台\testWX\WX\BLL\PalmAPIHelper.cs:行号 144
+   在 BLL.BLLRequestData.RequestIIS3380Data(String pageurl, String data, String& json, String& errmsg) 位置 f:\信息化平台\testWX\WX\BLL\BLLRequestData.cs:行号 54
+
+***************************************************************
+
+错误时间 : 2019-04-12 09:23:31
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3380API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3380API(String url, Dictionary`2 postData, String requestmethod) 位置 f:\信息化平台\testWX\WX\BLL\PalmAPIHelper.cs:行号 144
+   在 BLL.BLLRequestData.RequestIIS3380Data(String pageurl, String data, String& json, String& errmsg) 位置 f:\信息化平台\testWX\WX\BLL\BLLRequestData.cs:行号 54
+
+***************************************************************
+
+错误时间 : 2019-04-12 09:26:04
+错误对象 : BLL
+异常方法 : System.String PalmCoreIIS3380API(System.String, System.Collections.Generic.Dictionary`2[System.String,System.String], System.String)
+错误信息 : 远程服务器返回错误: (500) 内部服务器错误。
+堆栈内容 : 
+   在 BLL.PalmAPIHelper.PalmCoreIIS3380API(String url, Dictionary`2 postData, String requestmethod) 位置 f:\信息化平台\testWX\WX\BLL\PalmAPIHelper.cs:行号 144
+   在 BLL.BLLRequestData.RequestIIS3380Data(String pageurl, String data, String& json, String& errmsg) 位置 f:\信息化平台\testWX\WX\BLL\BLLRequestData.cs:行号 54
+
+***************************************************************
+

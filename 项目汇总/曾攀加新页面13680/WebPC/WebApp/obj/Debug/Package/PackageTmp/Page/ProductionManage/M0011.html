@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>每通信息化平台-角色PC权限</title>
+        <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+        <script src="/UI/Scripts/Basic.js?20190425"></script>
+        <link href="/Page/ProductionManage/UI/Style/M0011.css?20190408" rel="stylesheet" />
+        <script src="/Page/ProductionManage/UI/Script/M0011.js?20190408"></script>
+    </head>
+    <body>
+
+        <div class="main" id="main">
+            <div class="panel panel-default" id="datalist">
+                <div class="panel-box">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">标签定义</h3>
+                        <div id="addlable" class="add">添加</div>
+                    </div>
+                    <div class="panel-body" id="panel_table02">
+                        <div class="table-responsive" id="div_form_table02">
+                            <table id="form_table02" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                <thead id="form_th02">
+                                    <tr>
+                                        <th>组别名称</th>
+                                        <th>备注</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="form_tb02">
+                                    <tr>
+                                        <td>组装一组</td>
+                                        <td>XX带队的分组</td>
+                                        <td>
+                                            <a href="JavaScript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>组装二组</td>
+                                        <td>XX带队的分组</td>
+                                        <td>
+                                            <a href="JavaScript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-box">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">上班时间段定义</h3>
+                        <div id="addtimelist" class="add">添加</div>
+                    </div>
+                    <div class="panel-body" id="panel_table01">
+                        <div class="table-responsive" id="div_form_table01">
+                            <table id="form_table01" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                <thead id="form_th01">
+                                    <tr>
+                                        <th>上班时间</th>
+                                        <th>开始时间</th>
+                                        <th>结束时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="form_tb01">
+                                    <tr>
+                                        <td>早上</td>
+                                        <td>08:00</td>
+                                        <td>12:10</td>
+                                        <td>
+                                            <a href="JavaScript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>下午</td>
+                                        <td>13:40</td>
+                                        <td>18:00</td>
+                                        <td>
+                                            <a href="JavaScript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>晚上</td>
+                                        <td>18:30</td>
+                                        <td>20:30</td>
+                                        <td>
+                                            <a href="JavaScript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>夜班1</td>
+                                        <td>20:30</td>
+                                        <td>00:30</td>
+                                        <td>
+                                            <a href="JavaScript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>夜班2</td>
+                                        <td>02:00</td>
+                                        <td>08:00</td>
+                                        <td>
+                                            <a href="JavaScript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">添加角色</h5>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>角色名称</td>
+                                    <td><input id="add_rolename" type="text" placeholder="请输入角色名称" /></td>
+                                </tr>
+                                <tr>
+                                    <td>备注</td>
+                                    <td><input id="add_remark" type="text" placeholder="请输入备注" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" id="add_sure">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="SetUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="modalDialog" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">编辑页面</h5>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>角色代码</td>
+                                    <td id="set_rolecode"></td>
+                                </tr>
+                                <tr>
+                                    <td>角色名称</td>
+                                    <td><input id="set_rolename" type="text" placeholder="请输入页面名称" /></td>
+                                </tr>
+                                <tr>
+                                    <td>备注</td>
+                                    <td>
+                                        <input id="set_remark" type="text" placeholder="请输入备注" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-success" id="set_sure">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

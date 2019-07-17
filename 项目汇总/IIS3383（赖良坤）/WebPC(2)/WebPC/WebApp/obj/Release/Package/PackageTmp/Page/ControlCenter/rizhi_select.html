@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-物料明细</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190405"></script>
+    <link href="/UI/Style/superTables.css" rel="stylesheet" />
+    <script src="/UI/Scripts/supertables.js"></script>
+    <link href="/UI/Style/style.css" rel="stylesheet" />
+    <!--<script src="/UI/Scripts/pagination.min.js"></script>-->
+    <link href="/Page/ReportTable/UI/Style/R0001.css?20190404" rel="stylesheet" />
+
+
+    <script src="UI/Scripts/rizhi_select.js"></script>
+
+    <link href="UI/Style/WordOrder.css" rel="stylesheet" />
+    <link href="UI/Style/yy_pagegps.css" rel="stylesheet" />
+    <!--<script src="UI/Scripts/WordOrder.js"></script>-->
+    <script src="UI/Scripts/yy_pagegps.js"></script>
+</head>
+<body>
+    <input type="hidden" id="account" value="" />
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+
+                <!--<select id="select_input">
+                <option value="user_id">工号</option>
+                <option value="user_name">姓名</option>
+                <option value="name">程序名</option>
+                <option value="time">时间</option>-->
+                <!--<option value="time">时间</option>-->
+                <!--</select>
+            <input type="text" id="gonghao" value="" autocomplete="off" placeholder="请输入工号、姓名或者程序名" style="width:200px"/>
+            <div id="datetype_date" style="display:none">
+                <input id="startdate" type="date" value="" />
+                <div class="mid">-</div>
+                <input id="enddate" type="date" value="" />
+            </div>-->
+
+                <select id="twotype">
+                    <option value="全部">全部</option>
+                    <option value="user_id">工号</option>
+                    <option value="user_name">姓名</option>
+                </select>
+                <input type="text" id="twoval" value="" placeholder="请输入" style="display:none" />
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="name">程序名</option>
+
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="start_time">启动时间</option>
+                    <option value="exit_time">结束时间</option>
+                </select>
+                <div id="datetype_date" style="display:none">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid">-</div>
+                    <input id="enddate" type="date" value="" />
+                    <!--<input type="text" value=" " />-->
+                </div>
+
+
+                <!--<select id="onetype1">
+                    <option value="全部">全部</option>
+                    <option value="run_time">运行时长</option>
+
+                </select>-->
+                <select id="rn_time">
+                    <option value="全部">全部</option>
+                    <option value="run_time">开始运行时长</option>
+                    <option value="run_time">结束运行时长</option>
+                </select>
+                <div id="rn_time_val" style="display:none">
+                    <input id="startdate1" type="number" value="" style="float:left" onkeyup="if( ! /^d*(?:.d{0,2})?$/.test(this.value)){alert('只能输入数字，小数点后只能保留两位');this.value='';}" />
+                    <div class="mid">-</div>
+                    <input id="enddate1" type="number" value="" onkeyup="if( ! /^d*(?:.d{0,2})?$/.test(this.value)){alert('只能输入数字，小数点后只能保留两位');this.value='';}" />
+                    <!--<input type="text" value=" " />-->
+                </div>
+                <!--<input type="number" id="oneval1" value="" placeholder="请输入" style="display:none" />-->
+
+
+               
+                <div class="query_btn" style="">查询</div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">日志查询</h3>
+                <div class="panel-options">
+                    <a href="JavaScript:;" id="allselect" class="hide">全选</a>
+                    <a href="JavaScript:;" id="allnoselect" class="hide">全不选</a>
+                    <a href="JavaScript:;" id="selectclose" class="hide">一键关闭</a>
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table" > <!--style='overflow:scroll;overflow-y:hidden;'去掉滚动条-->
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th class="contor" data-type="num" data-val="IP">IP<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="user_id">工号<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="user_name">姓名<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" style="display:none" data-val="MD5_ID">MD5_ID<i class="iconfont">&#xe733;</i></th>
+                                <!--<th class="contor" data-type="string" data-val="GUID">GUID<i class="iconfont">&#xe733;</i></th>-->
+                                <th class="contor" data-type="string" data-val="UUID">UUID<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="name">程序名<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="alias">别名<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="class">分类<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="start_time">最后启动时间<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="exit_time">最后结束时间<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="run_time">运行时长<i class="iconfont">&#xe733;</i></th>
+                                <th class="contor" data-type="string" data-val="status">运行状态<i class="iconfont">&#xe733;</i></th>
+                                <th data-type="string" data-val="详情">详情</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <div id="yy_pagegps01" class="yy_pagegps" data-page="1" data-pagenums="1" style=""></div>
+
+                <ul class="pagination" id="pagination_9">
+                    <!--<li class="active">
+                <a href="#">1</a>
+            </li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+        <!--测试表格导出-->
+        <table id="tableExcel" width="100%" class="table table-hover" style="display:none">
+            <thead id="form_th">
+                <tr>
+                    <th class="contor" data-type="num" data-val="IP">IP</th>
+                    <th class="contor" data-type="string" data-val="user_id">工号</th>
+                    <th class="contor" data-type="string" data-val="user_name">姓名</th>
+                    <th class="contor" data-type="string" data-val="MD5_ID" style="display:none">MD5_ID</th>
+                    <th class="contor" data-type="string" data-val="GUID">GUID</th>
+                    <th class="contor" data-type="string" data-val="UUID">UUID</th>
+                    <th class="contor" data-type="string" data-val="UUID">程序名</th>
+                    <th class="contor" data-type="string" data-val="UUID">别名</th>
+                    <th class="contor" data-type="string" data-val="UUID">分类</th>
+                    <th class="contor" data-type="string" data-val="status">最后启动时间</th>
+                    <th class="contor" data-type="string" data-val="status">最后结束时间</th>
+                    <th class="contor" data-type="string" data-val="status">运行时长</th>
+                    <th class="contor" data-type="string" data-val="status">运行状态</th>
+
+                </tr>
+            </thead>
+            <tbody id="excel"></tbody>
+        </table>
+        <a id="dlink" style="display:none;"></a>
+        <input type="text" name="" value="请输入文件名" class="center-block form-control" style="margin-bottom: 20px;display:none; text-align: center" id="submit" onclick="submt()">
+
+        <!--测试表格导出-->
+
+    </div>
+
+    <div class="modal fade" id="AddUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">修改信息</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>IP</td>
+                                <td>
+                                    <input type="text" id="IP_edit" readonly style="width:100%;border:none;background:#E3E3E3" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MD5_ID</td>
+                                <td><input type="text" id="MD5_ID_edit" readonly style="width:100%;border:none;background:#E3E3E3" /></td>
+                            </tr>
+                            <tr>
+                                <td>GUID</td>
+                                <td><input type="text" id="GUID_edit" readonly style="width:100%;border:none;background:#E3E3E3" /></td>
+                            </tr>
+                            <tr>
+                                <td>UUID</td>
+                                <td>
+                                    <input type="text" id="UUID_edit" readonly style="width:100%;border:none;background:#E3E3E3" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>工号</td>
+                                <td>
+                                    <input type="text" id="user_id_edit" style="width:100%;border:none;" placeholder="请输入工号" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>姓名</td>
+                                <td>
+                                    <input type="text" id="user_name_edit" style="width:100%;border:none;" placeholder="请输入姓名" />
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="add_sure_edit" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

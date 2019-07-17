@@ -1,0 +1,480 @@
+﻿#div_form_table{
+    margin-top: 3.1rem;
+    padding-bottom: 1.3rem;
+}
+
+#form_th th{
+    white-space: nowrap;
+    padding: 5px 12px;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+
+#conditions{
+    transition: all 0.3s linear;
+    margin-top: -3rem;
+    width: 100%;
+    height: 2rem;
+}
+
+#conditions.contor{
+    transition: all 0.3s linear;
+    margin-top: 1.4rem;
+}
+
+#conditions > .left{
+    float: left;
+    width: 98%;
+    border: 1px solid #eee;
+    padding: 0.3rem 0.2rem;
+    margin-left: 1%;
+    border-radius: 0.1rem;
+}
+
+#conditions > .right{
+
+}
+
+#conditions > .right > .query{
+
+}
+
+#onetype_dummy{
+    width: 3.2rem;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+#twotype_dummy{
+    width: 3.2rem;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+#threetype_dummy{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+
+#oneval{
+    width: 5.9rem;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+#twoval{
+    width: 5.9rem;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+
+#threeval{
+    width: 5.9rem;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 3px;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+#conditions > .left > .query{
+    width: 9.2rem;
+    float: left;
+    padding: 7px 0px;
+    background: #34BB49;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+    color: #fff;
+}
+
+#conditions > .left > .query:active{
+    background:#1D942F;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 1px 0.2rem;
+}
+
+
+#conditions > .dropdown{
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: 0.2rem;
+    background: #f5f5f5;
+    padding: 0.1rem;
+}
+
+#conditions > .dropdown:active{
+    background:#ddd;
+}
+
+#conditions > .dropdown > .iconfont{
+    color: #ccc;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#conditions > .dropdown:active > .iconfont{
+    color:#fff;
+}
+
+#conditions.contor > .dropdown > .iconfont
+{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg)
+}
+
+#bottom_footer{
+    width: 100%;
+    position: fixed;
+    height: 1.1rem;
+    bottom: 0;
+}
+
+#bottom_footer > .left{
+    width: 6rem;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+#bottom_footer > .left > .box1{
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+}
+
+#bottom_footer > .right{
+    width: 4rem;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+
+#bottom_footer > .right > .box1{
+    background:#808080;
+    color: #fff;
+}
+
+#bottom_footer > .right > .box1.contor{
+    background: #62affc;
+}
+
+#bottom_footer > .right > .box1.contor:active{
+    background: #175DA2;
+}
+
+#form_tb > tr.contor > td{
+    background: rgba(0, 218, 255, 0.2);
+}
+
+
+#div_form_table > .infolist{
+    width: 9.8rem;
+    margin-left: 0.1rem;
+    border: 1px solid #ddd;
+    padding: 0.1rem;
+    border-radius: 0.1rem;
+    margin-bottom:3px;
+}
+
+#div_form_table > .infolist > .rows1{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+
+#div_form_table > .infolist > .rows1 > .box1{
+    color: #444;
+}
+
+#div_form_table > .infolist > .rows2{
+    width: 100%;
+    height: 1.2rem;
+}
+
+#div_form_table > .infolist > .rows2 > .left{
+        width: 3.2rem;
+    height: 100%;
+    float: left;
+}
+
+#div_form_table > .infolist > .rows2 > .left > .box1{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #444;
+}
+
+#div_form_table > .infolist > .rows2 > .left > .box2{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .rows2 > .mid{
+        width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+#div_form_table > .infolist > .rows2 > .mid > .box1{
+    font-size: 0.38rem;
+    color: red;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#div_form_table > .infolist > .rows2 > .right{
+    width: 4.5rem;
+    height: 100%;
+    float: left;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box1{
+        width: 100%;
+    height: 0.6rem;
+    float: left;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box1 > .column1{
+    width: 2rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    margin-top: 0.05rem;
+    float: left;
+    background: #fff;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box1 > .column1:active{
+    background: #ddd;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box1 > .column2{
+        width: 2rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    margin-top: 0.05rem;
+    float: left;
+    background: #fff700;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box1 > .column2:active{
+    background: #DAD414;
+    color: #fff;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box2{
+        width: 100%;
+    height: 0.6rem;
+    float: left;
+}
+
+
+#div_form_table > .infolist > .rows2 > .right > .box2 > .column1{
+        width: 2rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    margin-top: 0.05rem;
+    float: left;
+    color: #fff;
+    background: #f00;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box2 > .column1:active{
+    background: #B90808;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box2 > .column2{
+        width: 2rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    margin-top: 0.05rem;
+    float: left;
+        color: #fff;
+    background: #0dec33;
+}
+
+#div_form_table > .infolist > .rows2 > .right > .box2 > .column2:active{
+    background: #069C20;
+}
+
+#div_form_table > .infolist > .rows3{
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+
+
+#div_form_table > .infolist > .rows3 > .right{ 
+    width: 3.2rem;
+    height: 100%;
+    float: left;
+}
+
+#div_form_table > .infolist > .rows3 > .right > .box1{ 
+    text-align: right;
+    padding-right: 0.15rem;
+}
+
+#div_form_table > .infolist > .rows3 > .left{
+    width: 6.3rem;
+    height: 100%;
+    float: left;
+}
+
+
+#div_form_table > .infolist > .rows3 > .left > .box1{
+    width: 1.5rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    margin-top: 0.05rem;
+    float: left;
+    margin-right: 0.2rem;
+    color: #62affc;
+}
+
+#div_form_table > .infolist > .rows3 > .left > .box1:active{
+    background: #eee;
+}
+
+
+#div_form_table > .infolist > .rows3 > .left > .box2{
+    width: 1.5rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    margin-top: 0.05rem;
+    float: left;
+    margin-right: 0.2rem;
+    color: #62affc;
+}
+
+#div_form_table > .infolist > .rows3 > .left > .box2:active{
+    background: #eee;
+}
+
+#div_form_table > .infolist > .rows3 > .left > .box3{
+    width: 1.5rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    margin-top: 0.05rem;
+    float: left;
+    margin-right: 0.2rem;
+    color: #62affc;
+}
+
+#div_form_table > .infolist > .rows3 > .left > .box3:active{
+    background: #eee;
+}
+
+#conditions > .left > .rows{
+    width: 100%;
+    padding-bottom: 0.8rem;
+}
+
+
+#stardate{
+        width: 2.9rem;
+    float: left;
+    border: 1px solid #eee;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    text-align: center;
+    margin-left: 0.1rem;
+}
+
+
+#enddate{
+        width: 2.9rem;
+    float: left;
+    border: 1px solid #eee;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    text-align: center;
+    margin-left: 0.1rem;
+}
+
+
+
+
+#modulestatus_dummy{
+        position: fixed;
+    top: 3rem;
+    width: 0;
+    height: 0;
+    display: none;
+}

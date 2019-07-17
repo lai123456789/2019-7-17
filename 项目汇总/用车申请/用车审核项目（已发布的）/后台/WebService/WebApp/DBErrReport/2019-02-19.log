@@ -1,0 +1,118 @@
+﻿错误时间 : 2019-02-19 16:07:11
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:07:11
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:07:14
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:07:14
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:07:44
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:07:44
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:07:46
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleConnection.Open()
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 167
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:07:46
+错误对象 : Oracle.DataAccess
+异常方法 : Void Open()
+错误信息 : 无法访问已释放的对象。
+对象名:“OracleConnection”。
+堆栈内容 : 
+   在 DataOperator.OracleDBO.HandelException(Exception ex) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 123
+   在 DataOperator.OracleDBO.Open() 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 176
+   在 DataOperator.OracleDBO.GetDataAdapter(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 526
+   在 DataOperator.OracleDBO.GetDataTable(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 761
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:12:08
+错误对象 : Oracle.DataAccess
+异常方法 : Void CheckConStatus()
+错误信息 : 必须为此操作打开连接
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleCommand.CheckConStatus()
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+
+错误时间 : 2019-02-19 16:12:13
+错误对象 : Oracle.DataAccess
+异常方法 : Void CheckConStatus()
+错误信息 : 必须为此操作打开连接
+堆栈内容 : 
+   在 Oracle.DataAccess.Client.OracleCommand.CheckConStatus()
+   在 Oracle.DataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 DataOperator.OracleDBO.ExecuteNonQuery(String ExOracle, OracleCmdParam[] MyCmdParam) 位置 c:\Users\hp\Desktop\WebService\DataOperator\OracleDBO.cs:行号 386
+
+**********************************************************************
+

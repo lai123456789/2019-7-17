@@ -1,0 +1,1813 @@
+﻿/*#mid{
+    width: 100%;
+    margin-top: 1.4rem;
+}
+
+#mid > .module1{
+    width: 9.6rem;
+    margin-left: 0.2rem;
+    height: 14rem;
+    padding-top: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+    background: #fcfcfc;
+}
+
+#addinfo > .materialinfo > .column1 > .right{
+        width: calc(100% - 2rem);
+    height: 100%;
+    float: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#addinfo > .materialinfo > .column1 > .right textarea{
+         width: 100%;
+    max-height: calc(100% - 0.4rem);
+    border: none !important;
+    height: calc(100% - 0.4rem) !important;
+    resize: none !important;
+    outline: none !important;
+    margin-top: 0.3rem !important;
+}
+
+#mid > .module1 > .rows1{
+    width: 100%;
+    height: 0.8rem;
+    margin-top:0.1rem;
+}
+
+#mid > .module1 > .rows2 > .box1 > .right input{
+     width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows7 > .box1 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows7 > .box1 > .right {
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows8 > .box1 > .right {
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows10 > .box1 > .right {
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows9 > .box1 > .right {
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows4 > .box1 > .right input{
+      width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+#mid > .module1 > .rows1 > .box1{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows1 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows1 > .box1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows1 > .box1 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+#mid > .module1 > .rows1 > .box2{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows1 > .box2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows1 > .box2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows1 > .box2 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+
+#mid > .module1 > .rows2{
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 6px;
+}
+
+
+#mid > .module1 > .rows2 > .box1{
+    width: 100%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows5 {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 0.1rem;
+}
+
+#mid > .module1 > .rows5 > .box2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#mid > .module1 > .rows5 > .box1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#mid > .module1 > .rows5 > .box2 > .right input {
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows5 > .box1 > .right input {
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+#mid > .module1 > .rows5 > .box1 > .left{
+    width: 2.3rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows5 > .box1 > .right{
+    width: calc(100% - 2.3rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows5 > .box2 > .left{
+    width: 2.3rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows5 > .box2 > .right{
+    width: calc(100% - 2.3rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows4{
+    width: 100%;
+    height: 100%;
+}
+
+#mid > .module1 > .rows4 .box1{
+    width: 98%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows4 > .box2{
+    width: 30%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows4 > .box2 > .submitinfo{
+    width: 68%;
+    height: 100%;
+    line-height: 0.7rem;
+    text-align: center;
+    border-radius: 0.1rem;
+    background: #aaa;
+    margin-left: 0.5rem;
+    line-height: 0.8rem;
+    color: #fff;
+}
+
+
+#mid > .module1 > .rows2 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows7 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+#mid > .module1 > .rows4 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows2 > .box1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows4 > .box1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows1 > .box1 > .right .values{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    text-align:center;
+}
+
+#infotype_dummy{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+#mid > .module1 > .rows2 > .box2{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows2 > .box2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows2 > .box2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows7 {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 6px;
+}
+#mid > .module1 > .rows8 {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 6px;
+}
+
+#mid > .module1 > .rows9 {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 6px;
+}
+
+#mid > .module1 > .rows10 {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 6px;
+}
+
+#mid > .module1 > .rows8 > .box1 > .left {
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows13 {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 6px;
+}
+
+#mid > .module1 > .rows13 > .box1 > .left {
+    width: 1.5rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows13 > .box1 > .right {
+    width: calc(100% - 1.5rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows9 > .box1 > .left {
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows13 > .box1 > .right input {
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows10 > .box1 > .left {
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows8 > .box1 > .right input {
+    width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows9 > .box1 > .right input {
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows10 > .box1 > .right input {
+    width: calc(100% - 0.2rem);
+    h width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows11 > .box2 > .right input {
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows11 > .box2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#mid > .module1 > .rows11 > .box1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+
+#mid > .module1 > .rows12 > .box2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#mid > .module1 > .rows12 > .box1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#mid > .module1 > .rows12 > .box1 > .left {
+    width: 2.3rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows12 > .box2 > .left {
+    width: 2.5rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+
+#mid > .module1 > .rows11 > .box1 > .left {
+    width: 1.5rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows11 > .box2 > .left {
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows13 {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 6px;
+}
+
+#mid > .module1 > .rows12 > .box1 > .right {
+    width: calc(100% - 2.3rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows12 > .box2 > .right {
+    width: calc(100% - 2.5rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+
+
+#mid > .module1 > .rows12 > .box1 > .right input {
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows11 > .box1 > .right input {
+    width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows11 > .box2 > .right {
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows11 > .box1 > .right {
+    width: calc(100% - 1.5rem);
+    height: 100%;
+    float: left;
+    line-height: 0.6rem;
+}
+
+#mid > .module1 > .rows12 > .box2 > .right input {
+    width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows12 > .box1 > .right input {
+   width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows2 > .box2 > .right .values{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    text-align:center;
+}
+
+#mid > .module1 > .rows3{
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 0.1rem;
+}
+
+#mid > .module1 > .rows3 > .box1{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows3 > .box1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows3 > .box1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows3 > .box1 > .right input{
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows3 > .box2{
+    width: 100%;
+    height: 100%;
+    float:left;
+}
+
+#mid > .module1 > .rows3 > .box2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.2rem;
+}
+
+#mid > .module1 > .rows3 > .box2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    line-height: 0.8rem;
+}
+
+#mid > .module1 > .rows3 > .box2 > .right input{
+     width: calc(100% - 0.2rem);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+}
+
+#mid > .module1 > .rows4{
+    width: 100%;
+    height: 0.8rem;
+   margin-top: 0.7rem;
+}
+
+#addmaterial{
+    width: 4rem;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #03A9F4;
+    margin-left:0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    float:left;
+}
+
+#addmaterial:active{
+    background:#0D7BAD;
+}
+
+
+#submitinfo{
+    width: 7rem;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #aaa;
+    margin-left: 1.3rem;
+    text-align: center;
+    line-height: 0.8rem;
+    margin-top: 0.5rem;
+    color: #fff;
+    float: left;
+}
+
+#submitinfo.contor{
+    background: #5FBD09;
+}
+
+#submitinfo.contor:active{
+    background:#4E9A07;
+}
+
+#mid > .module2{
+    width: 100%;
+}
+
+#mid > .module2 > .title{
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-top: 0.2rem;
+    background: #e2e2e2;
+}
+
+#mid > .module2 > .title > .column1{
+    width: 38%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    border-right: 1px solid #f9f9f9;
+    float: left;
+}
+
+#mid > .module2 > .title > .column2{
+    width: 17%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    border-right: 1px solid #f9f9f9;
+    float: left;
+}
+
+#mid > .module2 > .title > .column3{
+    width: 23%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    border-right: 1px solid #f9f9f9;
+    float: left;
+}
+
+#mid > .module2 > .title > .column4{
+    width: 22%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content{
+    width: 100%;
+    max-height: 10.1rem;
+    overflow-y: auto;
+}
+
+#mid > .module2 > .content > .infolist{
+    width: 100%;
+    height: 1rem;
+}
+
+#mid > .module2 > .content > .infolist:nth-child(2n+1){
+    background: #f4f4f4;
+}
+
+#mid > .module2 > .content > .infolist > .column1{
+    width: 38%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column2{
+    width: 17%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column3{
+    width: 23%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column4{
+    width: 22%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .left{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .left:active{
+    background:#ddd;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .right{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#mid > .module2 > .content > .infolist > .column4 > .right:active{
+    background:#ddd;
+}
+
+
+
+#addinfo{
+    position: fixed;
+    width: 100%;
+    height: 6.6rem;
+    background: #f5f5f5;
+    z-index: 400;
+    transition: all 0.3s linear;
+    top: -8rem;
+}
+
+#addinfo.contor{
+    transition: all 0.3s linear;
+    top: 1.2rem;
+}
+
+#addinfo > .materialinfo{
+    width: 9.2rem;
+    height: 5.8rem;
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ddd;
+}
+
+#addinfo > .materialinfo > .column1{
+    width: 100%;
+    height: 3rem;
+    line-height: 1rem;
+}
+
+#addinfo > .materialinfo > .column1 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    padding-left: 0.2rem;
+}
+
+#addinfo > .materialinfo > .column1 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column1 > .right input{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column2{
+    width: 50%;
+    height: 1rem;
+    float: left;
+    line-height: 1rem;
+}
+
+#addinfo > .materialinfo > .column2 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    padding-left: 0.2rem;
+}
+
+#addinfo > .materialinfo > .column2 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#addinfo > .materialinfo > .column2 > .right .values{
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column3{
+    width: 50%;
+    height: 1rem;
+    float: left;
+    line-height: 1rem;
+}
+
+#addinfo > .materialinfo > .column3 > .left{
+    width: 1.8rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column3 > .right{
+    width: calc(100% - 1.8rem);
+    height: 100%;
+    float: left;
+}
+
+#materialtype_dummy{
+    width: calc(100% - 0.2rem);
+    height: 100%;
+    line-height: 1rem;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+#addinfo > .materialinfo > .column4{
+    width: 100%;
+    height: 1.6rem;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column4 > .left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column4 > .left .values{
+    width: 3rem;
+    margin: 0 auto;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #aaa;
+    color:#fff;
+    border-radius: 0.15rem;
+    margin-top: 0.5rem;
+}
+
+#addinfo > .materialinfo > .column4 > .left .values:active{
+    background:#888;
+}
+
+#addinfo > .materialinfo > .column4 > .right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#addinfo > .materialinfo > .column4 > .right .values{
+    width: 3rem;
+    margin: 0 auto;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #0FB30F;
+    color: #fff;
+    border-radius: 0.15rem;
+    margin-top: 0.5rem;
+}
+
+#addinfo > .materialinfo > .column4 > .right .values:active{
+    background:#118411;
+}
+
+#mask300{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: #000;
+    opacity: 0.45;
+    display:none;
+}
+
+#mask300.contor{
+    display:block;
+}*/
+
+
+#pagethree{
+    margin-top: 54px;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+
+#pagethree > .bottom_footer{
+    width: 100%;
+    position: fixed;
+    height: 1.1rem;
+    bottom: 0;
+}
+
+
+
+#pagethree > .bottom_footer > .left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+
+#pagethree > .bottom_footer > .left > .box1{
+    background:#808080;
+    color: #fff;
+}
+
+#pagethree > .bottom_footer > .left > .box1.contor{
+    background: #999;
+}
+
+#pagethree > .bottom_footer > .left > .box1.contor:active{
+    background: #666;
+}
+
+
+#pagethree > .bottom_footer > .right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+
+#pagethree > .bottom_footer > .right > .box1{
+    background:#808080;
+    color: #fff;
+}
+
+#pagethree > .bottom_footer > .right > .box1.contor{
+    background: #1EB34C;
+}
+
+#pagethree > .bottom_footer > .right > .box1.contor:active{
+    background: #0B8832;
+}
+
+
+#pagethree > .content {
+    border: 1px solid #ccc;
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+
+#pagethree > .content > .row1{
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row1 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+#pagethree > .content > .row1 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row1 > .box2{
+    width: 6.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row1 > .box2 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    resize: none;
+    text-align: center;
+}
+
+#pagethree > .content > .row1 > .box3{
+    width: 1rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#pagethree > .content > .row1 > .box3:active{
+    background: #eee;
+}
+
+#pagethree > .content > .row2{
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row2 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+#pagethree > .content > .row2 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+
+#pagethree > .content > .row2 > .box2{
+    width: 6.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row2 > .box2 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    resize: none;
+    text-align: center;
+}
+
+#pagethree > .content > .row2 > .box3{
+        width: 1rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#pagethree > .content > .row2 > .box3:active{
+    background: #eee;
+}
+
+
+
+
+#pagethree > .content > .row3{
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row3 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+
+#pagethree > .content > .row3 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row3 > .box2{
+    width: 6.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row3 > .box2 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    resize: none;
+    padding-left: 0.1rem;
+    text-align: center;
+}
+
+#pagethree > .content > .row3 > .box3{
+        width: 1rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#pagethree > .content > .row3 > .box3:active{
+    background: #eee;
+}
+
+#pagethree > .content > .row4{
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+
+#pagethree > .content > .row4 > .left{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row4 > .left > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+#pagethree > .content > .row4 > .left > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row4 > .left > .box2{
+    width: calc(100% - 1.9rem);
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row4 > .right{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+#gratetype_dummy{
+    width: 2.6rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+#pagethree > .content > .row4 > .right > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+#pagethree > .content > .row4 > .right > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row4 > .right > .box2{
+    width: calc(100% - 1.9rem);
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row4 > .right > .box2 input{
+    width: 2.6rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+#pagethree > .content > .row5{
+    width: 100%;
+    height: 2.1rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row5 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+#pagethree > .content > .row5 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row5 > .box2{
+    width: 7.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row5 > .box2 textarea{
+    width: 100%;
+    height: 100% !important;
+    border: none;
+    border-bottom: 1px solid #eee;
+    resize: none;
+    outline: none;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+}
+
+
+
+
+
+#pagethree > .content > .row6{
+    width: 100%;
+    height: 2.1rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row6 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+#pagethree > .content > .row6 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row6 > .box2{
+    width: 7.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row6 > .box2 textarea{
+    width: 100%;
+    height: 100% !important;
+    border: none;
+    border-bottom: 1px solid #eee;
+    resize: none;
+    outline: none;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+}
+
+
+#pagethree > .content > .row7{
+    width: 100%;
+    height: 2.1rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row7 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+#pagethree > .content > .row7 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row7 > .box2{
+    width: 7.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row7 > .box2 textarea{
+    width: 100%;
+    height: 100% !important;
+    border: none;
+    border-bottom: 1px solid #eee;
+    resize: none;
+    outline: none;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+}
+
+#pagethree > .content > .row8{
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row8 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+
+#pagethree > .content > .row8 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row8 > .box2{
+    width: 6.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row8 > .box2 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    resize: none;
+    text-align: center;
+}
+
+#pagethree > .content > .row8 > .box3{
+        width: 1rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#pagethree > .content > .row8 > .box3:active{
+    background: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pagethree > .content > .row9{
+    width: 100%;
+    height: 1.9rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row9 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+
+#pagethree > .content > .row9 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row9 > .box2{
+    width: 7.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row9 > .box2 > .img{
+        width: 1.3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 0.1rem;
+    float: left;
+    border: 1px solid #eee;
+}
+
+#pagethree > .content > .row9 > .box2 > .img > img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#pagethree > .content > .row9 > .box2 > .addimg{
+    width: 1.4rem;
+    height: 100%;
+    text-align: center;
+    line-height: 1.4rem;
+    float:left;
+    display: none;
+}
+
+#pagethree > .content > .row9 > .box2 > .addimg.contor{
+    display: flex;
+    align-items: center;
+}
+
+#pagethree > .content > .row9 > .box2 > .addimg > .iconfont{
+    font-size: 1.1rem;
+}
+
+#pagethree > .content > .row9 > .box2 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    resize: none;
+    text-align: center;
+}
+
+#pagethree > .content > .row9 > .box3{
+        width: 1rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#pagethree > .content > .row9 > .box3:active{
+    background: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+#pagethree > .content > .row10{
+    width: 100%;
+    height: 1.9rem;
+    line-height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#pagethree > .content > .row10 > .box1{
+    width: 1.6rem;
+    display: inline-block;
+    height: 100%;
+    min-width: 1.6rem;
+    text-align: justify;
+    text-align-last: justify;
+    float:left;
+}
+
+
+#pagethree > .content > .row10 > .symbol{
+    width:0.3rem;
+    height:100%;
+    float:left;
+}
+
+#pagethree > .content > .row10 > .box2{
+    width: 7.4rem;
+    height: 100%;
+    float: left;
+}
+
+#pagethree > .content > .row10 > .box2 > .img{
+        width: 1.3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 0.1rem;
+    float: left;
+    border: 1px solid #eee;
+}
+
+#pagethree > .content > .row10 > .box2 > .img > img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#pagethree > .content > .row10 > .box2 > .addimg{
+    width: 1.4rem;
+    height: 100%;
+    text-align: center;
+    line-height: 1.4rem;
+    float:left;
+    display: none;
+}
+
+#pagethree > .content > .row10 > .box2 > .addimg.contor{
+    display: flex;
+    align-items: center;
+}
+
+#pagethree > .content > .row10 > .box2 > .addimg > .iconfont{
+    font-size: 1.1rem;
+}
+
+#pagethree > .content > .row10 > .box2 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    resize: none;
+    text-align: center;
+}
+
+#pagethree > .content > .row10 > .box3{
+        width: 1rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#pagethree > .content > .row10 > .box3:active{
+    background: #eee;
+}
+
+
+
+#pagetwo{
+
+}
+
+
+#pagetwo > .bottom_footer{
+    width: 100%;
+    position: fixed;
+    height: 1.1rem;
+    bottom: 0;
+}
+
+
+
+#pagetwo > .bottom_footer > .resultbtn{
+    width: 100%;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+
+#pagetwo > .bottom_footer > .resultbtn > .box1{
+    background:#808080;
+    color: #fff;
+}
+
+#pagetwo > .bottom_footer > .resultbtn > .box1.contor{
+    background: #999;
+}
+
+#pagetwo > .bottom_footer > .resultbtn > .box1.contor:active{
+    background: #666;
+}
+
+
+#pagetwo > .img{
+    width: 100%;
+    height: calc(100vh - 1.1rem);
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+
+#pagetwo > .img > img{
+    max-height: 100%;
+    max-width: 100%;
+}

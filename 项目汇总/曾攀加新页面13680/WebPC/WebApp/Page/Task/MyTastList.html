@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每通信息化平台-我的任务列表</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190425"></script>
+    <link href="/Page/Task/UI/Style/MyTastList.css" rel="stylesheet" />
+    <link href="/UI/Style/input-autocomplete.css" rel="stylesheet" />
+    <script src="/UI/Scripts/input-autocomplete.js"></script>
+    <script src="/Page/Task/UI/Script/MyTastList.js?20190511"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <input type="text" id="search_content" value="" placeholder="请输入操作员名称或PJ号搜索" />
+                <div class="query_btn">查询</div>
+
+                <menu id="nestable-menu">
+                    <button type="button" class="btn btn-success" data-val="">全部</button>
+                    <button type="button" class="btn btn-default" data-val="0">进行中</button>
+                    <button type="button" class="btn btn-default" data-val="1">已完成</button>
+                </menu>
+            </div>
+        </div>
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">异常任务列表</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th>任务类型</th>
+                                <th>创建时间</th>
+                                <th>开始时间</th>
+                                <th>完成时间</th>
+                                <th>操作员</th>
+                                <th>派工时间</th>
+                                <th style="max-width:50px;">进度</th>
+                                <th style="max-width:50px;">解决方案</th>
+                                <th>结束任务操作人</th>
+                                <th>备注</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                </div>
+                <ul class="pagination" id="pagination_MyTaskList"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="WorkDispatching" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">工作调度</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>操作员</td>
+                                <td><input id="Work_account" type="text" placeholder="请输入负责人工号或姓名" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="WorkDispatching_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="ErrorDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document" style="width:50%;overflow:hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">异常信息</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"></h3>
+                    </div>
+                    <table class="table table-bordered" style="overflow:hidden;">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>值</th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_TaskListtb"></tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <!--<button type="button" class="btn btn-success" id="WorkDispatching_sure">确定</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="ScheduleAndsolution" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialog" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">进度</h5>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control des" rows="3"></textarea>
+                   <!--<input class="form-control des" type="text" placeholder="请描述"/>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="Over_sure">结束异常处理</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-success" id="ScheduleAndsolution_sure">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="scheduleUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialogschedulet" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">进度列表</h5>
+                </div>
+                <div class="modal-body">
+
+                    <!--<div style="padding-bottom:10px;border-bottom:1px solid #eee">
+                    <input type="text" class="form-control Print-Txt" placeholder="请输入要查询的工号或者名字" style="width:90%;display:inline-block" />
+                    <button class="btn btn-success queryPrint-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+                </div>-->
+
+
+                    <div class="panel-body" id="panel_table">
+                        <div class="table-responsive" id="div_form_table">
+                            <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                <thead id="form_th_schedule">
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>PJ</th>
+                                        <th>进度</th>
+                                        <th>创建人</th>
+                                        <th>创建时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="form_tb_schedule"></tbody>
+                            </table>
+
+                        </div>
+                        <ul class="pagination" id="pagination_schedule"></ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <!--<button type="button" class="btn btn-success" id="add_sure">确定</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="solutionUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="modalDialogsolution" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title">解决方案列表</h5>
+                </div>
+                <div class="modal-body">
+
+                    <!--<div style="padding-bottom:10px;border-bottom:1px solid #eee">
+                    <input type="text" class="form-control Print-Txt" placeholder="请输入要查询的工号或者名字" style="width:90%;display:inline-block" />
+                    <button class="btn btn-success queryPrint-btn" style="display:inline-block;padding: 5px 15px;">查询</button>
+                </div>-->
+
+
+                    <div class="panel-body" id="panel_table">
+                        <div class="table-responsive" id="div_form_table">
+                            <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                                <thead id="form_th_Print">
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>PJ</th>
+                                        <th>解决方案</th>
+                                        <th>创建人</th>
+                                        <th>创建时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="form_tb_solution"></tbody>
+                            </table>
+
+                        </div>
+                        <ul class="pagination" id="pagination_solution"></ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <!--<button type="button" class="btn btn-success" id="add_sure">确定</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

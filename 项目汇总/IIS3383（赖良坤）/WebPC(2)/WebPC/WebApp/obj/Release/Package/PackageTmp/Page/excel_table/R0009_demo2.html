@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-Excel管理</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-table.css">
+    <link rel="stylesheet" href="./css/likeExcel.css">
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <!--<script src="/UI/Scripts/Basic.js?20190405"></script>-->
+    <style>
+        #selectedParts-excel {
+            width: 20px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main" id="main">
+        
+        <div class="page-whole" id="page1">
+            <table id="selectedParts-excel" unselectable="on" onselectstart="return false;" data-table="excelTable" style="-moz-user-select:none;"></table>
+        </div>
+
+        
+        <button id="btn">添加</button>
+        <button id="aq" onclick="tijiao_demo2()">提交</button>
+
+    </div>
+
+
+
+    <!--<script src="./js/jquery.min.js"></script>-->
+    <script src="./js/bootstrapTable.js"></script>
+    <script src="./js/R0009_demo2.js"></script>
+    <script src="./js/outStoreDetail_demo2.js"></script>
+
+
+
+
+</body>
+</html>

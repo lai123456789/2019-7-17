@@ -1,0 +1,155 @@
+﻿.Smallkeyboard{
+
+}
+
+.Smallkeyboard > .mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    display:none;
+    z-index:900;
+}
+
+.Smallkeyboard > .mask.contor{
+    display:block;
+}
+
+.Smallkeyboard > .keyboard{
+    width: 100%;
+    height: 11.4rem;
+    position: fixed;
+    transition: all 0.3s linear;
+    bottom: -12rem;
+    z-index: 1000;
+}
+
+.Smallkeyboard.contor > .keyboard{
+    bottom: 0rem;
+}
+
+.Smallkeyboard > .keyboard > .showcontent{
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 400;
+    width: 100%;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .topcontent{
+    width: 100%;
+    height: 1.2rem;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .topcontent > .tittlecontent{
+    width: 100%;
+    height: 1.2rem;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: .38rem;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent{
+    width: 100%;
+    height: 1.2rem;
+    background: #fff;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .left{
+    width: 1.2rem;
+    height: 1.2rem;
+    float: left;
+    text-align: center;
+    line-height: 1rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .left > .subtract{
+    width: 1rem;
+    height: 1rem;
+    line-height: 0.9rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .left > .subtract:active{
+    background:#999;
+    color:#fff;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .mid{
+    width: calc(100% - 3.4rem);
+    height: 1rem;
+    float: left;
+    border: 1px solid #ddd;
+    text-align: right;
+    padding-right: .2rem;
+    line-height: 1rem;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .mid > .content{
+    color: red;
+    font-size: .65rem;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .right{
+    width: 1.2rem;
+    height: 1.2rem;
+    float: left;
+    text-align: center;
+    line-height: 1rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .right > .add{
+    width: 1rem;
+    height: 1rem;
+    line-height: 0.9rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.Smallkeyboard > .keyboard > .showcontent > .bottomcontent > .right > .add:active{
+    background:#999;
+    color:#fff;
+}
+
+.Smallkeyboard > .keyboard > .showbutton{
+    width: 100%;
+    height: 8rem;
+    background: #fff;
+}
+
+.Smallkeyboard > .keyboard > .showbutton > .key{
+    width: 25%;
+    height: 2rem;
+    float: left;
+    text-align: center;
+    line-height: 2rem;
+    border: 1px solid #eee;
+    font-size: .55rem;
+}
+
+.Smallkeyboard > .keyboard > .showbutton > .key.W_50{
+    width:50%;
+}
+
+.Smallkeyboard > .keyboard > .showbutton > .key.success{
+    background: #62affc;
+    color: #fff;
+}
+
+.Smallkeyboard > .keyboard > .showbutton > .key:active{
+    background:#999;
+    color:#fff;
+}

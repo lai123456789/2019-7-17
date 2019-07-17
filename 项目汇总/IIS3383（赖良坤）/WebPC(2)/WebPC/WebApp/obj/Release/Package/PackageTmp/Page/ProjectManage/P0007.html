@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每通信息化平台-装配订单明细</title>
+    <script src="/UI/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/UI/Scripts/Basic.js?20190324"></script>
+    <link href="/Page/ProjectManage/UI/Style/P0007.css?20190406" rel="stylesheet" />
+    <script src="/Page/ProjectManage/UI/Script/P0007.js?20190406"></script>
+</head>
+<body>
+    <div class="main" id="main">
+        <div id="query_title">
+            <div class="query_content">
+                <select id="onetype">
+                    <option value="全部">全部</option>
+                    <option value="PJ">PJ号</option>
+                    <option value="名称">名称</option>
+                    <option value="负责人">负责人</option>
+                    <option value="操作人">操作人</option>
+                    <option value="创建人">创建人</option>
+                    <option value="类型">异常类型</option>
+                    <option value="异常备注">异常备注</option>
+                    <option value="异常关闭备注">异常关闭备注</option>
+                </select>
+                <input type="text" id="oneval" value="" placeholder="请输入" style="display:none" />
+
+                <select id="twotype">
+                    <!--<option value="全部">全部</option>
+                    <option value="组装">组装</option>
+                    <option value="接线">接线</option>
+                    <option value="绒布">绒布</option>
+                    <option value="调试">调试</option>
+                    <option value="QA">QA</option>
+                    <option value="打包">打包</option>-->
+                </select>
+
+                <select id="datetype">
+                    <option value="全部">全部</option>
+                    <option value="开始时间">开始时间</option>
+                    <option value="完成时间">完成时间</option>
+                    <option value="派工时间">派工时间</option>
+
+                </select>
+                <div id="datetype_date" style="display:none;">
+                    <input id="startdate" type="date" value="" />
+                    <div class="mid" style="width:auto;">-</div>
+                    <input id="enddate" type="date" value="" />
+                </div>
+                <select id="numbertype">
+                    <option value="全部">全部</option>
+                    <option value="已关闭">已关闭</option>
+                    <option value="未关闭">未关闭</option>
+                </select>
+               <!-- <input type="text" id="numberval" value="" placeholder="请输入" style="display:none" />-->
+
+                <!--<div id="numberval" style="display:none">
+                    <select id="numselect">
+                        <option value=">">大于</option>
+                        <option value="<">小于</option>
+                        <option value="=">等于</option>
+                    </select>
+                    <input type="text" value="" placeholder="请输入大于数量" id="numqty" />
+                </div>-->
+
+                <!--<input type="text" id="search_content" value="" placeholder="请输入PJ号查询" />-->
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="datalist">
+            <div class="panel-heading">
+                <h3 class="panel-title">装配订单用户操作异常明细</h3>
+                <div class="panel-options">
+                    <a id="dlink" style="display:none;"></a>
+                    <a href="javascript:;" class="download">
+                        <i class="fa fa-download" title="下载"></i>
+                    </a>
+                    <a href="javascript:;" class="fullscreen">
+                        <i class="fa fa-arrows-alt" title="全屏"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body" id="panel_table">
+                <div class="table-responsive" id="div_form_table">
+                    <table id="form_table" class="table table-small-font table-bordered table-striped col-selectable row-selectable" style="width:calc(100% - 2px)">
+                        <thead id="form_th">
+                            <tr>
+                                <th data-val="PJ号">PJ号<i class="iconfont">&#xe733;</i></th>
+                                <th style="min-width: 200px;" data-val="名称">名称<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="工序名">工序名<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="开始时间">开始时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="完成时间">完成时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="派工时间">派工时间<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="异常原因">异常原因<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="关闭原因">关闭原因<i class="iconfont">&#xe733;</i></th>
+                                 <th data-val="创建人">创建人<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="负责人">负责人<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="操作人">操作人<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="类型">异常类型<i class="iconfont">&#xe733;</i></th>
+                                <th data-val="状态">状态<i class="iconfont">&#xe733;</i></th>
+                            </tr>
+                        </thead>
+                        <tbody id="form_tb"></tbody>
+                    </table>
+                    <!--<ul class="pagination">
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>-->
+                </div>
+                <ul class="pagination" id="pagination_P0007"></ul>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>

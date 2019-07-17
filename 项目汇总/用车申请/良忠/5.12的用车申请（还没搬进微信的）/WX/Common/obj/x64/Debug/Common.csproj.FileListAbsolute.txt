@@ -1,0 +1,5 @@
+F:\linzhanhao\MES\WX\WX\Common\bin\x64\Debug\Common.dll
+F:\linzhanhao\MES\WX\WX\Common\bin\x64\Debug\Common.pdb
+F:\linzhanhao\MES\WX\WX\Common\obj\x64\Debug\Common.csprojResolveAssemblyReference.cache
+F:\linzhanhao\MES\WX\WX\Common\obj\x64\Debug\Common.dll
+F:\linzhanhao\MES\WX\WX\Common\obj\x64\Debug\Common.pdb

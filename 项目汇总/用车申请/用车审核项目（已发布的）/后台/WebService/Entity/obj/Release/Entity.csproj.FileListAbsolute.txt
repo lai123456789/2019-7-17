@@ -1,0 +1,10 @@
+E:\WebService\Entity\bin\Release\Entity.dll
+E:\WebService\Entity\bin\Release\Entity.pdb
+E:\WebService\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+E:\WebService\Entity\obj\Release\Entity.dll
+E:\WebService\Entity\obj\Release\Entity.pdb
+D:\临时\WebService(2)\WebService\Entity\bin\Release\Entity.dll
+D:\临时\WebService(2)\WebService\Entity\bin\Release\Entity.pdb
+D:\临时\WebService(2)\WebService\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+D:\临时\WebService(2)\WebService\Entity\obj\Release\Entity.dll
+D:\临时\WebService(2)\WebService\Entity\obj\Release\Entity.pdb

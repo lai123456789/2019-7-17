@@ -1,0 +1,16 @@
+E:\WebService\WebApp\bin\WebApp.dll.config
+E:\WebService\WebApp\bin\WebApp.dll
+E:\WebService\WebApp\bin\WebApp.pdb
+E:\WebService\WebApp\bin\BLL.dll
+E:\WebService\WebApp\bin\Common.dll
+E:\WebService\WebApp\bin\DAL.dll
+E:\WebService\WebApp\bin\DataOperator.dll
+E:\WebService\WebApp\bin\Entity.dll
+E:\WebService\WebApp\bin\BLL.pdb
+E:\WebService\WebApp\bin\Common.pdb
+E:\WebService\WebApp\bin\DAL.pdb
+E:\WebService\WebApp\bin\DataOperator.pdb
+E:\WebService\WebApp\bin\Entity.pdb
+E:\WebService\WebApp\obj\x86\Release\WebApp.csprojResolveAssemblyReference.cache
+E:\WebService\WebApp\obj\x86\Release\WebApp.dll
+E:\WebService\WebApp\obj\x86\Release\WebApp.pdb

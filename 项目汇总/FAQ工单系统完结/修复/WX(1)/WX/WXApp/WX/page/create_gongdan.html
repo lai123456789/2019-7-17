@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- 规定国产浏览器使用webkit内核渲染（目前只有360支持） -->
+    <meta name="renderer" content="webkit">
+    <title>我的工单</title>
+    <!-- oray的控制台公共css样式 -->
+    
+    <script src="script/jquery-1.11.3.min.js"></script>
+    <script src="script/ImageManage.js"></script>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/create_gongdan.css">
+    <link href="css/123.css" rel="stylesheet"> 
+    <script>
+        var city = new Array(
+        new Array("物料丢失","物料损坏","原件修改"),
+        new Array("漏刻字", "漏检", "刻错", "刻字不清晰"),
+        new Array("漏下、多下、少下、重复下、下错", "设计更改", "图纸与3D不符", "程序未确定", "订单未有IO表"),
+        new Array("二次发生的问题得不到解决"),
+        new Array("来料错", "来料不良", "来料少数"),
+        new Array("孔、牙", "公差", "漏加工","加工错","毛刺"),
+        new Array("孔、牙", "公差", "漏加工","加工错","毛刺","丝印","色差")
+);
+        function changeCity(){
+            index = memberform.province.options.selectedIndex-1;
+            memberform.city.length = city[index].length;
+            for(var i = 0;i<city[index].length;i++)
+            {
+                var text = city[index][i].split("-");
+                memberform.city.options[i].text = text[0];
+                memberform.city.options[i].value =text[1];
+            }
+        }
+    </script>      
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!--左边导航-->
+    
+<!-- 页面左边导航开始 -->
+<div class="page-sidebar">
+    <div class="logo-wrap">
+        <a href="" class="block">
+            <img class="img-oray" src="img/MT.png" width="70px" height="31px">
+        </a>
+    </div>
+    <ul class="menu-level-1" id="index">
+                       
+        <li class="level-1-item">
+            <a class="toggle-item" href="create_gongdan.html">
+                <i class="iconfont"></i>
+                <span>创建工单</span>
+            </a>
+        </li>
+        <li class="level-1-item active">
+            <a class="toggle-item" href="gongdan_list.html">
+                <i class="iconfont"></i>
+                <span>工单分页列表</span>
+            </a>
+        </li>
+        
+        
+    </ul>
+    <div class="packup-btn-wrap">
+        <div class="packup-btn-box">
+            <a data-open="true" id="packup-btn" href="javascript:void(0);"  class="iconfont" style="font-size: 20px;color: #fff;">&#xe844;</a>
+        </div>
+    </div>
+</div>
+<!-- 页面左边导航结束 -->
+    <!--右边内容-->
+    <div class="page-main">
+        <!-- 页面右边顶部导航栏开始 -->
+<div class="top-bar">
+    <ul class="nav-menu-list" id="console-header">
+        <li class="item no-border">
+            <a href="javascript:void(0);" style="width: 160px;">
+                <span id="name"></span>
+                <i class="iconfont more-icon"></i>
+            </a>
+            
+        </li>
+        <li class="item">
+            <a href="javascript:;"><span id="logout">注销</span></a>
+        </li>
+        <!--<li class="item">
+            <a href=""><span>工单</span> <span id="workorder_num" class="red"></span></a>
+        </li>
+        <li class="item">
+            <a href=""><span>客服中心</span> <span class="red"></span><i class="iconfont more-icon"></i></a>
+           
+        </li>-->
+        <li class="item">
+            <a href="http://www.mtworld.cn/"><span>每通首页</span><i class="iconfont more-icon"></i></a>
+            
+        </li>
+    </ul>
+</div>
+<!-- 页面右边顶部导航栏结束 -->
+
+
+    <!-- 页面中间内容开始-->
+    <div id="jz">
+    <div id="result1" style="display: none;"></div>  <!-- 这里通过usercode拿到对应的分页信息显示值 -->
+    <div id="result2" style="display:none;"></div>
+    <div class="lowin" >
+        <div class="lowin-brand">
+            <img src="img/mtt.jpg" height="60px;" alt="logo" style="margin-top: 10px;">
+        </div>
+        <div class="lowin-wrapper">
+            <div class="lowin-box lowin-login">
+                <div class="lowin-box-inner" style="margin-bottom:100px;">
+                    <div id="login" enctype="multipart/form-data">
+                        <p>创建工单</p>
+                        <div class="lowin-group">
+                            <label>装配常见异常</label>                            
+                        </div>
+                        <div class="lowin-group">
+                            <!--<label>产品类型</label>
+                            <select name="WORDTYPECODE" id="select" style="height: 30px;" class="a">
+                                   <option value="组装部">组装部</option>
+                                   <option value="品质部">品质部</option>
+                                   <option value="机加部">机加部</option>  
+                                   <option value="其他">其他</option>
+                            </select>-->  
+                            <!--<select name="WORDTYPECODE" id="select" style="height: 30px;" class="a">
+                                <option value="组装部">装配部</option>
+                                <option value="品质部">品质部</option>
+                                <option value="机加部">机加部</option>
+                                <option value="机加部">设计部</option>
+                                <option value="机加部">外发部</option>
+                                <option value="机加部">采购部</option>
+                                <option value="机加部">精益科</option>
+                            </select>-->  
+                            <!--这里调试开始-->
+                            <form id="memberform" style="padding: 0px;margin: 0px; width: 100%;" name="memberform">
+                               <em>部门 :</em>                                 
+                                    <select id="province" onchange="changeCity()" name="province"  class="a">
+                                        <option selected>选择部门</option>
+                                        <option value="装配部">装配部</option>
+                                        <option value="品质部">品质部</option>
+                                        <option value="设计部">设计部</option>
+                                        <option value="精益科">精益科</option>
+                                        <option value="采购部">采购部</option>
+                                        <option value="机加部">机加部</option>
+                                        <option value="外发部">外发部</option>
+                                    </select> &nbsp;—&nbsp;
+                                    <select id="city" tabindex="11" name="city" alt="市/地区:无内容" class="a_a">
+                                        <option value="">选择问题</option>
+                                    </select>
+                                
+                            </form>
+                            <!--这里调试结束-->
+                        </div>
+                      
+                            <!--<label>标题</label>
+        <input type="text" name="apptittle"  class="lowin-input b" placeholder="请输入标题">-->                            
+                            
+                        
+                        <div class="lowin-group">
+                            <label>内容</label>
+                            <textarea name="CONTENT"  class="lowin-input c"  placeholder="可在此处详细描述问题，也可不填。" style="height:80px;"></textarea>
+                        </div>
+                        <div class="lowin-group">
+                            <label>上传图片</label>
+                            <p id="faqbillimg" class="lowin-input" style="cursor:pointer;">点我选择图片</p> 
+                        </div>
+                        <!--<div class="lowin-group" style="border:1px solid blue">-->
+                            <div style="margin-left: 50px;">
+                                <div id="addimg" style="clear: both;padding-left: 50px;"></div>
+                            </div>
+                        <!--</div>-->
+                        <p><input style="width: 200px;" id="btn_sure" class="lowin-input lowin-btn login-btn" type="button" value="确认创建"></p>
+                        
+                    </div>
+                    <!--文件域-->
+      <input id="imgfile" style="display:none;"  type="file" accept="image/*;capture=camera"  hidefocus="true"  name="imgfile" onchange="getUrl(this.files,this.id);"/>
+     <!--Base64-->
+       <!--画布-->
+      <canvas id="myCanvas" data-filetype="" style="display:none;" ></canvas>
+      <img src="" style="display:none;" alt="" id="ago"  />
+                </div>
+            </div>
+
+            
+        </div>  
+        
+    </div>
+</div>
+  
+
+    <!-- 页面中间内容结束-->
+
+        
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <script type="text/javascript" src="https://cdn.orayimg.com/console/js/domain-1.2.67.js"></script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>登录</title>
+    <link rel="stylesheet" href="auth.css">
+    <script src="script/jquery-1.11.3.min.js"></script>
+    <script src="script/zhuce.js"></script>
+    <style>
+        body {
+            background: radial-gradient(circle, white,#bef2fd, #d0fbf1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lowin">
+        <div class="lowin-brand">
+            <img src="img/mtt.jpg" alt="logo" width="160px;" height="75px;">
+        </div>
+        <div class="lowin-wrapper">
+            <div class="lowin-box lowin-login">
+                <div class="lowin-box-inner">
+                    <form id="login" enctype="multipart/form-data">
+                        <p>注册界面</p><span style="padding-left:110px;font-size:12px;">已有账号？<a href="index.html">请登录</a></span>
+                        <div class="lowin-group">
+                            <label>账号</label>
+                            <input type="text" id="username" class="lowin-input" placeholder="请输入账号">
+                        </div>
+                        <div class="lowin-group password-group">
+                            <label>密码</label>
+                            <input type="password" id="pwd" class="lowin-input" placeholder="请输入密码">
+                        </div>
+                        <div class="lowin-group">
+                            <label>名称</label>
+                            <input type="text" id="name" name="name" class="lowin-input" placeholder="请输入用户名">
+                        </div>
+                        <div class="lowin-group">
+                            <label>电话号码</label>
+                            <input type="text" id="phone" name="phone" class="lowin-input" placeholder="请输入电话号码">
+                        </div>
+                        <input class="lowin-btn login-btn" id="register" type="button" value="注册">
+                        <!-- <button   type="submit" onclick="login1()">
+                            登录
+                        </button> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="auth.js"></script>
+    <script>
+        Auth.init({
+            login_url: '#login',
+            forgot_url: '#forgot'
+        });
+    </script> -->
+</body>
+</html>
